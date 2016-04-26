@@ -14,7 +14,7 @@
 #import "CMDHeader.h"
 #import "CMDOP.h"
 #import "CMDSocketSender.h"
-
+#import "DeviceConfig.h"
 //#import "Socketsingleton.h"
 //#import "SystemConfiguration.h"
 //#if HttpSenderViaASI

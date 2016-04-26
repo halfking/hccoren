@@ -9,6 +9,7 @@
 #import "CMDSocketSender.h"
 #import "HCBase.h"
 #import "CMDs.h"
+#import "AsyncSocket.h"
 
 //#import "Common.h"
 #import "CommonUtil(Date).h"
