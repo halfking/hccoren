@@ -43,7 +43,7 @@
 @property   (nonatomic,assign) BOOL DisconnectByUser;
 @property   (atomic,assign)    BOOL IsInited;
 @property   (atomic,assign)    BOOL isConnnection_;
-@property   (atomic,PP_WEAK)    id<HCNetworkDelegate> delegate;
+@property   (atomic,PP_WEAK)    NSObject<HCNetworkDelegate> * delegate;
 + (Socketsingleton *)     sharedSocketsingleton;
 -(int)  sendData:(NSData *)data withTimeout:(NSTimeInterval)timeout tag:(long)tag;
 -(void) disconnectToMina;

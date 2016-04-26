@@ -29,24 +29,24 @@
 
 #import "NSString+SBJSON.h"
 #import "SBJsonParser.h"
-
+#import "HCBase.h"
 @implementation NSString (NSString_SBJSON)
 
 - (id)JSONValueEx
 {
     id repr;
-    @autoreleasepool {
+//    @autoreleasepool {
         SBJsonParser *jsonParser = [SBJsonParser new];
-        repr = [[jsonParser objectWithString:self]retain];
+        repr = PP_RETAIN([jsonParser objectWithString:self]);
         if (!repr)
         {
             NSLog(@"-JSONValue failed. Error trace is: %@", [jsonParser errorTrace]);
             NSLog(@"String:%@",self);
         }
         //    repr = [repr retain];
-        [jsonParser release];
-    }
-    return [repr autorelease];
+        PP_RELEASE(jsonParser);
+//    }
+    return  PP_AUTORELEASE(repr);// [repr autorelease];
 }
 
 @end
