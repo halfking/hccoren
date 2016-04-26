@@ -338,8 +338,8 @@ typedef enum AsyncSocketError AsyncSocketError;
  * 
  * See also the connectedHost, connectedPort, localHost and localPort methods.
 **/
-- (NSData *)connectedAddress;
-- (NSData *)localAddress;
+//- (NSData *)connectedAddress;
+//- (NSData *)localAddress;
 
 /**
  * Returns whether the socket is IPv4 or IPv6.
