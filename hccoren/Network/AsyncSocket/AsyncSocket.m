@@ -3113,115 +3113,120 @@ Failed:
 	return ntohs(pSockaddr6->sin6_port);
 }
 
-- (NSData *)connectedAddress
-{
-#if DEBUG_THREAD_SAFETY
-	[self checkForThreadSafety];
-#endif
-	
-	// Extract address from CFSocket
-	
-    CFSocketRef theSocket;
-    
-    if (theSocket4)
-        theSocket = theSocket4;
-    else
-        theSocket = theSocket6;
-    
-    if (theSocket)
-    {
-		CFDataRef peeraddr = CFSocketCopyPeerAddress(theSocket);
-		
-		if (peeraddr == NULL) return nil;
-		
-		return (NSData *)PP_AUTORELEASE(NSMakeCollectable(peeraddr));
-	}
-	
-	// Extract address from CFSocketNativeHandle
-	
-	socklen_t sockaddrlen;
-	CFSocketNativeHandle theNativeSocket = 0;
-	
-	if (theNativeSocket4 > 0)
-	{
-		theNativeSocket = theNativeSocket4;
-		sockaddrlen = sizeof(struct sockaddr_in);
-	}
-	else
-	{
-		theNativeSocket = theNativeSocket6;
-		sockaddrlen = sizeof(struct sockaddr_in6);
-	}
-	
-	NSData *result = nil;
-	void *sockaddr = malloc(sockaddrlen);
-	
-	if(getpeername(theNativeSocket, (struct sockaddr *)sockaddr, &sockaddrlen) >= 0)
-	{
-		result = [NSData dataWithBytesNoCopy:sockaddr length:sockaddrlen freeWhenDone:YES];
-	}
-	else
-	{
-		free(sockaddr);
-	}
-	
-	return result;
-}
-
-- (NSData *)localAddress
-{
-#if DEBUG_THREAD_SAFETY
-	[self checkForThreadSafety];
-#endif
-	
-	// Extract address from CFSocket
-	
-    CFSocketRef theSocket;
-    
-    if (theSocket4)
-        theSocket = theSocket4;
-    else
-        theSocket = theSocket6;
-    
-    if (theSocket)
-    {
-		CFDataRef selfaddr = CFSocketCopyAddress(theSocket);
-		
-		if (selfaddr == NULL) return nil;
-		
-		return (NSData *)PP_AUTORELEASE(NSMakeCollectable(selfaddr));
-	}
-	
-	// Extract address from CFSocketNativeHandle
-	
-	socklen_t sockaddrlen;
-	CFSocketNativeHandle theNativeSocket = 0;
-	
-	if (theNativeSocket4 > 0)
-	{
-		theNativeSocket = theNativeSocket4;
-		sockaddrlen = sizeof(struct sockaddr_in);
-	}
-	else
-	{
-		theNativeSocket = theNativeSocket6;
-		sockaddrlen = sizeof(struct sockaddr_in6);
-	}
-	
-	NSData *result = nil;
-	void *sockaddr = malloc(sockaddrlen);
-	
-	if(getsockname(theNativeSocket, (struct sockaddr *)sockaddr, &sockaddrlen) >= 0)
-	{
-		result = [NSData dataWithBytesNoCopy:sockaddr length:sockaddrlen freeWhenDone:YES];
-	}
-	else
-	{
-		free(sockaddr);
-	}
-	
-	return result;
-}
+//- (NSData *)connectedAddress
+//{
+//#if DEBUG_THREAD_SAFETY
+//	[self checkForThreadSafety];
+//#endif
+//	
+//	// Extract address from CFSocket
+//	
+//    CFSocketRef theSocket;
+//    
+//    if (theSocket4)
+//        theSocket = theSocket4;
+//    else
+//        theSocket = theSocket6;
+//    
+//    if (theSocket)
+//    {
+//		CFDataRef peeraddr = CFSocketCopyPeerAddress(theSocket);
+//		
+//		if (peeraddr == NULL) return nil;
+//		
+////        if (getsockname(socket4FD, (struct sockaddr *)&sockaddr4, &sockaddr4len) == 0)
+////        {
+////            result = [[NSData alloc] initWithBytes:&sockaddr4 length:sockaddr4len];
+////        }
+////         NSString *newString = CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)string, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding([self stringEncoding])));
+////        
+//        
+//		return (NSData *)PP_AUTORELEASE(NSMakeCollectable(peeraddr));
+//	}
+//	
+//	// Extract address from CFSocketNativeHandle
+//	
+//	socklen_t sockaddrlen;
+//	CFSocketNativeHandle theNativeSocket = 0;
+//	
+//	if (theNativeSocket4 > 0)
+//	{
+//		theNativeSocket = theNativeSocket4;
+//		sockaddrlen = sizeof(struct sockaddr_in);
+//	}
+//	else
+//	{
+//		theNativeSocket = theNativeSocket6;
+//		sockaddrlen = sizeof(struct sockaddr_in6);
+//	}
+//	
+//	NSData *result = nil;
+//	void *sockaddr = malloc(sockaddrlen);
+//	
+//	if(getpeername(theNativeSocket, (struct sockaddr *)sockaddr, &sockaddrlen) >= 0)
+//	{
+//		result = [NSData dataWithBytesNoCopy:sockaddr length:sockaddrlen freeWhenDone:YES];
+//	}
+//	else
+//	{
+//		free(sockaddr);
+//	}
+//	
+//	return result;
+//}
+//- (NSData *)localAddress
+//{
+//#if DEBUG_THREAD_SAFETY
+//	[self checkForThreadSafety];
+//#endif
+//	
+//	// Extract address from CFSocket
+//	
+//    CFSocketRef theSocket;
+//    
+//    if (theSocket4)
+//        theSocket = theSocket4;
+//    else
+//        theSocket = theSocket6;
+//    
+//    if (theSocket)
+//    {
+//		CFDataRef selfaddr = CFSocketCopyAddress(theSocket);
+//		
+//		if (selfaddr == NULL) return nil;
+//		
+//		return (NSData *)PP_AUTORELEASE(NSMakeCollectable(selfaddr));
+//	}
+//	// Extract address from CFSocketNativeHandle
+//	
+//	socklen_t sockaddrlen;
+//	CFSocketNativeHandle theNativeSocket = 0;
+//	
+//	if (theNativeSocket4 > 0)
+//	{
+//		theNativeSocket = theNativeSocket4;
+//		sockaddrlen = sizeof(struct sockaddr_in);
+//	}
+//	else
+//	{
+//		theNativeSocket = theNativeSocket6;
+//		sockaddrlen = sizeof(struct sockaddr_in6);
+//	}
+//	
+//	NSData *result = nil;
+//	void *sockaddr = malloc(sockaddrlen);
+//	
+//	if(getsockname(theNativeSocket, (struct sockaddr *)sockaddr, &sockaddrlen) >= 0)
+//	{
+//		result = [NSData dataWithBytesNoCopy:sockaddr length:sockaddrlen freeWhenDone:YES];
+//	}
+//	else
+//	{
+//		free(sockaddr);
+//	}
+//	
+//	return result;
+//}
 
 - (BOOL)isIPv4
 {
