@@ -79,13 +79,13 @@
 		11ED3F5C1CC61E7E00561E33 /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E571CC61E7E00561E33 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F5D1CC61E7E00561E33 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E581CC61E7E00561E33 /* LocationManager.m */; };
 		11ED3F5E1CC61E7E00561E33 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E5B1CC61E7E00561E33 /* AsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F5F1CC61E7E00561E33 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E5C1CC61E7E00561E33 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3F5F1CC61E7E00561E33 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E5C1CC61E7E00561E33 /* AsyncSocket.m */; };
 		11ED3F601CC61E7E00561E33 /* HCSendRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E5D1CC61E7E00561E33 /* HCSendRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F611CC61E7E00561E33 /* HCSendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E5E1CC61E7E00561E33 /* HCSendRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3F611CC61E7E00561E33 /* HCSendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E5E1CC61E7E00561E33 /* HCSendRequest.m */; };
 		11ED3F621CC61E7E00561E33 /* HCSocketBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E5F1CC61E7E00561E33 /* HCSocketBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F631CC61E7E00561E33 /* HCSocketBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E601CC61E7E00561E33 /* HCSocketBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3F631CC61E7E00561E33 /* HCSocketBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E601CC61E7E00561E33 /* HCSocketBuffer.m */; };
 		11ED3F641CC61E7E00561E33 /* Socketsingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E611CC61E7E00561E33 /* Socketsingleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F651CC61E7E00561E33 /* Socketsingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E621CC61E7E00561E33 /* Socketsingleton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3F651CC61E7E00561E33 /* Socketsingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E621CC61E7E00561E33 /* Socketsingleton.m */; };
 		11ED3F661CC61E7E00561E33 /* BlueSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E641CC61E7E00561E33 /* BlueSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F671CC61E7E00561E33 /* BlueSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E651CC61E7E00561E33 /* BlueSessionManager.m */; };
 		11ED3F681CC61E7E00561E33 /* bluesessionusage.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3E661CC61E7E00561E33 /* bluesessionusage.txt */; };
@@ -150,22 +150,22 @@
 		11ED3FA31CC61E7E00561E33 /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EA51CC61E7E00561E33 /* rijndael.c */; };
 		11ED3FA41CC61E7E00561E33 /* rijndael.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EA61CC61E7E00561E33 /* rijndael.h */; };
 		11ED3FA51CC61E7E00561E33 /* NSString+MD5Addition.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EA81CC61E7E00561E33 /* NSString+MD5Addition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FA61CC61E7E00561E33 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EA91CC61E7E00561E33 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FA61CC61E7E00561E33 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EA91CC61E7E00561E33 /* NSString+MD5Addition.m */; };
 		11ED3FA71CC61E7E00561E33 /* NSDataGZipAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EAA1CC61E7E00561E33 /* NSDataGZipAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FA81CC61E7E00561E33 /* NSDataGZipAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EAB1CC61E7E00561E33 /* NSDataGZipAdditions.m */; };
 		11ED3FA91CC61E7E00561E33 /* AFUIImageReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EAD1CC61E7E00561E33 /* AFUIImageReflection.h */; };
 		11ED3FAA1CC61E7E00561E33 /* AFUIImageReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EAE1CC61E7E00561E33 /* AFUIImageReflection.m */; };
 		11ED3FAB1CC61E7E00561E33 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EAF1CC61E7E00561E33 /* JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FAC1CC61E7E00561E33 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EB01CC61E7E00561E33 /* NSObject+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FAD1CC61E7E00561E33 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB11CC61E7E00561E33 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FAD1CC61E7E00561E33 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB11CC61E7E00561E33 /* NSObject+SBJSON.m */; };
 		11ED3FAE1CC61E7E00561E33 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EB21CC61E7E00561E33 /* NSString+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FAF1CC61E7E00561E33 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB31CC61E7E00561E33 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FAF1CC61E7E00561E33 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB31CC61E7E00561E33 /* NSString+SBJSON.m */; };
 		11ED3FB01CC61E7E00561E33 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EB41CC61E7E00561E33 /* SBJsonBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FB11CC61E7E00561E33 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB51CC61E7E00561E33 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FB11CC61E7E00561E33 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB51CC61E7E00561E33 /* SBJsonBase.m */; };
 		11ED3FB21CC61E7E00561E33 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EB61CC61E7E00561E33 /* SBJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FB31CC61E7E00561E33 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB71CC61E7E00561E33 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FB31CC61E7E00561E33 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB71CC61E7E00561E33 /* SBJsonParser.m */; };
 		11ED3FB41CC61E7E00561E33 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EB81CC61E7E00561E33 /* SBJsonWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FB51CC61E7E00561E33 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB91CC61E7E00561E33 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FB51CC61E7E00561E33 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB91CC61E7E00561E33 /* SBJsonWriter.m */; };
 		11ED3FB61CC61E7E00561E33 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EBA1CC61E7E00561E33 /* RegexKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FB71CC61E7E00561E33 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EBB1CC61E7E00561E33 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11ED3FB81CC61E7E00561E33 /* UIDevice+IdentifierAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EBD1CC61E7E00561E33 /* UIDevice+IdentifierAddition.h */; };
@@ -207,11 +207,11 @@
 		11ED3FDC1CC61E7E00561E33 /* NSNumber+CC.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EE31CC61E7E00561E33 /* NSNumber+CC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FDD1CC61E7E00561E33 /* NSNumber+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EE41CC61E7E00561E33 /* NSNumber+CC.m */; };
 		11ED3FDE1CC61E7E00561E33 /* NSString+CC.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EE51CC61E7E00561E33 /* NSString+CC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FDF1CC61E7E00561E33 /* NSString+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EE61CC61E7E00561E33 /* NSString+CC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FDF1CC61E7E00561E33 /* NSString+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EE61CC61E7E00561E33 /* NSString+CC.m */; };
 		11ED3FE01CC61E7E00561E33 /* NSTimer+CC.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EE71CC61E7E00561E33 /* NSTimer+CC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FE11CC61E7E00561E33 /* NSTimer+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EE81CC61E7E00561E33 /* NSTimer+CC.m */; };
 		11ED3FE21CC61E7E00561E33 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EE91CC61E7E00561E33 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FE31CC61E7E00561E33 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EEA1CC61E7E00561E33 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11ED3FE31CC61E7E00561E33 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EEA1CC61E7E00561E33 /* OpenUDID.m */; };
 		11ED3FE41CC61E7E00561E33 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EED1CC61E7E00561E33 /* crypt.h */; };
 		11ED3FE51CC61E7E00561E33 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EEE1CC61E7E00561E33 /* ioapi.c */; };
 		11ED3FE61CC61E7E00561E33 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EEF1CC61E7E00561E33 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -284,6 +284,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorendebug.xcconfig; sourceTree = "<group>"; };
+		114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorenrelease.xcconfig; sourceTree = "<group>"; };
+		114DE8B91CCFCBE8004BE152 /* hccoreappstore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccoreappstore.xcconfig; sourceTree = "<group>"; };
+		114DE8BA1CCFCBFD004BE152 /* hccoreshare.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccoreshare.xcconfig; sourceTree = "<group>"; };
+		114DE8BB1CCFCD72004BE152 /* framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = framework.xcconfig; sourceTree = "<group>"; };
 		11ED3DF71CC61E1900561E33 /* hccoren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hccoren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED3DFA1CC61E1900561E33 /* hccoren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hccoren.h; sourceTree = "<group>"; };
 		11ED3DFC1CC61E1900561E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -563,6 +568,11 @@
 		11ED3DED1CC61E1900561E33 = {
 			isa = PBXGroup;
 			children = (
+				114DE8BB1CCFCD72004BE152 /* framework.xcconfig */,
+				114DE8BA1CCFCBFD004BE152 /* hccoreshare.xcconfig */,
+				114DE8B91CCFCBE8004BE152 /* hccoreappstore.xcconfig */,
+				114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */,
+				114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */,
 				11ED3DF91CC61E1900561E33 /* hccoren */,
 				11ED3E051CC61E1900561E33 /* hccorenTests */,
 				11ED3DF81CC61E1900561E33 /* Products */,
@@ -1533,6 +1543,7 @@
 					armv7s,
 				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1557,6 +1568,7 @@
 					armv7s,
 				);
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
