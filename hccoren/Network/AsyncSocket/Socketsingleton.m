@@ -16,7 +16,31 @@
 #import "HCSendRequest.h"
 //#import "PageBase(Windows).h"
 #import "RegexKitLite.h"
-
+#import "JSON.h"
+#import <netdb.h>
+#include <arpa/inet.h>
+#import <sys/socket.h>
+//#import "CMDDelegate.h"
+#import "DeviceConfig.h"
+#import "HCSocketBuffer.h"
+#import "Reachability.h"
+@interface Socketsingleton() <AsyncSocketDelegate>
+{
+    NSString * server;
+    BOOL DisconnectByUser;
+    
+    HCSocketBuffer * _Buffer;
+    BOOL isConnnection_;
+    BOOL isIniting_; //是否正在初始化
+    int showNoNetCount_; //显示没有网络的信息的次数，在网络未变情况下，不得超过2次
+    
+    int connectRequestCount_;//网络重联次数
+    BOOL showConnectting_;  //是否显示正在联接信息
+    
+    Reachability * reachalility_;
+    CMDs * cmds_;
+}
+@end
 @implementation Socketsingleton
 @synthesize  asyncSocket = asyncSocket_;
 @synthesize DisconnectByUser;
