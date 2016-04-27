@@ -1436,7 +1436,23 @@ static void MyCFWriteStreamCallback(CFWriteStreamRef stream, CFStreamEventType t
     if (address4)
     {
         theSocket4 = [self newAcceptSocketForAddress:address4 error:errPtr];
-        if (theSocket4 == NULL) goto Failed;
+        if (theSocket4 == NULL) //goto Failed;
+        {
+            if(errPtr) *errPtr = [self getSocketError];
+            if(theSocket4 != NULL)
+            {
+                CFSocketInvalidate(theSocket4);
+                CFRelease(theSocket4);
+                theSocket4 = NULL;
+            }
+            if(theSocket6 != NULL)
+            {
+                CFSocketInvalidate(theSocket6);
+                CFRelease(theSocket6);
+                theSocket6 = NULL;
+            }
+            return NO;
+        }
     }
     
     if (address6)
@@ -1446,7 +1462,23 @@ static void MyCFWriteStreamCallback(CFWriteStreamRef stream, CFStreamEventType t
         // Note: The iPhone doesn't currently support IPv6
         
 #if !TARGET_OS_IPHONE
-        if (theSocket6 == NULL) goto Failed;
+        if (theSocket6 == NULL)// goto Failed;
+        {
+            if(errPtr) *errPtr = [self getSocketError];
+            if(theSocket4 != NULL)
+            {
+                CFSocketInvalidate(theSocket4);
+                CFRelease(theSocket4);
+                theSocket4 = NULL;
+            }
+            if(theSocket6 != NULL)
+            {
+                CFSocketInvalidate(theSocket6);
+                CFRelease(theSocket6);
+                theSocket6 = NULL;
+            }
+            return NO;
+        }
 #endif
     }
     
@@ -1466,7 +1498,23 @@ static void MyCFWriteStreamCallback(CFWriteStreamRef stream, CFStreamEventType t
     if (theSocket4)
     {
         err = CFSocketSetAddress(theSocket4, (CFDataRef)address4);
-        if (err != kCFSocketSuccess) goto Failed;
+        if (err != kCFSocketSuccess)// goto Failed;
+        {
+            if(errPtr) *errPtr = [self getSocketError];
+            if(theSocket4 != NULL)
+            {
+                CFSocketInvalidate(theSocket4);
+                CFRelease(theSocket4);
+                theSocket4 = NULL;
+            }
+            if(theSocket6 != NULL)
+            {
+                CFSocketInvalidate(theSocket6);
+                CFRelease(theSocket6);
+                theSocket6 = NULL;
+            }
+            return NO;
+        }
         
         //NSLog(@"theSocket4: %hu", [self localPortFromCFSocket4:theSocket4]);
     }
@@ -1488,7 +1536,23 @@ static void MyCFWriteStreamCallback(CFWriteStreamRef stream, CFStreamEventType t
     if (theSocket6)
     {
         err = CFSocketSetAddress(theSocket6, (CFDataRef)address6);
-        if (err != kCFSocketSuccess) goto Failed;
+        if (err != kCFSocketSuccess)// goto Failed;
+        {
+            if(errPtr) *errPtr = [self getSocketError];
+            if(theSocket4 != NULL)
+            {
+                CFSocketInvalidate(theSocket4);
+                CFRelease(theSocket4);
+                theSocket4 = NULL;
+            }
+            if(theSocket6 != NULL)
+            {
+                CFSocketInvalidate(theSocket6);
+                CFRelease(theSocket6);
+                theSocket6 = NULL;
+            }
+            return NO;
+        }
         
         //NSLog(@"theSocket6: %hu", [self localPortFromCFSocket6:theSocket6]);
     }
@@ -1496,21 +1560,21 @@ static void MyCFWriteStreamCallback(CFWriteStreamRef stream, CFStreamEventType t
     theFlags |= kDidStartDelegate;
     return YES;
     
-Failed:
-    if(errPtr) *errPtr = [self getSocketError];
-    if(theSocket4 != NULL)
-    {
-        CFSocketInvalidate(theSocket4);
-        CFRelease(theSocket4);
-        theSocket4 = NULL;
-    }
-    if(theSocket6 != NULL)
-    {
-        CFSocketInvalidate(theSocket6);
-        CFRelease(theSocket6);
-        theSocket6 = NULL;
-    }
-    return NO;
+//Failed:
+//    if(errPtr) *errPtr = [self getSocketError];
+//    if(theSocket4 != NULL)
+//    {
+//        CFSocketInvalidate(theSocket4);
+//        CFRelease(theSocket4);
+//        theSocket4 = NULL;
+//    }
+//    if(theSocket6 != NULL)
+//    {
+//        CFSocketInvalidate(theSocket6);
+//        CFRelease(theSocket6);
+//        theSocket6 = NULL;
+//    }
+//    return NO;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1550,17 +1614,17 @@ Failed:
     // Clear queues (spurious read/write requests post disconnect)
     [self emptyQueues];
     
-    if(![self createStreamsToHost:hostname onPort:port error:errPtr]) goto Failed;
-    if(![self attachStreamsToRunLoop:nil error:errPtr])               goto Failed;
-    if(![self configureStreamsAndReturnError:errPtr])                 goto Failed;
-    if(![self openStreamsAndReturnError:errPtr])                      goto Failed;
-    
-    [self startConnectTimeout:timeout];
-    theFlags |= kDidStartDelegate;
-    
-    return YES;
-    
-Failed:
+    if([self createStreamsToHost:hostname onPort:port error:errPtr])
+        if([self attachStreamsToRunLoop:nil error:errPtr])
+            if([self configureStreamsAndReturnError:errPtr])
+                if([self openStreamsAndReturnError:errPtr])
+                {
+                    [self startConnectTimeout:timeout];
+                    theFlags |= kDidStartDelegate;
+                    
+                    return YES;
+                }
+    //Failed:
     [self close];
     return NO;
 }
@@ -1613,18 +1677,18 @@ Failed:
     // Clear queues (spurious read/write requests post disconnect)
     [self emptyQueues];
     
-    if(![self createSocketForAddress:remoteAddr error:errPtr])   goto Failed;
-    if(![self bindSocketToAddress:interfaceAddr error:errPtr])   goto Failed;
-    if(![self attachSocketsToRunLoop:nil error:errPtr])          goto Failed;
-    if(![self configureSocketAndReturnError:errPtr])             goto Failed;
-    if(![self connectSocketToAddress:remoteAddr error:errPtr])   goto Failed;
-    
-    [self startConnectTimeout:timeout];
-    theFlags |= kDidStartDelegate;
-    
-    return YES;
-    
-Failed:
+    if([self createSocketForAddress:remoteAddr error:errPtr])
+        if([self bindSocketToAddress:interfaceAddr error:errPtr])
+            if([self attachSocketsToRunLoop:nil error:errPtr])
+                if([self configureSocketAndReturnError:errPtr])
+                    if([self connectSocketToAddress:remoteAddr error:errPtr])
+                    {
+                        [self startConnectTimeout:timeout];
+                        theFlags |= kDidStartDelegate;
+                        
+                        return YES;
+                    }
+    //Failed:
     [self close];
     return NO;
 }
@@ -4245,7 +4309,7 @@ Failed:
         theCurrentWrite->timeout += timeoutExtension;
         
         theWriteTimer = [NSTimer timerWithTimeInterval:timeoutExtension
-                                                target:self 
+                                                target:self
                                               selector:@selector(doWriteTimeout:)
                                               userInfo:nil
                                                repeats:NO];
@@ -4271,10 +4335,10 @@ Failed:
     {
         // Passing nil/NULL to CFReadStreamSetProperty will appear to work the same as passing an empty dictionary,
         // but causes problems if we later try to fetch the remote host's certificate.
-        // 
+        //
         // To be exact, it causes the following to return NULL instead of the normal result:
         // CFReadStreamCopyProperty(readStream, kCFStreamPropertySSLPeerCertificates)
-        // 
+        //
         // So we use an empty dictionary instead, which works perfectly.
         
         tlsSettings = [NSDictionary dictionary];
@@ -4297,7 +4361,7 @@ Failed:
     // We can't start TLS until:
     // - All queued reads prior to the user calling StartTLS are complete
     // - All queued writes prior to the user calling StartTLS are complete
-    // 
+    //
     // We'll know these conditions are met when both kStartingReadTLS and kStartingWriteTLS are set
     
     if((theFlags & kStartingReadTLS) && (theFlags & kStartingWriteTLS))

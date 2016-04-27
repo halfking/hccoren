@@ -159,28 +159,28 @@ ENABLE_BITCODE = YES
 //// Warn if a "@selector(...)" expression referring to an undeclared selector is found
 //GCC_WARN_UNDECLARED_SELECTOR = YES
 //
-//// Warn if a variable might be clobbered by a setjmp call or if an automatic variable is used without prior initialization.
-//GCC_WARN_UNINITIALIZED_AUTOS = YES
-//
-//// Whether to warn about static functions that are unused
-//GCC_WARN_UNUSED_FUNCTION = YES
-//
-//// Whether to warn about labels that are unused
-//GCC_WARN_UNUSED_LABEL = YES
-//
-//// Whether to warn about variables that are never used
-//GCC_WARN_UNUSED_VARIABLE = YES
-//
-//// Whether to run the static analyzer with every build
-//RUN_CLANG_STATIC_ANALYZER = YES
-//
-//// Don't treat unknown warnings as errors, and disable GCC compatibility warnings and unused static const variable warnings
-//WARNING_CFLAGS = -Wno-error=unknown-warning-option -Wno-gcc-compat -Wno-unused-const-variable -Wno-nullability-completeness
-//
-//// This setting is on for new projects as of Xcode ~6.3, though it is still not
-//// the default. It warns if the same variable is declared in two binaries that
-//// are linked together.
-//GCC_NO_COMMON_BLOCKS = YES
+// Warn if a variable might be clobbered by a setjmp call or if an automatic variable is used without prior initialization.
+GCC_WARN_UNINITIALIZED_AUTOS = YES
+
+// Whether to warn about static functions that are unused
+GCC_WARN_UNUSED_FUNCTION = YES
+
+// Whether to warn about labels that are unused
+GCC_WARN_UNUSED_LABEL = YES
+
+// Whether to warn about variables that are never used
+GCC_WARN_UNUSED_VARIABLE = YES
+
+// Whether to run the static analyzer with every build
+RUN_CLANG_STATIC_ANALYZER = YES
+
+// Don't treat unknown warnings as errors, and disable GCC compatibility warnings and unused static const variable warnings
+WARNING_CFLAGS = -Wno-error=unknown-warning-option -Wno-gcc-compat -Wno-unused-const-variable -Wno-nullability-completeness
+
+// This setting is on for new projects as of Xcode ~6.3, though it is still not
+// the default. It warns if the same variable is declared in two binaries that
+// are linked together.
+GCC_NO_COMMON_BLOCKS = YES
 
 
 //:configuration = Debug
