@@ -34,8 +34,8 @@
 #import "ZipWriteStream.h"
 #import "ZipException.h"
 #import "ARCHelper.h"
-#include "zip.h"
-//#import <Minizip/Minizip.h>
+//#include "zip.h"
+#import <Minizip/Minizip.h>
 
 
 @implementation ZipWriteStream
