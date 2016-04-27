@@ -17,7 +17,7 @@ INFOPLIST_FILE = hccoren/Info.plist
 
 
 // Whether this framework should define an LLVM module
-DEFINES_MODULE = NO
+DEFINES_MODULE = YES
 
 // Whether function calls should be position-dependent (should always be
 // disabled for library code)
@@ -57,5 +57,9 @@ DEAD_CODE_STRIPPING = YES
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
 
 CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
+
+//:configuration = Debug
+CLANG_ENABLE_MODULES = YES
+
 
 

@@ -31,7 +31,7 @@ VALID_ARCHS = armv7 armv7s arm64
 //i386 x86_64
 //arm64 armv7 armv7s
 //:configuration = Release
-ENABLE_BITCODE = YES
+ENABLE_BITCODE = NO
 
 //:configuration = Debug
 GCC_PRECOMPILE_PREFIX_HEADER = YES
@@ -136,7 +136,7 @@ GCC_PREFIX_HEADER = PrefixHeader.pch
 //GCC_TREAT_WARNINGS_AS_ERRORS = YES
 //
 //// Whether to warn about 64-bit values being implicitly shortened to 32 bits
-//GCC_WARN_64_TO_32_BIT_CONVERSION = YES
+GCC_WARN_64_TO_32_BIT_CONVERSION = NO
 //
 //// Whether to warn about fields missing from structure initializers (only if
 //// designated initializers aren't used)
@@ -210,8 +210,8 @@ GCC_NO_COMMON_BLOCKS = YES
 //:configuration = Debug
 //OTHER_CFLAGS = -p -g
 
-//GCC_C_LANGUAGE_STANDARD = gnu99
-GCC_C_LANGUAGE_STANDARD = compiler-default
+GCC_C_LANGUAGE_STANDARD = gnu99
+//GCC_C_LANGUAGE_STANDARD = compiler-default
 //:configuration = Debug
 CLANG_CXX_LANGUAGE_STANDARD = compiler-default
 //:configuration = Debug

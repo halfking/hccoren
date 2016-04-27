@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "这是一个与业务无关的特定的核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -147,7 +147,9 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
         ]
         spec.exclude_files = [
             "hccoren/Util/HttpServerManager.{h,m,mm,c,cpp}",
-            "hccoren/Util/HWWeakTimer.{h,m}"
+            "hccoren/Util/HWWeakTimer.{h,m}",
+            "hccoren/ZipArchive/Zlib/*.{h,m,mm,c,cpp}",
+            "hccoren/base/publictext.h"
         ]
         spec.libraries = [
             'icucore',
@@ -164,7 +166,8 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             'SystemConfiguration',
             'CoreGraphics',
             'Security',
-            'IOKit'
+            'IOKit',
+            'lib/Minizip'
         ]
     end
 

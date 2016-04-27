@@ -33,8 +33,8 @@
 
 #import <Foundation/Foundation.h>
 
-
-#include "unzip.h"
+#import <Minizip/Minizip.h>
+//#include "unzip.h"
 
 
 @interface ZipReadStream : NSObject {
