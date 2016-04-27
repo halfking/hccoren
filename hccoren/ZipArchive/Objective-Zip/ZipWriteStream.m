@@ -33,7 +33,7 @@
 
 #import "ZipWriteStream.h"
 #import "ZipException.h"
-
+#import "ARCHelper.h"
 #include "zip.h"
 
 
@@ -50,7 +50,7 @@
 }
 
 - (void) writeData:(NSData *)data {
-	int err= zipWriteInFileInZip(_zipFile, [data bytes], [data length]);
+	int err= zipWriteInFileInZip(_zipFile, [data bytes], (unsigned int)[data length]);
 	if (err < 0) {
 		NSString *reason= [NSString stringWithFormat:@"Error in writing '%@' in the zipfile", _fileNameInZip];
 		@throw [[[ZipException alloc] initWithError:err reason:reason] autorelease];

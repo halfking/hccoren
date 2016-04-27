@@ -35,7 +35,7 @@
 }
 
 + (HWindowStack *)shareObject;
-- (WindowItem *)pushWindow:(UIViewController *)vc;
+- (WindowItem *)pushWindow:(UIViewController<PageDelegate>  *)vc;
 - (WindowItem *)pushWindowItem:(WindowItem *)item;
 - (WindowItem *)popWindow:(UIViewController *)vc;
 - (WindowItem *)popWindowItem:(WindowItem *)item;

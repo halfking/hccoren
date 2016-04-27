@@ -32,7 +32,7 @@
 //
 
 #import "ZipException.h"
-
+#import "ARCHelper.h"
 
 @implementation ZipException
 

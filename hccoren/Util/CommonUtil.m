@@ -427,7 +427,7 @@
     {
         
         NSCharacterSet* tmpInvalidCharSet = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
-        NSMutableCharacterSet* tmpInvalidMutableCharSet = [[tmpInvalidCharSet mutableCopy] autorelease];
+        NSMutableCharacterSet* tmpInvalidMutableCharSet = PP_AUTORELEASE([tmpInvalidCharSet mutableCopy]);
         [tmpInvalidMutableCharSet removeCharactersInString:@"_-"];
         
         //使用compare option 来设定比较规则，如
@@ -1000,7 +1000,8 @@
     
     ZipFile *zipFile = [[ZipFile alloc] initWithResourcePath:source];
     returnState = [zipFile UnzipFileTo:destination];
-    [zipFile release];
+    PP_RELEASE(zipFile);
+//    [zipFile release];
     return returnState;
 }
 

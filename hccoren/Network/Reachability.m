@@ -158,7 +158,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
         
     {
         
-        retVal= [[self alloc] init] ;
+        retVal= [[Reachability alloc] init] ;
         
         if(retVal!= NULL)
             
@@ -170,11 +170,11 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
             
         }
         //CFRelease(reachability);
-        PP_AUTORELEASE(retVal);
+        return PP_AUTORELEASE(retVal);
         
     }
     
-    return retVal;
+    return nil;
     
 }
 
@@ -192,7 +192,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
         
     {
         
-        retVal= [[self alloc] init];
+        retVal= [[Reachability alloc] init];
         
         if(retVal!= NULL)
             
@@ -204,11 +204,11 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
             
         }
         //CFRelease(reachability);
-        PP_AUTORELEASE(retVal);
+        return PP_AUTORELEASE(retVal);
         
     }
     
-    return retVal;
+    return nil;
     
 }
 

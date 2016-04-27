@@ -21,7 +21,7 @@ DEFINES_MODULE = YES
 
 // Whether function calls should be position-dependent (should always be
 // disabled for library code)
-GCC_DYNAMIC_NO_PIC = NO
+//GCC_DYNAMIC_NO_PIC = NO
 
 // Default frameworks to the name of the project, instead of any
 // platform-specific target

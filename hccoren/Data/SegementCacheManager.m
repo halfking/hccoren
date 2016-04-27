@@ -94,7 +94,7 @@
         {
             [data_ setObject:object forKey:key];
         }
-        totalCount_ = data_.allKeys.count;
+        totalCount_ = (int)data_.allKeys.count;
         
         //change segment
         if(segmentEndRow_ <row)
@@ -128,7 +128,7 @@
     
         NSString * key = [NSString stringWithFormat:SEGMENTCACHE_KEY,section,row];
         [data_ setObject:object forKey:key];
-         totalCount_ = data_.allKeys.count;
+         totalCount_ = (int)data_.allKeys.count;
         if(totalCount_ > cacheSize_)
         {
             [self resetCache];
@@ -166,7 +166,7 @@
             }
         }
         
-        totalCount_ = data_.allKeys.count;
+        totalCount_ = (int)data_.allKeys.count;
     }
     //change segment
 }

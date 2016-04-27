@@ -91,7 +91,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
 //    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc]init];
     NSLog(@"首次初始化");
     
-    UIDevice * uidevice = PP_RETAIN([UIDevice currentDevice]);
+//    UIDevice * uidevice = PP_RETAIN([UIDevice currentDevice]);
     
 #if REMOTESERVER
     DeviceConfig * information = [DeviceConfig Instance];
@@ -115,7 +115,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
     
     //因为异步SOcket 需要从主线程中发起。
     [self performSelectorOnMainThread:@selector(firstConnect) withObject:self waitUntilDone:FALSE];
-    PP_RELEASE(uidevice);
+//    PP_RELEASE(uidevice);
 //    [uidevice release];
     //    [information release];
     

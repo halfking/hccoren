@@ -742,15 +742,14 @@
 - (id)comparePropValues:(HCEPropertyType *)pt value:(id)value value_other:(id)value_other// diffValue:(id *)diffValue
 {
     BOOL isSame = YES;
-    if(((value_other==nil || [value_other isKindOfClass:[NSNull class]])
-        && (value!=nil && (![value isKindOfClass:[NSNull class]])))
-       ||
-       ((value==nil || [value isKindOfClass:[NSNull class]])
-        && (value_other!=nil && (![value_other isKindOfClass:[NSNull class]]))))
+    BOOL isValueNull = value==nil || [value isKindOfClass:[NSNull class]];
+    BOOL isOtherNull = value_other==nil || [value_other isKindOfClass:[NSNull class]];
+    
+    if((isValueNull && !isOtherNull) || (!isValueNull && isOtherNull))
     {
         isSame = NO;
     }
-    else if((value==nil && value_other==nil) || ([value isKindOfClass:[NSNull class]] &&[value_other isKindOfClass:[NSNull class]]))
+    else if(isValueNull && isOtherNull)
     {
         isSame = YES;
     }

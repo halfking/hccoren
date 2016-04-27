@@ -58,7 +58,7 @@ static HWindowStack * intance_ = nil;
     openDelegate_ = PP_RETAIN(delegate);
 }
 #pragma mark - funs
-- (WindowItem *)pushWindow:(UIViewController *)vc
+- (WindowItem *)pushWindow:(UIViewController<PageDelegate>  *)vc
 {
     WindowItem * item = [self buildWindowItem:vc autoCreate:YES];
     if(!item) return nil;
@@ -84,7 +84,7 @@ static HWindowStack * intance_ = nil;
     }
     return item;
 }
-- (WindowItem *)buildWindowItem:(UIViewController *)vc autoCreate:(BOOL)autoCreate
+- (WindowItem *)buildWindowItem:(UIViewController<PageDelegate> *)vc autoCreate:(BOOL)autoCreate
 {
     if(!vc) return nil;
     
@@ -111,12 +111,12 @@ static HWindowStack * intance_ = nil;
     if(!windowClass) return nil;
     WindowItem * itemFound = nil;
     @synchronized(self) {
-        BOOL isFind = NO;
+//        BOOL isFind = NO;
         for (int i = (int)windowItems_.count-1;i>=0;i--){
             WindowItem * cItem = windowItems_[i];
             if([cItem.WinInstance isKindOfClass:windowClass])
             {
-                isFind = YES;
+//                isFind = YES;
                 itemFound = cItem;
                 break;
             }
@@ -130,12 +130,12 @@ static HWindowStack * intance_ = nil;
     WindowItem * itemFound = nil;
     Class windowClass = [window class];
     @synchronized(self) {
-        BOOL isFind = NO;
+//        BOOL isFind = NO;
         for (int i = (int)windowItems_.count-1;i>=0;i--){
             WindowItem * cItem = windowItems_[i];
             if(cItem.WinInstance == window || [cItem.WinInstance isKindOfClass:windowClass])
             {
-                isFind = YES;
+//                isFind = YES;
                 itemFound = cItem;
                 break;
             }

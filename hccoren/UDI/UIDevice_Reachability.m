@@ -275,7 +275,7 @@ SCNetworkReachabilityRef reachability;
 	va_list arglist;
 	if (!formatstring) return;
 	va_start(arglist, formatstring);
-	id outstring = [[NSString alloc] initWithFormat:formatstring arguments:arglist];
+//	id outstring = [[NSString alloc] initWithFormat:formatstring arguments:arglist];
 	va_end(arglist);
     
 //    UIAlertView *av = [[UIAlertView alloc] initWithTitle:outstring message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];

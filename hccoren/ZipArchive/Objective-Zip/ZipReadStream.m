@@ -33,7 +33,7 @@
 
 #import "ZipReadStream.h"
 #import "ZipException.h"
-
+#import "ARCHelper.h"
 #include "unzip.h"
 
 
