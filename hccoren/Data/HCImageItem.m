@@ -859,10 +859,10 @@
 #pragma  marker dealloc
 - (void) dealloc
 {
-    self.Title = nil;
-    self.Src = nil;
-    self.Icon = nil;
-    self.Wh  = nil;
+    PP_RELEASE(Title);
+    PP_RELEASE(Src);
+    PP_RELEASE(Icon);
+    PP_RELEASE(Wh);
     PP_SUPERDEALLOC;
 }
 @end

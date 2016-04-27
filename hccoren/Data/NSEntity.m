@@ -1329,25 +1329,16 @@
     NSString * addr = [NSString stringWithFormat:@"%X",(unsigned int)p];
     [[SystemConfiguration sharedSystemConfiguration] closePageRec:cname  Addr:addr];
 #endif
-    //    if(_dataArray!=nil)
-    //    {
-    //        [_dataArray release];
-    //        _dataArray = nil;
-    //    }
-    self.TableName = nil;
-    self.KeyName = nil;
+    
+    PP_RELEASE(TableName);
+    PP_RELEASE(KeyName);
     if(_IncludeArray)
     {
         PP_RELEASE(_IncludeArray);
-        //        [_IncludeArray release];
-        //        _IncludeArray = nil;
     }
     if(_dataEntity!=nil){
         PP_RELEASE(_dataEntity);
-        //        [_dataEntity release];
-        //        _dataEntity = nil;
     }
     PP_SUPERDEALLOC;
-    //    [super dealloc];
 }
 @end

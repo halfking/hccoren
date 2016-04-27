@@ -17,7 +17,7 @@ INFOPLIST_FILE = hccoren/Info.plist
 
 
 // Whether this framework should define an LLVM module
-DEFINES_MODULE = YES
+DEFINES_MODULE = NO
 
 // Whether function calls should be position-dependent (should always be
 // disabled for library code)

@@ -31,7 +31,7 @@
     DeviceConfig * _config;
     
     BOOL isLaunched_;
-    id<HWindowStackOpenDelegate> openDelegate_;
+    NSObject<HWindowStackOpenDelegate> * openDelegate_;
 }
 
 + (HWindowStack *)shareObject;
@@ -41,7 +41,7 @@
 - (WindowItem *)popWindowItem:(WindowItem *)item;
 - (WindowItem *)findWindow:(Class)windowClass;
 - (WindowItem *)findWindowByInstance:(UIViewController *)window;
-- (void)setDelegateForOpen:(id<HWindowStackOpenDelegate>)delegate;
+- (void)setDelegateForOpen:(NSObject<HWindowStackOpenDelegate>*)delegate;
 
 - (NSArray *)getWindowItemList;
 - (UIViewController<PageDelegate> *)getLastVc;

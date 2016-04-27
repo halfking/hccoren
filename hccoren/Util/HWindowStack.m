@@ -52,7 +52,7 @@ static HWindowStack * intance_ = nil;
     PP_RELEASE(windowItems_);
     PP_SUPERDEALLOC;
 }
-- (void)setDelegateForOpen:(id<HWindowStackOpenDelegate>)delegate
+- (void)setDelegateForOpen:(NSObject<HWindowStackOpenDelegate> *)delegate
 {
     PP_RELEASE(openDelegate_);
     openDelegate_ = PP_RETAIN(delegate);

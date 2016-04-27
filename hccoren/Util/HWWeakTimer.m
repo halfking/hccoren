@@ -21,12 +21,12 @@
 // SOFTWARE.
 
 #import "HWWeakTimer.h"
-
+#import "HCBase.h"
 @interface HWWeakTimerTarget : NSObject
 
-@property (nonatomic, weak) id target;
+@property (nonatomic, PP_WEAK) id target;
 @property (nonatomic, assign) SEL selector;
-@property (nonatomic, weak) NSTimer* timer;
+@property (nonatomic, PP_WEAK) NSTimer* timer;
 
 @end
 
@@ -52,7 +52,7 @@
                                     selector:(SEL)aSelector
                                     userInfo:(id)userInfo
                                      repeats:(BOOL)repeats {
-    HWWeakTimerTarget* timerTarget = [[HWWeakTimerTarget alloc] init];
+    HWWeakTimerTarget* timerTarget = PP_AUTORELEASE([[HWWeakTimerTarget alloc] init]);
     timerTarget.target = aTarget;
     timerTarget.selector = aSelector;
     timerTarget.timer = [NSTimer scheduledTimerWithTimeInterval:interval

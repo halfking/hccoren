@@ -28,12 +28,13 @@
 }
 -(void)dealloc
 {
-    self.SCode  = nil;
-    self.Args = nil;
-    self.CacheKey = nil;
-    self.DataMD5 = nil;
-    self.LastUpdateTime = nil;
-    self.ExpireTime = nil;
+    PP_RELEASE(SCode);
+    PP_RELEASE(Args);
+    PP_RELEASE(CacheKey);
+    PP_RELEASE(DataMD5);
+    PP_RELEASE(LastUpdateTime);
+    PP_RELEASE(ExpireTime);
+    
     PP_SUPERDEALLOC;
 //    [super dealloc];
 }

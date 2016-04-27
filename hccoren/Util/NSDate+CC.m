@@ -7,7 +7,7 @@
 //
 
 #import "NSDate+CC.h"
-
+#import "HCBase.h"
 #define DATE_COMPONENTS (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit |  NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit)
 #define CURRENT_CALENDAR [NSCalendar currentCalendar]
 
@@ -332,7 +332,7 @@
 static NSDateFormatter *dateFormatter = nil;
 - (NSString *)stringWithFormate:(NSString *)formate{
     if (!dateFormatter) {
-        dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter = PP_AUTORELEASE([[NSDateFormatter alloc] init]);
     }
     [dateFormatter setDateFormat:formate];
     return [dateFormatter stringFromDate:self];

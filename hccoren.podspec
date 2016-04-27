@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "这是一个与业务无关的特定的核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -121,121 +121,38 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
 #spec.ios.dependency 'hccoren/AsyncSocket'
 #  end
 
-  s.subspec 'REGEXKITLITE' do |spec|
+    s.subspec 'Core' do |spec|
         spec.requires_arc            = false
-        spec.source_files = "hccoren/**/regexkitlite.{h,m,mm,c,cpp}","hccoren/**/NSString+CC.{h,m,mm,c,cpp}"
+        spec.source_files = [
+            "hccoren/String/**/*.{h,m,mm,c,cpp}",
+            "hccoren/Util/**/*.{h,m,mm,c,cpp}",
+            "hccoren/ZipArchive/**/*.{h,m,mm,cpp,c}",
+            "hccoren/Data/*.{h,m,c,cpp}",
+            "hccoren/base/*.{h,m,mm,c,cpp}",
+            "hccoren/**/config.h",
+            "hccoren/**/Reachability.{h,m}",
+            "hccoren/UDI/**/*.{h,m,cpp,c}",
+            "hccoren/Map/*.{h,m}"
+        ]
         spec.public_header_files = [
-            'hccoren/**/regexkitlite.h',
-            'hccoren/**/NSString+CC.h'
+            'hccoren/String/**/*.h',
+            'hccoren/Util/**/*.h',
+            'hccoren/ZipArchive/**/*.h',
+            'hccoren/Data/*.h',
+            'hccoren/Base/*.h',
+            'hccoren/**/config.h',
+            'hccoren/UDI/**/*.h',
+            'hccoren/**/Reachability.h',
+            'hccoren/Map/*.h'
         ]
-       
+        spec.exclude_files = [
+            "hccoren/Util/HttpServerManager.{h,m,mm,c,cpp}",
+            "hccoren/Util/HWWeakTimer.{h,m}"
+        ]
         spec.libraries = [
-            "stdc++",
-            "stdc++.6",
+            'icucore'
         ]
-end
-s.subspec 'Network' do |spec|
-    spec.requires_arc            = false
-    spec.source_files = "hccoren/UDI/*.{h,m,mm,c,cpp}"
-    spec.public_header_files = [
-    'hccoren/UDI/*.h'
-    ]
-
-    spec.libraries = [
-    "stdc++","stdc++.6","icucore","iconv"
-    ]
-    spec.ios.dependency 'hccoren/REGEXKITLITE'
-end
-#  s.subspec 'AsyncSocket' do |spec|
-#        spec.requires_arc            = false
-#        spec.source_files = "hccoren/**/regexkitlite.{h,m,mm,cpp}"
-#        spec.public_header_files = [
-#        'hccoren/**/regexkitlite.h'
-#        ]
-#
-#        spec.libraries = [
-#        "stdc++",
-#        "stdc++.6","icucore","iconv"
-#        ]
-#   end
-s.subspec 'Core' do |spec|
-    spec.requires_arc        = true
-spec.exclude_files = "hccoren/**/regexkitlite.{h,m,mm,c,cpp}","hccoren/**/hccoren.h","hccoren/UDI/*.{h,m,mm,c,cpp}","hccoren/**/NSString+CC.{h,m,mm,c,cpp}"
-    spec.source_files = "hccoren/**/*.{h,m,mm,c,cpp}"
-    spec.public_header_files = [
-        'hccoren/**/HCBase.h',
-        'hccoren/**/database.h',
-        'hccoren/**/cmd.h',
-        'hccoren/**/base.h',
-        'hccoren/**/images.h',
-        'hccoren/**/CommonUtil.h',
-        'hccoren/**/CommonUtil(Date).h',
-        'hccoren/**/NSArray+CC.h',
-        'hccoren/**/NSData+CC.h',
-        'hccoren/**/NSDate+CC.h',
-        'hccoren/**/NSNumber+CC.h',
-#        'hccoren/**/NSString+CC.h',
-        'hccoren/**/NSTimer+CC.h',
-        'hccoren/**/DeviceConfig.h',
-        'hccoren/**/OpenUDID.h',
-        'hccoren/**/HttpServerManager.h',
-        'hccoren/**/HWindowStack.h',
-        'hccoren/**/PublicMControls.h',
-        'hccoren/**/CMDDelegate.h',
-        'hccoren/**/CMDOP.h',
-        'hccoren/**/HCCallbackResult.h',
-        'hccoren/**/CMDs.h',
-        'hccoren/**/Reachability.h',
-        'hccoren/**/images.h',
-        'hccoren/**/HCDBHelper.h',
-        'hccoren/**/HCSQLHelper.h',
-        'hccoren/**/HCDBHelper-init.h',
-        'hccoren/**/QCMDUpdateTime.h',
-        'hccoren/**/HCImageItem.h',
-        'hccoren/**/NSEntity.h',
-        'hccoren/**/HCEPropetyType.h',
-        'hccoren/**/WindowItem.h',
-#        'hccoren/**/iVersion.h',
-        'hccoren/**/ChinaMapShift.h',
-        'hccoren/**/LocationManager.h',
-#        'hccoren/**/AsyncSocket.h',
-        'hccoren/**/HCSendRequest.h',
-        'hccoren/**/Socketsingleton.h',
-        'hccoren/**/BlueSessionManager.h',
-        'hccoren/**/HttpConnection.h',
-        'hccoren/**/HttpResponse.h',
-        'hccoren/**/MacAddress.h',
-        'hccoren/**/NSData-AES.h',
-        'hccoren/**/NSFileManager-AES.h',
-#        'hccoren/**/RegexKitLite.h',
-#        'hccoren/**/NSString+MD5Addition.h',
-        'hccoren/**/NSDataGZipAdditions.h',
-        'hccoren/**/JSON.h',
-        'hccoren/**/MBProgressHUD.h',
-        'hccoren/**/ZipFile.h',
-        'hccoren/**/UIView+Genie.h',
-        'hccoren/**/UIView+LoadFromNib.h',
-        'hccoren/**/HWWeakTimer.h',
-        'hccoren/**/HCCacheItem.h',
-        'hccoren/**/FileDataCacheHelper.h',
-        'hccoren/**/WebSocket.h',
-        'hccoren/**/CMDSender.h',
-        'hccoren/**/trackrecord.h',
-        'hccoren/**/CMDHttpHeader.h',
-        'hccoren/**/CMDSocketHeader.h'
-        ]
-        spec.frameworks = [
-                'UIKit',
-                'CoreLocation',
-                'QuartzCore',
-                'OpenGLES',
-                'SystemConfiguration',
-                'CoreGraphics',
-                'Security',
-                'IOKit'
-            ]
-        spec.libraries = ["icucore","sqlite3.0","stdc++","iconv","bz2","z"]
-        spec.ios.dependency 'hccoren/REGEXKITLITE'
-        spec.ios.dependency 'hccoren/Network'
     end
+
+
  end
