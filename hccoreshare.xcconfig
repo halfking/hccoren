@@ -206,6 +206,7 @@ WARNING_CFLAGS = -Wno-error=unknown-warning-option -Wno-gcc-compat -Wno-unused-c
 // are linked together.
 GCC_NO_COMMON_BLOCKS = YES
 
+GCC_C_LANGUAGE_STANDARD = gnu99
 
 
 

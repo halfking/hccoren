@@ -181,7 +181,7 @@ s.subspec 'Core' do |spec|
         'hccoren/**/NSEntity.h',
         'hccoren/**/HCEPropetyType.h',
         'hccoren/**/WindowItem.h',
-        'hccoren/**/iVersion.h',
+#        'hccoren/**/iVersion.h',
         'hccoren/**/ChinaMapShift.h',
         'hccoren/**/LocationManager.h',
 #        'hccoren/**/AsyncSocket.h',
@@ -219,7 +219,7 @@ s.subspec 'Core' do |spec|
                 'CoreGraphics',
                 'Security'
             ]
-        spec.libraries = ["icucore","sqlite3.0","stdc++"]
+        spec.libraries = ["icucore","sqlite3.0","stdc++","std"]
         spec.ios.dependency 'hccoren/REGEXKITLITE'
     end
  end
