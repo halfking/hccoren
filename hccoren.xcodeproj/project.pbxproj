@@ -72,8 +72,6 @@
 		11ED3F531CC61E7E00561E33 /* HCSQLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E4B1CC61E7E00561E33 /* HCSQLHelper.m */; };
 		11ED3F541CC61E7E00561E33 /* QCMDUpdateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E4C1CC61E7E00561E33 /* QCMDUpdateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F551CC61E7E00561E33 /* QCMDUpdateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E4D1CC61E7E00561E33 /* QCMDUpdateTime.m */; };
-		11ED3F581CC61E7E00561E33 /* iVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E521CC61E7E00561E33 /* iVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F591CC61E7E00561E33 /* iVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E531CC61E7E00561E33 /* iVersion.m */; };
 		11ED3F5A1CC61E7E00561E33 /* ChinaMapShift.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E551CC61E7E00561E33 /* ChinaMapShift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F5B1CC61E7E00561E33 /* ChinaMapShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E561CC61E7E00561E33 /* ChinaMapShift.m */; };
 		11ED3F5C1CC61E7E00561E33 /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E571CC61E7E00561E33 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -343,8 +341,6 @@
 		11ED3E4B1CC61E7E00561E33 /* HCSQLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSQLHelper.m; sourceTree = "<group>"; };
 		11ED3E4C1CC61E7E00561E33 /* QCMDUpdateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMDUpdateTime.h; sourceTree = "<group>"; };
 		11ED3E4D1CC61E7E00561E33 /* QCMDUpdateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMDUpdateTime.m; sourceTree = "<group>"; };
-		11ED3E521CC61E7E00561E33 /* iVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iVersion.h; sourceTree = "<group>"; };
-		11ED3E531CC61E7E00561E33 /* iVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iVersion.m; sourceTree = "<group>"; };
 		11ED3E551CC61E7E00561E33 /* ChinaMapShift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChinaMapShift.h; sourceTree = "<group>"; };
 		11ED3E561CC61E7E00561E33 /* ChinaMapShift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChinaMapShift.m; sourceTree = "<group>"; };
 		11ED3E571CC61E7E00561E33 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
@@ -596,7 +592,6 @@
 				11ED3E241CC61E7E00561E33 /* CMDBase */,
 				11ED3E3A1CC61E7E00561E33 /* Data */,
 				11ED3E431CC61E7E00561E33 /* Database */,
-				11ED3E511CC61E7E00561E33 /* iVersion */,
 				11ED3E541CC61E7E00561E33 /* Map */,
 				11ED3E591CC61E7E00561E33 /* Network */,
 				11ED3E9F1CC61E7E00561E33 /* String */,
@@ -698,15 +693,6 @@
 				11ED3E4D1CC61E7E00561E33 /* QCMDUpdateTime.m */,
 			);
 			path = Database;
-			sourceTree = "<group>";
-		};
-		11ED3E511CC61E7E00561E33 /* iVersion */ = {
-			isa = PBXGroup;
-			children = (
-				11ED3E521CC61E7E00561E33 /* iVersion.h */,
-				11ED3E531CC61E7E00561E33 /* iVersion.m */,
-			);
-			path = iVersion;
 			sourceTree = "<group>";
 		};
 		11ED3E541CC61E7E00561E33 /* Map */ = {
@@ -1085,7 +1071,6 @@
 				11ED3F601CC61E7E00561E33 /* HCSendRequest.h in Headers */,
 				11ED3F971CC61E7E00561E33 /* WebSocket.h in Headers */,
 				11ED3F851CC61E7E00561E33 /* HTTPConnection.h in Headers */,
-				11ED3F581CC61E7E00561E33 /* iVersion.h in Headers */,
 				11ED3F641CC61E7E00561E33 /* Socketsingleton.h in Headers */,
 				11ED3F521CC61E7E00561E33 /* HCSQLHelper.h in Headers */,
 				11ED3F4E1CC61E7E00561E33 /* HCDBHelper-init.h in Headers */,
@@ -1328,7 +1313,6 @@
 				11ED3F3B1CC61E7E00561E33 /* CMDSender.m in Sources */,
 				11ED3FBE1CC61E7E00561E33 /* wwanconnect.c in Sources */,
 				11ED3F701CC61E7E00561E33 /* DDData.m in Sources */,
-				11ED3F591CC61E7E00561E33 /* iVersion.m in Sources */,
 				11ED3FAD1CC61E7E00561E33 /* NSObject+SBJSON.m in Sources */,
 				11ED3F4D1CC61E7E00561E33 /* HCDBHelper(FMDB).m in Sources */,
 				11ED3F841CC61E7E00561E33 /* HTTPAuthenticationRequest.m in Sources */,
@@ -1433,6 +1417,7 @@
 /* Begin XCBuildConfiguration section */
 		114DE6031CC9D447004BE152 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1440,6 +1425,7 @@
 		};
 		114DE6041CC9D447004BE152 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1447,6 +1433,7 @@
 		};
 		11ED3E091CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1495,6 +1482,7 @@
 		};
 		11ED3E0A1CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1537,6 +1525,7 @@
 		};
 		11ED3E0C1CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -1556,12 +1545,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Debug;
 		};
 		11ED3E0D1CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -1580,14 +1572,18 @@
 				INFOPLIST_FILE = hccoren/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
 			name = Release;
 		};
 		11ED3E0F1CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hccorenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1598,6 +1594,7 @@
 		};
 		11ED3E101CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hccorenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
