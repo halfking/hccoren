@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HttpServerManager : NSObject
 
 + (HttpServerManager *)shareObject;
-- (void)startHttpServer:(NSString*)dir;
+- (void)startHttpServer:(NSString*)dir completion:(void(^)(NSError * error))completion;
 - (void)stopHttpServer;
 - (NSString *)buildUrlForResource:(NSString *)fileAndPath;
 @end

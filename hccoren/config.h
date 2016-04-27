@@ -27,9 +27,11 @@ typedef int HCImgViewModel;
 #define NET_IPCHANGED           @"MSG_IPCHANGED"
 #define NET_RECONNECT           @"CMD_RECONNECT"    //当重联服务器时，发送给前端的消息
 #define NET_STOPHT              @"CMD_STOPHT"
+#define NET_CONNECTED           @"NET_CONNECTED"
+#define NET_CONNECTING          @"NET_CONNECTING"
 
 #define NT_LOCATIONCHANGED      @"REFRESH_LOCATION"
-
+#define NT_LOCATIONFAILURE      @"LOCATION_FAILURE"
 
 #pragma mark - 一些常用初始值
 #define CENTER_LNG          120.09

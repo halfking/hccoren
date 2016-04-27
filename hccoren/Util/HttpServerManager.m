@@ -43,7 +43,7 @@ static HttpServerManager * intance_ = nil;
 }
 
 #pragma mark - httpServer
-- (void)startHttpServer:(NSString *)dir
+- (void)startHttpServer:(NSString *)dir completion:(void(^)(NSError * error))completion
 {
     DeviceConfig * config = [DeviceConfig config];
     NSLog(@"start http server....");
@@ -84,9 +84,14 @@ static HttpServerManager * intance_ = nil;
         }
         if(!serverIsRunning)
         {
-            UIAlertView * alterView = [[UIAlertView alloc]initWithTitle:@"错误信息" message:@"无法开启本地Web服务，将无法缓存远程文件。请先缓存歌曲后再操作。" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-            [alterView show];
-            PP_RELEASE(alterView);
+            if(completion)
+            {
+                NSError * error = [NSError errorWithDomain:@"com.seenvoice.hccoren" code:-1005 userInfo:@{NSLocalizedDescriptionKey:@"无法开启本地Web服务，将无法缓存远程文件。请先缓存歌曲后再操作。"}];
+                completion(error);
+            }
+//            UIAlertView * alterView = [[UIAlertView alloc]initWithTitle:@"错误信息" message:@"无法开启本地Web服务，将无法缓存远程文件。请先缓存歌曲后再操作。" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+//            [alterView show];
+//            PP_RELEASE(alterView);
         }
         else
         {
@@ -94,14 +99,26 @@ static HttpServerManager * intance_ = nil;
         }
         {
             NSString * hostName = [httpServer_ hostName];
+            config.LOCALHOST_IP = hostName;
             if(hostName==nil||[hostName isEqualToString:@"null"])
             {
+                if(completion)
+                {
+                    NSError * error = [NSError errorWithDomain:@"com.seenvoice.hccoren" code:-1005 userInfo:@{NSLocalizedDescriptionKey:@"请打开WiFI，再开启服务。"}];
+                    completion(error);
+                }
                 NSLog(@"%@", @"请打开WiFI，再开启服务");
+                
             }
             else
+            {
                 NSLog(@"vdcserver:    http://%@:%d", hostName, [httpServer_ port]);
+                if(completion)
+                {
+                    completion(nil);
+                }
+            }
             
-            config.LOCALHOST_IP = hostName;
             
         }
     }

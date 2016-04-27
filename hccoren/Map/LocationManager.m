@@ -179,8 +179,10 @@ static LocationManager * intance_ = nil;
     if((!hasAlerted_) && errorCount_ > 10)
     {
         hasAlerted_ = YES;
-        UIAlertView * alterView = [[UIAlertView alloc]initWithTitle:MSG_ERROR message:MSG_OPENLOCATIONERROR delegate:self cancelButtonTitle:EDIT_IKNOWN otherButtonTitles:nil];
-        [alterView show];
+//        UIAlertView * alterView = [[UIAlertView alloc]initWithTitle:MSG_ERROR message:MSG_OPENLOCATIONERROR delegate:self cancelButtonTitle:EDIT_IKNOWN otherButtonTitles:nil];
+//        [alterView show];
+        
+        [[NSNotificationCenter defaultCenter]postNotificationName:NT_LOCATIONFAILURE object:MSG_OPENLOCATIONERROR userInfo:@{@"msg":MSG_OPENLOCATIONERROR}];
         
         DeviceConfig * config = [DeviceConfig config];
         [config setCurrentLocation:CENTER_LAT lng:CENTER_LNG];

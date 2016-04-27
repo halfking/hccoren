@@ -239,19 +239,19 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
     NSLog(@"will connect");
     connectRequestCount_ ++;
     if(!showConnectting_) return YES;
-    
-    UIViewController * vc = [UIApplication sharedApplication].keyWindow.rootViewController;
-    if(vc)
-    {
-        SEL selector = NSSelectorFromString(@"showProgressHUDWithMessage:");
-        if([vc respondsToSelector:selector])
-        {
-            [vc performSelector:selector
-                       onThread:[NSThread mainThread]
-                     withObject:MSG_CONNECTING
-                  waitUntilDone:YES];
-        }
-    }
+    [[NSNotificationCenter defaultCenter]postNotificationName:NET_CONNECTING object:nil];
+//    UIViewController * vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+//    if(vc)
+//    {
+//        SEL selector = NSSelectorFromString(@"showProgressHUDWithMessage:");
+//        if([vc respondsToSelector:selector])
+//        {
+//            [vc performSelector:selector
+//                       onThread:[NSThread mainThread]
+//                     withObject:MSG_CONNECTING
+//                  waitUntilDone:YES];
+//        }
+//    }
     
     return YES;
 }
@@ -300,18 +300,19 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
     connectRequestCount_ = 0;
     
 //将等待窗关闭
-    UIViewController * vc = [UIApplication sharedApplication].keyWindow.rootViewController;
-    if(vc)
-    {
-        SEL selector = NSSelectorFromString(@"hideProgressHUD:");
-        if([vc respondsToSelector:selector])
-        {
-            [vc performSelector:selector
-                       onThread:[NSThread mainThread]
-                     withObject:[NSNumber numberWithBool:YES]
-                  waitUntilDone:YES];
-        }
-    }
+    [[NSNotificationCenter defaultCenter]postNotificationName:NET_CONNECTED object:nil];
+//    UIViewController * vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+//    if(vc)
+//    {
+//        SEL selector = NSSelectorFromString(@"hideProgressHUD:");
+//        if([vc respondsToSelector:selector])
+//        {
+//            [vc performSelector:selector
+//                       onThread:[NSThread mainThread]
+//                     withObject:[NSNumber numberWithBool:YES]
+//                  waitUntilDone:YES];
+//        }
+//    }
     
 }
 - (void)onSocket:(AsyncSocket *)sock willDisconnectWithError:(NSError *)err

@@ -700,34 +700,34 @@
 }
 
 - (void)setTransformForCurrentOrientation:(BOOL)animated {
-	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-	NSInteger degrees = 0;
-	
-	// Stay in sync with the superview
-	if (self.superview) {
-		self.bounds = self.superview.bounds;
-		[self setNeedsDisplay];
-	}
-	
-	if (UIInterfaceOrientationIsLandscape(orientation)) {
-		if (orientation == UIInterfaceOrientationLandscapeLeft) { degrees = -90; } 
-		else { degrees = 90; }
-		// Window coordinates differ!
-		self.bounds = CGRectMake(0, 0, self.bounds.size.height, self.bounds.size.width);
-	} else {
-		if (orientation == UIInterfaceOrientationPortraitUpsideDown) { degrees = 180; } 
-		else { degrees = 0; }
-	}
-	
-	rotationTransform = CGAffineTransformMakeRotation(RADIANS(degrees));
-
-	if (animated) {
-		[UIView beginAnimations:nil context:nil];
-	}
-	[self setTransform:rotationTransform];
-	if (animated) {
-		[UIView commitAnimations];
-	}
+//	UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+//	NSInteger degrees = 0;
+//	
+//	// Stay in sync with the superview
+//	if (self.superview) {
+//		self.bounds = self.superview.bounds;
+//		[self setNeedsDisplay];
+//	}
+//	
+//	if (UIInterfaceOrientationIsLandscape(orientation)) {
+//		if (orientation == UIInterfaceOrientationLandscapeLeft) { degrees = -90; } 
+//		else { degrees = 90; }
+//		// Window coordinates differ!
+//		self.bounds = CGRectMake(0, 0, self.bounds.size.height, self.bounds.size.width);
+//	} else {
+//		if (orientation == UIInterfaceOrientationPortraitUpsideDown) { degrees = 180; } 
+//		else { degrees = 0; }
+//	}
+//	
+//	rotationTransform = CGAffineTransformMakeRotation(RADIANS(degrees));
+//
+//	if (animated) {
+//		[UIView beginAnimations:nil context:nil];
+//	}
+//	[self setTransform:rotationTransform];
+//	if (animated) {
+//		[UIView commitAnimations];
+//	}
 }
 
 @end

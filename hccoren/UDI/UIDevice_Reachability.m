@@ -278,8 +278,8 @@ SCNetworkReachabilityRef reachability;
 	id outstring = [[NSString alloc] initWithFormat:formatstring arguments:arglist];
 	va_end(arglist);
     
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:outstring message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-	[av show];
+//    UIAlertView *av = [[UIAlertView alloc] initWithTitle:outstring message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//	[av show];
 }
 
 - (BOOL) performWiFiCheck
