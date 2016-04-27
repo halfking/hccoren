@@ -207,6 +207,18 @@ WARNING_CFLAGS = -Wno-error=unknown-warning-option -Wno-gcc-compat -Wno-unused-c
 GCC_NO_COMMON_BLOCKS = YES
 
 GCC_C_LANGUAGE_STANDARD = gnu99
+//:configuration = Debug
+CLANG_CXX_LANGUAGE_STANDARD = compiler-default
+//:configuration = Debug
+CLANG_CXX_LIBRARY = compiler-default
+//:configuration = Debug
+GCC_INPUT_FILETYPE = automatic
+//:configuration = Debug
+GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES
+
+
+//:configuration = Debug
+OTHER_LDFLAGS = -all_load
 
 
 

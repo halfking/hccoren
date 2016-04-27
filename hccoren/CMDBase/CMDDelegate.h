@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 . All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
+#import <Foundation/Foundation.h>
 @protocol CMDDelegate <NSObject>
 @optional
 -(void)CMDCallback:(id)cmdHelper data:(NSDictionary *)data cmd:(NSString*)cmd;

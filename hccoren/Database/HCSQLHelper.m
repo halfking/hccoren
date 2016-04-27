@@ -12,7 +12,7 @@
 #import "JSON.h"
 #import "RegexKitLite.h"
 #import "HCBase.h"
-
+#import <sqlite3.h>
 @implementation HCSQLHelper
 + (NSString *) columNameCheck:(NSString*)name
 {

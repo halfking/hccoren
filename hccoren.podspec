@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "这是一个与业务无关的特定的核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -100,7 +100,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
   # s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
-    s.libraries = "icucore","sqlite3.0","stdc++"
+#  s.libraries = "icucore","sqlite3.0","stdc++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -123,32 +123,45 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
 
   s.subspec 'REGEXKITLITE' do |spec|
         spec.requires_arc            = false
-        spec.source_files = "hccoren/**/regexkitlite.{h,m,mm}"
+        spec.source_files = "hccoren/**/regexkitlite.{h,m,mm,c,cpp}","hccoren/**/NSString+CC.{h,m,mm,c,cpp}"
         spec.public_header_files = [
-            'hccoren/**/regexkitlite.h'
+            'hccoren/**/regexkitlite.h',
+            'hccoren/**/NSString+CC.h'
         ]
        
         spec.libraries = [
             "stdc++",
             "stdc++.6",
         ]
-  end
+end
+s.subspec 'Network' do |spec|
+    spec.requires_arc            = false
+    spec.source_files = "hccoren/UDI/*.{h,m,mm,c,cpp}"
+    spec.public_header_files = [
+    'hccoren/UDI/*.h'
+    ]
+
+    spec.libraries = [
+    "stdc++","stdc++.6","icucore","iconv"
+    ]
+    spec.ios.dependency 'hccoren/REGEXKITLITE'
+end
 #  s.subspec 'AsyncSocket' do |spec|
 #        spec.requires_arc            = false
-#        spec.source_files = "hccoren/**/regexkitlite.{h,m,mm}"
+#        spec.source_files = "hccoren/**/regexkitlite.{h,m,mm,cpp}"
 #        spec.public_header_files = [
 #        'hccoren/**/regexkitlite.h'
 #        ]
 #
 #        spec.libraries = [
 #        "stdc++",
-#        "stdc++.6",
+#        "stdc++.6","icucore","iconv"
 #        ]
 #   end
 s.subspec 'Core' do |spec|
     spec.requires_arc        = true
-    spec.exclude_files = "hccoren/**/regexkitlite.{h,m,mm}","hccoren/**/hccoren.h"
-    spec.source_files = "hccoren/**/*.{h,m,mm}"
+spec.exclude_files = "hccoren/**/regexkitlite.{h,m,mm,c,cpp}","hccoren/**/hccoren.h","hccoren/UDI/*.{h,m,mm,c,cpp}","hccoren/**/NSString+CC.{h,m,mm,c,cpp}"
+    spec.source_files = "hccoren/**/*.{h,m,mm,c,cpp}"
     spec.public_header_files = [
         'hccoren/**/HCBase.h',
         'hccoren/**/database.h',
@@ -161,13 +174,14 @@ s.subspec 'Core' do |spec|
         'hccoren/**/NSData+CC.h',
         'hccoren/**/NSDate+CC.h',
         'hccoren/**/NSNumber+CC.h',
-        'hccoren/**/NSString+CC.h',
+#        'hccoren/**/NSString+CC.h',
         'hccoren/**/NSTimer+CC.h',
         'hccoren/**/DeviceConfig.h',
         'hccoren/**/OpenUDID.h',
         'hccoren/**/HttpServerManager.h',
         'hccoren/**/HWindowStack.h',
         'hccoren/**/PublicMControls.h',
+        'hccoren/**/CMDDelegate.h',
         'hccoren/**/CMDOP.h',
         'hccoren/**/HCCallbackResult.h',
         'hccoren/**/CMDs.h',
@@ -194,7 +208,7 @@ s.subspec 'Core' do |spec|
         'hccoren/**/NSData-AES.h',
         'hccoren/**/NSFileManager-AES.h',
 #        'hccoren/**/RegexKitLite.h',
-        'hccoren/**/NSString+MD5Addition.h',
+#        'hccoren/**/NSString+MD5Addition.h',
         'hccoren/**/NSDataGZipAdditions.h',
         'hccoren/**/JSON.h',
         'hccoren/**/MBProgressHUD.h',
@@ -217,9 +231,11 @@ s.subspec 'Core' do |spec|
                 'OpenGLES',
                 'SystemConfiguration',
                 'CoreGraphics',
-                'Security'
+                'Security',
+                'IOKit'
             ]
-        spec.libraries = ["icucore","sqlite3.0","stdc++","std"]
+        spec.libraries = ["icucore","sqlite3.0","stdc++","iconv","bz2","z"]
         spec.ios.dependency 'hccoren/REGEXKITLITE'
+        spec.ios.dependency 'hccoren/Network'
     end
  end

@@ -7,7 +7,7 @@
 #import "QCMDUpdateTime.h"
 #import "CommonUtil.h"
 #import "JSON.h"
-
+#import <sqlite3.h>
 #include <pthread.h>
 static pthread_mutex_t dbMutex=PTHREAD_MUTEX_INITIALIZER;
 
