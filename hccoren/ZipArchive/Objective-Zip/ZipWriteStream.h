@@ -33,8 +33,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import <Minizip/Minizip.h>
-//#include "zip.h"
+//#import <Minizip/Minizip.h>
+#include "zip.h"
 
 
 @interface ZipWriteStream : NSObject {

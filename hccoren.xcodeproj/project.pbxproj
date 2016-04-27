@@ -30,11 +30,19 @@
 		117165AB1CD11003005F354F /* MacAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A71CD11003005F354F /* MacAddress.h */; };
 		117165AC1CD11003005F354F /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 117165A81CD11003005F354F /* MacAddress.m */; };
 		117165AE1CD1396D005F354F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165AD1CD1396D005F354F /* libz.tbd */; };
-		117165BA1CD14634005F354F /* Minizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165B91CD14634005F354F /* Minizip.framework */; };
 		117165BF1CD148E4005F354F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BB1CD148E4005F354F /* Foundation.framework */; };
 		117165C01CD148E4005F354F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BC1CD148E4005F354F /* Security.framework */; };
 		117165C11CD148E4005F354F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BD1CD148E4005F354F /* SystemConfiguration.framework */; };
 		117165C21CD148E5005F354F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BE1CD148E4005F354F /* UIKit.framework */; };
+		117165CD1CD14B8E005F354F /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165C41CD14B8E005F354F /* crypt.h */; };
+		117165CE1CD14B8E005F354F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165C51CD14B8E005F354F /* ioapi.c */; };
+		117165CF1CD14B8E005F354F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165C61CD14B8E005F354F /* ioapi.h */; };
+		117165D01CD14B8E005F354F /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165C71CD14B8E005F354F /* mztools.c */; };
+		117165D11CD14B8E005F354F /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165C81CD14B8E005F354F /* mztools.h */; };
+		117165D21CD14B8E005F354F /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165C91CD14B8E005F354F /* unzip.c */; };
+		117165D31CD14B8E005F354F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165CA1CD14B8E005F354F /* unzip.h */; };
+		117165D41CD14B8E005F354F /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165CB1CD14B8E005F354F /* zip.c */; };
+		117165D51CD14B8E005F354F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165CC1CD14B8E005F354F /* zip.h */; };
 		11ED3DFB1CC61E1900561E33 /* hccoren.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3DFA1CC61E1900561E33 /* hccoren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3E021CC61E1900561E33 /* hccoren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ED3DF71CC61E1900561E33 /* hccoren.framework */; };
 		11ED3E071CC61E1900561E33 /* hccorenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E061CC61E1900561E33 /* hccorenTests.m */; };
@@ -267,11 +275,19 @@
 		117165A71CD11003005F354F /* MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddress.h; sourceTree = "<group>"; };
 		117165A81CD11003005F354F /* MacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddress.m; sourceTree = "<group>"; };
 		117165AD1CD1396D005F354F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		117165B91CD14634005F354F /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Minizip.framework; path = lib/Minizip.framework; sourceTree = "<group>"; };
 		117165BB1CD148E4005F354F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		117165BC1CD148E4005F354F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		117165BD1CD148E4005F354F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		117165BE1CD148E4005F354F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		117165C41CD14B8E005F354F /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		117165C51CD14B8E005F354F /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		117165C61CD14B8E005F354F /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		117165C71CD14B8E005F354F /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		117165C81CD14B8E005F354F /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		117165C91CD14B8E005F354F /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		117165CA1CD14B8E005F354F /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		117165CB1CD14B8E005F354F /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		117165CC1CD14B8E005F354F /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
 		11ED3DF71CC61E1900561E33 /* hccoren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hccoren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED3DFA1CC61E1900561E33 /* hccoren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hccoren.h; sourceTree = "<group>"; };
 		11ED3DFC1CC61E1900561E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -492,7 +508,6 @@
 				117165C11CD148E4005F354F /* SystemConfiguration.framework in Frameworks */,
 				117165C21CD148E5005F354F /* UIKit.framework in Frameworks */,
 				117165AE1CD1396D005F354F /* libz.tbd in Frameworks */,
-				117165BA1CD14634005F354F /* Minizip.framework in Frameworks */,
 				11ED40151CC6668100561E33 /* libicucore.tbd in Frameworks */,
 				11ED40131CC6205900561E33 /* libsqlite3.0.tbd in Frameworks */,
 			);
@@ -509,6 +524,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		117165C31CD14B8E005F354F /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				117165C41CD14B8E005F354F /* crypt.h */,
+				117165C51CD14B8E005F354F /* ioapi.c */,
+				117165C61CD14B8E005F354F /* ioapi.h */,
+				117165C71CD14B8E005F354F /* mztools.c */,
+				117165C81CD14B8E005F354F /* mztools.h */,
+				117165C91CD14B8E005F354F /* unzip.c */,
+				117165CA1CD14B8E005F354F /* unzip.h */,
+				117165CB1CD14B8E005F354F /* zip.c */,
+				117165CC1CD14B8E005F354F /* zip.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
 		11ED3DED1CC61E1900561E33 = {
 			isa = PBXGroup;
 			children = (
@@ -870,6 +901,7 @@
 		11ED3EEB1CC61E7E00561E33 /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
+				117165C31CD14B8E005F354F /* MiniZip */,
 				117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */,
 				117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */,
 				11ED3EF61CC61E7E00561E33 /* Objective-Zip */,
@@ -902,7 +934,6 @@
 				117165BC1CD148E4005F354F /* Security.framework */,
 				117165BD1CD148E4005F354F /* SystemConfiguration.framework */,
 				117165BE1CD148E4005F354F /* UIKit.framework */,
-				117165B91CD14634005F354F /* Minizip.framework */,
 				117165AD1CD1396D005F354F /* libz.tbd */,
 				11ED40141CC6668100561E33 /* libicucore.tbd */,
 				11ED40121CC6205900561E33 /* libsqlite3.0.tbd */,
@@ -917,6 +948,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117165CD1CD14B8E005F354F /* crypt.h in Headers */,
 				11ED3F2F1CC61E7E00561E33 /* CMDDelegate.h in Headers */,
 				11ED42251CC73BA800561E33 /* config.h in Headers */,
 				11ED42211CC7356B00561E33 /* base.h in Headers */,
@@ -937,6 +969,7 @@
 				11ED3FEE1CC61E7E00561E33 /* FileInZipInfo.h in Headers */,
 				11ED3FCC1CC61E7E00561E33 /* CommonUtil(Date).h in Headers */,
 				11ED3FCE1CC61E7E00561E33 /* CommonUtil.h in Headers */,
+				117165D11CD14B8E005F354F /* mztools.h in Headers */,
 				11ED3FD01CC61E7E00561E33 /* DeviceConfig.h in Headers */,
 				11ED3FD41CC61E7E00561E33 /* HWindowStack.h in Headers */,
 				11ED3FD21CC61E7E00561E33 /* HttpServerManager.h in Headers */,
@@ -979,9 +1012,11 @@
 				11ED3FB41CC61E7E00561E33 /* SBJsonWriter.h in Headers */,
 				11ED3F1F1CC61E7E00561E33 /* HCCacheItem.h in Headers */,
 				11ED3F941CC61E7E00561E33 /* HTTPResponse.h in Headers */,
+				117165CF1CD14B8E005F354F /* ioapi.h in Headers */,
 				11ED3FB01CC61E7E00561E33 /* SBJsonBase.h in Headers */,
 				11ED3F7D1CC61E7E00561E33 /* FileResource.h in Headers */,
 				117165AA1CD11003005F354F /* Ipaddress.h in Headers */,
+				117165D51CD14B8E005F354F /* zip.h in Headers */,
 				11ED3F301CC61E7E00561E33 /* CMDHeader.h in Headers */,
 				11ED3FA11CC61E7E00561E33 /* NSFileManager-AES.h in Headers */,
 				11ED3FAC1CC61E7E00561E33 /* NSObject+SBJSON.h in Headers */,
@@ -1001,6 +1036,7 @@
 				11ED3FA91CC61E7E00561E33 /* AFUIImageReflection.h in Headers */,
 				11ED3F951CC61E7E00561E33 /* HTTPServer.h in Headers */,
 				11ED3F3E1CC61E7E00561E33 /* CMDSocketSender.h in Headers */,
+				117165D31CD14B8E005F354F /* unzip.h in Headers */,
 				11ED3F791CC61E7E00561E33 /* DDTTYLogger.h in Headers */,
 				11ED3F6F1CC61E7E00561E33 /* DDData.h in Headers */,
 				117165A31CD0E1E9005F354F /* NSDataGZipAdditions.h in Headers */,
@@ -1185,6 +1221,8 @@
 				11ED3F4D1CC61E7E00561E33 /* HCDBHelper(FMDB).m in Sources */,
 				11ED3F841CC61E7E00561E33 /* HTTPAuthenticationRequest.m in Sources */,
 				11ED3FE31CC61E7E00561E33 /* OpenUDID.m in Sources */,
+				117165D01CD14B8E005F354F /* mztools.c in Sources */,
+				117165D21CD14B8E005F354F /* unzip.c in Sources */,
 				11ED3FB51CC61E7E00561E33 /* SBJsonWriter.m in Sources */,
 				11ED3FD71CC61E7E00561E33 /* NSArray+CC.m in Sources */,
 				11ED3FD31CC61E7E00561E33 /* HttpServerManager.m in Sources */,
@@ -1192,6 +1230,7 @@
 				11ED3F331CC61E7E00561E33 /* CMDHttpHeader.m in Sources */,
 				11ED3FA01CC61E7E00561E33 /* NSData-AES.m in Sources */,
 				11ED3F9E1CC61E7E00561E33 /* Reachability.m in Sources */,
+				117165CE1CD14B8E005F354F /* ioapi.c in Sources */,
 				11ED3FBD1CC61E7E00561E33 /* UIDevice_Reachability.m in Sources */,
 				11ED3FA31CC61E7E00561E33 /* rijndael.c in Sources */,
 				11ED3F5F1CC61E7E00561E33 /* AsyncSocket.m in Sources */,
@@ -1213,6 +1252,7 @@
 				11ED3F511CC61E7E00561E33 /* HCDbHelper.m in Sources */,
 				11ED3F8E1CC61E7E00561E33 /* HTTPFileResponse.m in Sources */,
 				11ED3FD11CC61E7E00561E33 /* DeviceConfig.m in Sources */,
+				117165D41CD14B8E005F354F /* zip.c in Sources */,
 				11ED3F351CC61E7E00561E33 /* CMDHttpSenderNew.m in Sources */,
 				11ED3FC71CC61E7E00561E33 /* UIImage-Extension.m in Sources */,
 				11ED3F7C1CC61E7E00561E33 /* DispatchQueueLogFormatter.m in Sources */,

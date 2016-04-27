@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "这是一个与业务无关的特定的核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -120,56 +120,18 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
 #    spec.ios.dependency 'hccoren/Core'          '~>0.0.5'
 #spec.ios.dependency 'hccoren/AsyncSocket'
 #  end
-
-    s.subspec 'Core' do |spec|
+    s.subspec 'Minizip' do |spec|
         spec.requires_arc            = false
-        spec.source_files = [
-            "hccoren/String/**/*.{h,m,mm,c,cpp}",
-            "hccoren/Util/**/*.{h,m,mm,c,cpp}",
-            "hccoren/ZipArchive/**/*.{h,m,mm,c,cpp}",
-            "hccoren/Data/*.{h,m,c,cpp}",
-            "hccoren/base/*.{h,m,mm,c,cpp}",
-            "hccoren/**/config.h",
-            "hccoren/**/Reachability.{h,m}",
-            "hccoren/UDI/**/*.{h,m,cpp,c}",
-            "hccoren/Map/*.{h,m}"
-        ]
+        spec.source_files = "hccoren/ZipArchive/MiniZip/*.{h,m,mm,c,cpp}"
         spec.public_header_files = [
-            'hccoren/String/**/*.h',
-            'hccoren/Util/**/*.h',
-            'hccoren/ZipArchive/**/*.h',
-            'hccoren/Data/*.h',
-            'hccoren/Base/*.h',
-            'hccoren/**/config.h',
-            'hccoren/UDI/**/*.h',
-            'hccoren/**/Reachability.h',
-            'hccoren/Map/*.h'
+            'hccoren/ZipArchive/MiniZip/*.h'
         ]
-        spec.exclude_files = [
-            "hccoren/Util/HttpServerManager.{h,m,mm,c,cpp}",
-            "hccoren/Util/HWWeakTimer.{h,m}",
-            "hccoren/ZipArchive/Zlib/*.{h,m,mm,c,cpp}",
-            "hccoren/base/publictext.h"
-        ]
+
         spec.libraries = [
-            'icucore',
-            'iconv',
-            'stdc++',
-            'stdc++.6',
-            'z'
-        ]
-        spec.frameworks = [
-            'UIKit',
-            'CoreLocation',
-            'QuartzCore',
-            'OpenGLES',
-            'SystemConfiguration',
-            'CoreGraphics',
-            'Security',
-            'IOKit',
-            'lib/Minizip'
+            "icucore","iconv","z"
         ]
     end
+
 
 
  end

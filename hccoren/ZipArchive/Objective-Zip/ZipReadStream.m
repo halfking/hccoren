@@ -34,8 +34,8 @@
 #import "ZipReadStream.h"
 #import "ZipException.h"
 #import "ARCHelper.h"
-#import <Minizip/Minizip.h>
-//#include "unzip.h"
+//#import <Minizip/Minizip.h>
+#include "unzip.h"
 
 
 @implementation ZipReadStream
