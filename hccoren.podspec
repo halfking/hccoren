@@ -126,7 +126,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
         spec.source_files = [
             "hccoren/String/**/*.{h,m,mm,c,cpp}",
             "hccoren/Util/**/*.{h,m,mm,c,cpp}",
-            "hccoren/ZipArchive/**/*.{h,m,mm,cpp,c}",
+            "hccoren/ZipArchive/**/*.{h,m,mm,c,cpp}",
             "hccoren/Data/*.{h,m,c,cpp}",
             "hccoren/base/*.{h,m,mm,c,cpp}",
             "hccoren/**/config.h",
@@ -150,7 +150,21 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             "hccoren/Util/HWWeakTimer.{h,m}"
         ]
         spec.libraries = [
-            'icucore'
+            'icucore',
+            'iconv',
+            'stdc++',
+            'stdc++.6',
+            'z'
+        ]
+        spec.frameworks = [
+            'UIKit',
+            'CoreLocation',
+            'QuartzCore',
+            'OpenGLES',
+            'SystemConfiguration',
+            'CoreGraphics',
+            'Security',
+            'IOKit'
         ]
     end
 

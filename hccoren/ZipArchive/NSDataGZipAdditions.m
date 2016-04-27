@@ -24,7 +24,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#include <zlib.h>
+#import <zlib.h>
+//#include <zlib.h>
 
 #import "NSDataGZipAdditions.h"
 

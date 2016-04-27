@@ -23,38 +23,13 @@
 /* Begin PBXBuildFile section */
 		114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */; };
 		1171656B1CD0C313005F354F /* hccoren.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1171656A1CD0C313005F354F /* hccoren.podspec */; };
-		117165871CD0D207005F354F /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 1171656D1CD0D207005F354F /* adler32.c */; };
-		117165881CD0D207005F354F /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 1171656E1CD0D207005F354F /* compress.c */; };
-		117165891CD0D207005F354F /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 1171656F1CD0D207005F354F /* crc32.c */; };
-		1171658A1CD0D207005F354F /* crc32.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165701CD0D207005F354F /* crc32.h */; };
-		1171658B1CD0D207005F354F /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165711CD0D207005F354F /* deflate.c */; };
-		1171658C1CD0D207005F354F /* deflate.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165721CD0D207005F354F /* deflate.h */; };
-		1171658D1CD0D207005F354F /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165731CD0D207005F354F /* gzclose.c */; };
-		1171658E1CD0D207005F354F /* gzguts.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165741CD0D207005F354F /* gzguts.h */; };
-		1171658F1CD0D207005F354F /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165751CD0D207005F354F /* gzlib.c */; };
-		117165901CD0D207005F354F /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165761CD0D207005F354F /* gzread.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		117165911CD0D207005F354F /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165771CD0D207005F354F /* gzwrite.c */; };
-		117165921CD0D207005F354F /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165781CD0D207005F354F /* infback.c */; };
-		117165931CD0D207005F354F /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165791CD0D207005F354F /* inffast.c */; };
-		117165941CD0D207005F354F /* inffast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1171657A1CD0D207005F354F /* inffast.h */; };
-		117165951CD0D207005F354F /* inffixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 1171657B1CD0D207005F354F /* inffixed.h */; };
-		117165961CD0D207005F354F /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 1171657C1CD0D207005F354F /* inflate.c */; };
-		117165971CD0D207005F354F /* inflate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1171657D1CD0D207005F354F /* inflate.h */; };
-		117165981CD0D207005F354F /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 1171657E1CD0D207005F354F /* inftrees.c */; };
-		117165991CD0D207005F354F /* inftrees.h in Headers */ = {isa = PBXBuildFile; fileRef = 1171657F1CD0D207005F354F /* inftrees.h */; };
-		1171659A1CD0D207005F354F /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165801CD0D207005F354F /* trees.c */; };
-		1171659B1CD0D207005F354F /* trees.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165811CD0D207005F354F /* trees.h */; };
-		1171659C1CD0D207005F354F /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165821CD0D207005F354F /* uncompr.c */; };
-		1171659D1CD0D207005F354F /* zconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165831CD0D207005F354F /* zconf.h */; };
-		1171659E1CD0D207005F354F /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165841CD0D207005F354F /* zlib.h */; };
-		1171659F1CD0D207005F354F /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165851CD0D207005F354F /* zutil.c */; };
-		117165A01CD0D207005F354F /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165861CD0D207005F354F /* zutil.h */; };
 		117165A31CD0E1E9005F354F /* NSDataGZipAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */; };
 		117165A41CD0E1E9005F354F /* NSDataGZipAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		117165A91CD11003005F354F /* Ipaddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165A51CD11003005F354F /* Ipaddress.c */; };
 		117165AA1CD11003005F354F /* Ipaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A61CD11003005F354F /* Ipaddress.h */; };
 		117165AB1CD11003005F354F /* MacAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A71CD11003005F354F /* MacAddress.h */; };
 		117165AC1CD11003005F354F /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 117165A81CD11003005F354F /* MacAddress.m */; };
+		117165AE1CD1396D005F354F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165AD1CD1396D005F354F /* libz.tbd */; };
 		11ED3DFB1CC61E1900561E33 /* hccoren.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3DFA1CC61E1900561E33 /* hccoren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3E021CC61E1900561E33 /* hccoren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ED3DF71CC61E1900561E33 /* hccoren.framework */; };
 		11ED3E071CC61E1900561E33 /* hccorenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E061CC61E1900561E33 /* hccorenTests.m */; };
@@ -289,38 +264,13 @@
 		114DE8BB1CCFCD72004BE152 /* framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = framework.xcconfig; sourceTree = "<group>"; };
 		114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1171656A1CD0C313005F354F /* hccoren.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hccoren.podspec; sourceTree = "<group>"; };
-		1171656D1CD0D207005F354F /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
-		1171656E1CD0D207005F354F /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
-		1171656F1CD0D207005F354F /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
-		117165701CD0D207005F354F /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
-		117165711CD0D207005F354F /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
-		117165721CD0D207005F354F /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
-		117165731CD0D207005F354F /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
-		117165741CD0D207005F354F /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
-		117165751CD0D207005F354F /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
-		117165761CD0D207005F354F /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
-		117165771CD0D207005F354F /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
-		117165781CD0D207005F354F /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
-		117165791CD0D207005F354F /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
-		1171657A1CD0D207005F354F /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
-		1171657B1CD0D207005F354F /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
-		1171657C1CD0D207005F354F /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
-		1171657D1CD0D207005F354F /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
-		1171657E1CD0D207005F354F /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
-		1171657F1CD0D207005F354F /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
-		117165801CD0D207005F354F /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
-		117165811CD0D207005F354F /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
-		117165821CD0D207005F354F /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
-		117165831CD0D207005F354F /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
-		117165841CD0D207005F354F /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
-		117165851CD0D207005F354F /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
-		117165861CD0D207005F354F /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataGZipAdditions.h; sourceTree = "<group>"; };
 		117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataGZipAdditions.m; sourceTree = "<group>"; };
 		117165A51CD11003005F354F /* Ipaddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ipaddress.c; sourceTree = "<group>"; };
 		117165A61CD11003005F354F /* Ipaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ipaddress.h; sourceTree = "<group>"; };
 		117165A71CD11003005F354F /* MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddress.h; sourceTree = "<group>"; };
 		117165A81CD11003005F354F /* MacAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacAddress.m; sourceTree = "<group>"; };
+		117165AD1CD1396D005F354F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		11ED3DF71CC61E1900561E33 /* hccoren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hccoren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED3DFA1CC61E1900561E33 /* hccoren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hccoren.h; sourceTree = "<group>"; };
 		11ED3DFC1CC61E1900561E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -545,6 +495,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117165AE1CD1396D005F354F /* libz.tbd in Frameworks */,
 				11ED40151CC6668100561E33 /* libicucore.tbd in Frameworks */,
 				11ED40131CC6205900561E33 /* libsqlite3.0.tbd in Frameworks */,
 			);
@@ -561,42 +512,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1171656C1CD0D207005F354F /* ZLib */ = {
-			isa = PBXGroup;
-			children = (
-				1171656D1CD0D207005F354F /* adler32.c */,
-				1171656E1CD0D207005F354F /* compress.c */,
-				1171656F1CD0D207005F354F /* crc32.c */,
-				117165701CD0D207005F354F /* crc32.h */,
-				117165711CD0D207005F354F /* deflate.c */,
-				117165721CD0D207005F354F /* deflate.h */,
-				117165731CD0D207005F354F /* gzclose.c */,
-				117165741CD0D207005F354F /* gzguts.h */,
-				117165751CD0D207005F354F /* gzlib.c */,
-				117165761CD0D207005F354F /* gzread.c */,
-				117165771CD0D207005F354F /* gzwrite.c */,
-				117165781CD0D207005F354F /* infback.c */,
-				117165791CD0D207005F354F /* inffast.c */,
-				1171657A1CD0D207005F354F /* inffast.h */,
-				1171657B1CD0D207005F354F /* inffixed.h */,
-				1171657C1CD0D207005F354F /* inflate.c */,
-				1171657D1CD0D207005F354F /* inflate.h */,
-				1171657E1CD0D207005F354F /* inftrees.c */,
-				1171657F1CD0D207005F354F /* inftrees.h */,
-				117165801CD0D207005F354F /* trees.c */,
-				117165811CD0D207005F354F /* trees.h */,
-				117165821CD0D207005F354F /* uncompr.c */,
-				117165831CD0D207005F354F /* zconf.h */,
-				117165841CD0D207005F354F /* zlib.h */,
-				117165851CD0D207005F354F /* zutil.c */,
-				117165861CD0D207005F354F /* zutil.h */,
-			);
-			path = ZLib;
-			sourceTree = "<group>";
-		};
 		11ED3DED1CC61E1900561E33 = {
 			isa = PBXGroup;
 			children = (
+				117165AD1CD1396D005F354F /* libz.tbd */,
 				1171656A1CD0C313005F354F /* hccoren.podspec */,
 				114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */,
 				114DE8BB1CCFCD72004BE152 /* framework.xcconfig */,
@@ -957,7 +876,6 @@
 			children = (
 				117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */,
 				117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */,
-				1171656C1CD0D207005F354F /* ZLib */,
 				11ED3EEC1CC61E7E00561E33 /* MiniZip */,
 				11ED3EF61CC61E7E00561E33 /* Objective-Zip */,
 			);
@@ -1014,7 +932,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1171659E1CD0D207005F354F /* zlib.h in Headers */,
 				11ED3F2F1CC61E7E00561E33 /* CMDDelegate.h in Headers */,
 				11ED42251CC73BA800561E33 /* config.h in Headers */,
 				11ED42211CC7356B00561E33 /* base.h in Headers */,
@@ -1024,7 +941,6 @@
 				11ED3F461CC61E7E00561E33 /* HCImageItem.h in Headers */,
 				11ED3FCA1CC61E7E00561E33 /* UIView+extension.h in Headers */,
 				117165AB1CD11003005F354F /* MacAddress.h in Headers */,
-				117165971CD0D207005F354F /* inflate.h in Headers */,
 				11ED3FC81CC61E7E00561E33 /* UIImage-Transform.h in Headers */,
 				11ED3FC61CC61E7E00561E33 /* UIImage-Extension.h in Headers */,
 				11ED3FC41CC61E7E00561E33 /* UIImage+ImageEffects.h in Headers */,
@@ -1037,7 +953,6 @@
 				11ED3FCC1CC61E7E00561E33 /* CommonUtil(Date).h in Headers */,
 				11ED3FCE1CC61E7E00561E33 /* CommonUtil.h in Headers */,
 				11ED3FD01CC61E7E00561E33 /* DeviceConfig.h in Headers */,
-				1171659B1CD0D207005F354F /* trees.h in Headers */,
 				11ED3FD41CC61E7E00561E33 /* HWindowStack.h in Headers */,
 				11ED3FD21CC61E7E00561E33 /* HttpServerManager.h in Headers */,
 				11ED3F5A1CC61E7E00561E33 /* ChinaMapShift.h in Headers */,
@@ -1062,14 +977,10 @@
 				11ED3F4E1CC61E7E00561E33 /* HCDBHelper-init.h in Headers */,
 				11ED3F501CC61E7E00561E33 /* HCDbHelper.h in Headers */,
 				11ED3F541CC61E7E00561E33 /* QCMDUpdateTime.h in Headers */,
-				117165991CD0D207005F354F /* inftrees.h in Headers */,
-				117165951CD0D207005F354F /* inffixed.h in Headers */,
 				11ED3F2B1CC61E7E00561E33 /* TrackRecord.h in Headers */,
 				11ED3F481CC61E7E00561E33 /* NSEntity.h in Headers */,
 				11ED3FED1CC61E7E00561E33 /* ARCHelper.h in Headers */,
 				11ED3F2D1CC61E7E00561E33 /* WindowItem.h in Headers */,
-				1171659D1CD0D207005F354F /* zconf.h in Headers */,
-				117165941CD0D207005F354F /* inffast.h in Headers */,
 				11ED3F361CC61E7E00561E33 /* CMDOP.h in Headers */,
 				11ED3F381CC61E7E00561E33 /* CMDs.h in Headers */,
 				11ED3F421CC61E7E00561E33 /* HCCallbackResult.h in Headers */,
@@ -1082,7 +993,6 @@
 				11ED3FAE1CC61E7E00561E33 /* NSString+SBJSON.h in Headers */,
 				11ED3F401CC61E7E00561E33 /* FileDataCacheHelper.h in Headers */,
 				11ED3FB41CC61E7E00561E33 /* SBJsonWriter.h in Headers */,
-				1171658C1CD0D207005F354F /* deflate.h in Headers */,
 				11ED3F1F1CC61E7E00561E33 /* HCCacheItem.h in Headers */,
 				11ED3F941CC61E7E00561E33 /* HTTPResponse.h in Headers */,
 				11ED3FB01CC61E7E00561E33 /* SBJsonBase.h in Headers */,
@@ -1101,7 +1011,6 @@
 				11ED3F3A1CC61E7E00561E33 /* CMDSender.h in Headers */,
 				11ED3F3C1CC61E7E00561E33 /* CMDSocketHeader.h in Headers */,
 				11ED3FB81CC61E7E00561E33 /* UIDevice+IdentifierAddition.h in Headers */,
-				117165A01CD0D207005F354F /* zutil.h in Headers */,
 				11ED3FBC1CC61E7E00561E33 /* UIDevice_Reachability.h in Headers */,
 				11ED3FF01CC61E7E00561E33 /* ZipException.h in Headers */,
 				11ED3FF61CC61E7E00561E33 /* ZipWriteStream.h in Headers */,
@@ -1115,7 +1024,6 @@
 				117165A31CD0E1E9005F354F /* NSDataGZipAdditions.h in Headers */,
 				11ED3F691CC61E7E00561E33 /* ContextFilterLogFormatter.h in Headers */,
 				11ED3F8F1CC61E7E00561E33 /* HTTPLogging.h in Headers */,
-				1171658E1CD0D207005F354F /* gzguts.h in Headers */,
 				11ED3F711CC61E7E00561E33 /* DDFileLogger.h in Headers */,
 				11ED3F751CC61E7E00561E33 /* DDNumber.h in Headers */,
 				11ED3F771CC61E7E00561E33 /* DDRange.h in Headers */,
@@ -1134,7 +1042,6 @@
 				11ED3F731CC61E7E00561E33 /* DDLog.h in Headers */,
 				11ED3F4A1CC61E7E00561E33 /* SegementCacheManager.h in Headers */,
 				11ED3F891CC61E7E00561E33 /* HTTPDynamicFileResponse.h in Headers */,
-				1171658A1CD0D207005F354F /* crc32.h in Headers */,
 				114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */,
 				11ED3F6B1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h in Headers */,
 				11ED3FBF1CC61E7E00561E33 /* wwanconnect.h in Headers */,
@@ -1271,20 +1178,17 @@
 				11ED3F821CC61E7E00561E33 /* HTTPAsyncFileResponse.m in Sources */,
 				11ED3FF31CC61E7E00561E33 /* ZipFile.m in Sources */,
 				11ED3FB71CC61E7E00561E33 /* RegexKitLite.m in Sources */,
-				117165901CD0D207005F354F /* gzread.c in Sources */,
 				11ED3F8A1CC61E7E00561E33 /* HTTPDynamicFileResponse.m in Sources */,
 				11ED3FAF1CC61E7E00561E33 /* NSString+SBJSON.m in Sources */,
 				11ED3F7E1CC61E7E00561E33 /* FileResource.m in Sources */,
 				11ED3FEB1CC61E7E00561E33 /* zip.c in Sources */,
 				11ED3FC31CC61E7E00561E33 /* MBProgressHUD.m in Sources */,
-				117165911CD0D207005F354F /* gzwrite.c in Sources */,
 				11ED3FF11CC61E7E00561E33 /* ZipException.m in Sources */,
 				117165A41CD0E1E9005F354F /* NSDataGZipAdditions.m in Sources */,
 				11ED3F961CC61E7E00561E33 /* HTTPServer.m in Sources */,
 				11ED3FEF1CC61E7E00561E33 /* FileInZipInfo.m in Sources */,
 				11ED3FE11CC61E7E00561E33 /* NSTimer+CC.m in Sources */,
 				11ED3F631CC61E7E00561E33 /* HCSocketBuffer.m in Sources */,
-				1171658F1CD0D207005F354F /* gzlib.c in Sources */,
 				117165AC1CD11003005F354F /* MacAddress.m in Sources */,
 				11ED3F671CC61E7E00561E33 /* BlueSessionManager.m in Sources */,
 				11ED3F451CC61E7E00561E33 /* HCEPropetyType.m in Sources */,
@@ -1292,7 +1196,6 @@
 				11ED3F931CC61E7E00561E33 /* HTTPRedirectResponse.m in Sources */,
 				11ED3FCB1CC61E7E00561E33 /* UIView+extension.m in Sources */,
 				11ED3F801CC61E7E00561E33 /* GCDAsyncSocket.m in Sources */,
-				1171658B1CD0D207005F354F /* deflate.c in Sources */,
 				11ED3F491CC61E7E00561E33 /* NSEntity.m in Sources */,
 				11ED3FC91CC61E7E00561E33 /* UIImage-Transform.m in Sources */,
 				11ED3F391CC61E7E00561E33 /* CMDs.m in Sources */,
@@ -1301,30 +1204,24 @@
 				11ED3F701CC61E7E00561E33 /* DDData.m in Sources */,
 				11ED3FAD1CC61E7E00561E33 /* NSObject+SBJSON.m in Sources */,
 				11ED3F4D1CC61E7E00561E33 /* HCDBHelper(FMDB).m in Sources */,
-				117165981CD0D207005F354F /* inftrees.c in Sources */,
 				11ED3F841CC61E7E00561E33 /* HTTPAuthenticationRequest.m in Sources */,
 				11ED3FE31CC61E7E00561E33 /* OpenUDID.m in Sources */,
 				11ED3FB51CC61E7E00561E33 /* SBJsonWriter.m in Sources */,
-				117165961CD0D207005F354F /* inflate.c in Sources */,
 				11ED3FE91CC61E7E00561E33 /* unzip.c in Sources */,
 				11ED3FD71CC61E7E00561E33 /* NSArray+CC.m in Sources */,
 				11ED3FD31CC61E7E00561E33 /* HttpServerManager.m in Sources */,
 				11ED3F651CC61E7E00561E33 /* Socketsingleton.m in Sources */,
-				117165871CD0D207005F354F /* adler32.c in Sources */,
-				117165921CD0D207005F354F /* infback.c in Sources */,
 				11ED3F331CC61E7E00561E33 /* CMDHttpHeader.m in Sources */,
 				11ED3FA01CC61E7E00561E33 /* NSData-AES.m in Sources */,
 				11ED3F9E1CC61E7E00561E33 /* Reachability.m in Sources */,
 				11ED3FBD1CC61E7E00561E33 /* UIDevice_Reachability.m in Sources */,
 				11ED3FA31CC61E7E00561E33 /* rijndael.c in Sources */,
-				1171659C1CD0D207005F354F /* uncompr.c in Sources */,
 				11ED3F5F1CC61E7E00561E33 /* AsyncSocket.m in Sources */,
 				11ED3F2C1CC61E7E00561E33 /* TrackRecord.m in Sources */,
 				11ED3F881CC61E7E00561E33 /* HTTPDataResponse.m in Sources */,
 				11ED3FBB1CC61E7E00561E33 /* UIDevice_Hardware.m in Sources */,
 				11ED3FB91CC61E7E00561E33 /* UIDevice+IdentifierAddition.m in Sources */,
 				11ED3FC51CC61E7E00561E33 /* UIImage+ImageEffects.m in Sources */,
-				117165881CD0D207005F354F /* compress.c in Sources */,
 				11ED3F5D1CC61E7E00561E33 /* LocationManager.m in Sources */,
 				11ED3F4F1CC61E7E00561E33 /* HCDBHelper-init.m in Sources */,
 				11ED3FE51CC61E7E00561E33 /* ioapi.c in Sources */,
@@ -1333,13 +1230,11 @@
 				11ED3F8C1CC61E7E00561E33 /* HTTPErrorResponse.m in Sources */,
 				11ED3F531CC61E7E00561E33 /* HCSQLHelper.m in Sources */,
 				11ED3F2E1CC61E7E00561E33 /* WindowItem.m in Sources */,
-				117165931CD0D207005F354F /* inffast.c in Sources */,
 				11ED3F411CC61E7E00561E33 /* FileDataCacheHelper.m in Sources */,
 				11ED3FF71CC61E7E00561E33 /* ZipWriteStream.m in Sources */,
 				11ED3F721CC61E7E00561E33 /* DDFileLogger.m in Sources */,
 				11ED3F511CC61E7E00561E33 /* HCDbHelper.m in Sources */,
 				11ED3F8E1CC61E7E00561E33 /* HTTPFileResponse.m in Sources */,
-				1171659A1CD0D207005F354F /* trees.c in Sources */,
 				11ED3FD11CC61E7E00561E33 /* DeviceConfig.m in Sources */,
 				11ED3F351CC61E7E00561E33 /* CMDHttpSenderNew.m in Sources */,
 				11ED3FC71CC61E7E00561E33 /* UIImage-Extension.m in Sources */,
@@ -1347,7 +1242,6 @@
 				11ED3F371CC61E7E00561E33 /* CMDOP.m in Sources */,
 				11ED3F471CC61E7E00561E33 /* HCImageItem.m in Sources */,
 				11ED3F5B1CC61E7E00561E33 /* ChinaMapShift.m in Sources */,
-				1171659F1CD0D207005F354F /* zutil.c in Sources */,
 				11ED3FDF1CC61E7E00561E33 /* NSString+CC.m in Sources */,
 				11ED3F781CC61E7E00561E33 /* DDRange.m in Sources */,
 				11ED3FD91CC61E7E00561E33 /* NSData+CC.m in Sources */,
@@ -1370,11 +1264,9 @@
 				117165A91CD11003005F354F /* Ipaddress.c in Sources */,
 				11ED3F3F1CC61E7E00561E33 /* CMDSocketSender.m in Sources */,
 				11ED3F761CC61E7E00561E33 /* DDNumber.m in Sources */,
-				1171658D1CD0D207005F354F /* gzclose.c in Sources */,
 				11ED3FCD1CC61E7E00561E33 /* CommonUtil(Date).m in Sources */,
 				11ED3FD51CC61E7E00561E33 /* HWindowStack.m in Sources */,
 				11ED407F1CC722BF00561E33 /* UIView+LoadFromNib.m in Sources */,
-				117165891CD0D207005F354F /* crc32.c in Sources */,
 				11ED3FDB1CC61E7E00561E33 /* NSDate+CC.m in Sources */,
 				11ED3F311CC61E7E00561E33 /* CMDHeader.m in Sources */,
 			);
@@ -1533,12 +1425,13 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				INFOPLIST_FILE = hccoren/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1566,7 +1459,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = __OPTIMIZE__;
@@ -1574,6 +1467,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
