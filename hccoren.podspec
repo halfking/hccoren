@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.1.1"
+  s.version      = "0.1.3"
   s.summary      = "这是一个与业务无关的特定的核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。

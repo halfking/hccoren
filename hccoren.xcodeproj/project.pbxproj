@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */; };
+		11502F561CD29DB900365412 /* libHCMinizip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11502F551CD29DB900365412 /* libHCMinizip.a */; };
 		1171656B1CD0C313005F354F /* hccoren.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1171656A1CD0C313005F354F /* hccoren.podspec */; };
 		117165A91CD11003005F354F /* Ipaddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165A51CD11003005F354F /* Ipaddress.c */; };
 		117165AA1CD11003005F354F /* Ipaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A61CD11003005F354F /* Ipaddress.h */; };
@@ -32,7 +33,6 @@
 		117165C01CD148E4005F354F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BC1CD148E4005F354F /* Security.framework */; };
 		117165C11CD148E4005F354F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BD1CD148E4005F354F /* SystemConfiguration.framework */; };
 		117165C21CD148E5005F354F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BE1CD148E4005F354F /* UIKit.framework */; };
-		117165D71CD14DF2005F354F /* Minizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165D61CD14DF2005F354F /* Minizip.framework */; };
 		117165D91CD15300005F354F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165D81CD15300005F354F /* libiconv.tbd */; };
 		11ED3DFB1CC61E1900561E33 /* hccoren.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3DFA1CC61E1900561E33 /* hccoren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3E021CC61E1900561E33 /* hccoren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ED3DF71CC61E1900561E33 /* hccoren.framework */; };
@@ -226,7 +226,7 @@
 		11ED41FF1CC7311700561E33 /* cmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED41FE1CC7309400561E33 /* cmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED42211CC7356B00561E33 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42201CC7351300561E33 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED42251CC73BA800561E33 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42241CC73AC200561E33 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4903673A9460C8EFA871FC7 /* libPods-hccoren.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC463CA51B614AA69EE92DF /* libPods-hccoren.a */; };
+		7A1B080F49B5C7F34E4753D9 /* libPods-hccoren.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF62492A19B4E92A3916A3 /* libPods-hccoren.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,13 +240,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D07FE952826F2662DAF774D /* Pods-hccoren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.debug.xcconfig"; sourceTree = "<group>"; };
+		0DF1CC417C79B55313BCF611 /* Pods-hccoren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.release.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.release.xcconfig"; sourceTree = "<group>"; };
 		114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorendebug.xcconfig; sourceTree = "<group>"; };
 		114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorenrelease.xcconfig; sourceTree = "<group>"; };
 		114DE8B91CCFCBE8004BE152 /* hccoreappstore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccoreappstore.xcconfig; sourceTree = "<group>"; };
 		114DE8BA1CCFCBFD004BE152 /* hccoreshare.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccoreshare.xcconfig; sourceTree = "<group>"; };
 		114DE8BB1CCFCD72004BE152 /* framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = framework.xcconfig; sourceTree = "<group>"; };
 		114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11502F551CD29DB900365412 /* libHCMinizip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHCMinizip.a; path = "../../../Library/Developer/Xcode/DerivedData/hccoren-hiqtspceezllmpbywtaxeomgmcgf/Build/Products/Debug-iphoneos/HCMinizip/libHCMinizip.a"; sourceTree = "<group>"; };
 		1171656A1CD0C313005F354F /* hccoren.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hccoren.podspec; sourceTree = "<group>"; };
 		117165A51CD11003005F354F /* Ipaddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ipaddress.c; sourceTree = "<group>"; };
 		117165A61CD11003005F354F /* Ipaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ipaddress.h; sourceTree = "<group>"; };
@@ -257,7 +258,6 @@
 		117165BC1CD148E4005F354F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		117165BD1CD148E4005F354F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		117165BE1CD148E4005F354F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		117165D61CD14DF2005F354F /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Minizip.framework; sourceTree = "<group>"; };
 		117165D81CD15300005F354F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		11ED3DF71CC61E1900561E33 /* hccoren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hccoren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED3DFA1CC61E1900561E33 /* hccoren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hccoren.h; sourceTree = "<group>"; };
@@ -454,8 +454,8 @@
 		11ED41FE1CC7309400561E33 /* cmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
 		11ED42201CC7351300561E33 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		11ED42241CC73AC200561E33 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		3AC463CA51B614AA69EE92DF /* libPods-hccoren.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hccoren.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF76BE5EC1E3DD46787B59F1 /* Pods-hccoren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.release.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.release.xcconfig"; sourceTree = "<group>"; };
+		5108102EFA07826E055BF5C1 /* Pods-hccoren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.debug.xcconfig"; sourceTree = "<group>"; };
+		65BF62492A19B4E92A3916A3 /* libPods-hccoren.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hccoren.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,16 +463,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11502F561CD29DB900365412 /* libHCMinizip.a in Frameworks */,
 				117165D91CD15300005F354F /* libiconv.tbd in Frameworks */,
 				117165BF1CD148E4005F354F /* Foundation.framework in Frameworks */,
 				117165C01CD148E4005F354F /* Security.framework in Frameworks */,
 				117165C11CD148E4005F354F /* SystemConfiguration.framework in Frameworks */,
 				117165C21CD148E5005F354F /* UIKit.framework in Frameworks */,
 				117165AE1CD1396D005F354F /* libz.tbd in Frameworks */,
-				117165D71CD14DF2005F354F /* Minizip.framework in Frameworks */,
 				11ED40151CC6668100561E33 /* libicucore.tbd in Frameworks */,
 				11ED40131CC6205900561E33 /* libsqlite3.0.tbd in Frameworks */,
-				E4903673A9460C8EFA871FC7 /* libPods-hccoren.a in Frameworks */,
+				7A1B080F49B5C7F34E4753D9 /* libPods-hccoren.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,8 +501,8 @@
 				11ED3E051CC61E1900561E33 /* hccorenTests */,
 				11ED3DF81CC61E1900561E33 /* Products */,
 				11ED40161CC6669D00561E33 /* Libs */,
-				31FEDB6E8BF8777E5B7653A3 /* Pods */,
-				EC1112754C4C29CDA7853F67 /* Frameworks */,
+				36382A6FBF9AA6D6DBC753C1 /* Pods */,
+				FD031DC38723AEC69265DEE7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -848,7 +848,6 @@
 			isa = PBXGroup;
 			children = (
 				117165D81CD15300005F354F /* libiconv.tbd */,
-				117165D61CD14DF2005F354F /* Minizip.framework */,
 				117165BB1CD148E4005F354F /* Foundation.framework */,
 				117165BC1CD148E4005F354F /* Security.framework */,
 				117165BD1CD148E4005F354F /* SystemConfiguration.framework */,
@@ -860,19 +859,20 @@
 			name = Libs;
 			sourceTree = "<group>";
 		};
-		31FEDB6E8BF8777E5B7653A3 /* Pods */ = {
+		36382A6FBF9AA6D6DBC753C1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D07FE952826F2662DAF774D /* Pods-hccoren.debug.xcconfig */,
-				DF76BE5EC1E3DD46787B59F1 /* Pods-hccoren.release.xcconfig */,
+				5108102EFA07826E055BF5C1 /* Pods-hccoren.debug.xcconfig */,
+				0DF1CC417C79B55313BCF611 /* Pods-hccoren.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EC1112754C4C29CDA7853F67 /* Frameworks */ = {
+		FD031DC38723AEC69265DEE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3AC463CA51B614AA69EE92DF /* libPods-hccoren.a */,
+				11502F551CD29DB900365412 /* libHCMinizip.a */,
+				65BF62492A19B4E92A3916A3 /* libPods-hccoren.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -996,7 +996,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ED3E0B1CC61E1900561E33 /* Build configuration list for PBXNativeTarget "hccoren" */;
 			buildPhases = (
-				ADD5B17257334C3D7EE31A2D /* 📦 Check Pods Manifest.lock */,
+				E880C0CDF4DE9EBFB252CC0B /* 📦 Check Pods Manifest.lock */,
 				11ED3DF21CC61E1900561E33 /* Sources */,
 				11ED3DF31CC61E1900561E33 /* Frameworks */,
 				11ED3DF41CC61E1900561E33 /* Headers */,
@@ -1104,21 +1104,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n#FMK_NAME= \"hccoren\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\nINSTALL_DIR2=${SRCROOT}/../HCBaseSystem/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\n#拷贝到下一级的Lib目录下\nif [ -d \"${INSTALL_DIR2}\" ]\nthen\nrm -rf \"${INSTALL_DIR2}\"\nfi\n#mkdir -p \"{INSTALL_DIR2}\"\ncp -R \"${INSTALL_DIR}\" \"${INSTALL_DIR2}\"\nopen \"${INSTALL_DIR}\"";
 		};
-		ADD5B17257334C3D7EE31A2D /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		DF2D7578E93FDA86971AEA99 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1132,6 +1117,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hccoren/Pods-hccoren-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E880C0CDF4DE9EBFB252CC0B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1361,7 +1361,7 @@
 		};
 		11ED3E0C1CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D07FE952826F2662DAF774D /* Pods-hccoren.debug.xcconfig */;
+			baseConfigurationReference = 5108102EFA07826E055BF5C1 /* Pods-hccoren.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -1377,7 +1377,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
@@ -1402,7 +1402,7 @@
 		};
 		11ED3E0D1CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF76BE5EC1E3DD46787B59F1 /* Pods-hccoren.release.xcconfig */;
+			baseConfigurationReference = 0DF1CC417C79B55313BCF611 /* Pods-hccoren.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -1418,7 +1418,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
