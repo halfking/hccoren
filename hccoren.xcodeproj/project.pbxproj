@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		114DE6011CC9D446004BE152 /* sncore */ = {
+		117165DA1CD1572A005F354F /* hccore */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 114DE6021CC9D447004BE152 /* Build configuration list for PBXAggregateTarget "sncore" */;
+			buildConfigurationList = 117165DB1CD1572A005F354F /* Build configuration list for PBXAggregateTarget "hccore" */;
 			buildPhases = (
-				114DE6051CC9D477004BE152 /* ShellScript */,
+				117165DE1CD1573D005F354F /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = sncore;
-			productName = sncore;
+			name = hccore;
+			productName = hccore;
 		};
 /* End PBXAggregateTarget section */
 
@@ -43,6 +43,8 @@
 		117165D31CD14B8E005F354F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165CA1CD14B8E005F354F /* unzip.h */; };
 		117165D41CD14B8E005F354F /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165CB1CD14B8E005F354F /* zip.c */; };
 		117165D51CD14B8E005F354F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165CC1CD14B8E005F354F /* zip.h */; };
+		117165D71CD14DF2005F354F /* Minizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165D61CD14DF2005F354F /* Minizip.framework */; };
+		117165D91CD15300005F354F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165D81CD15300005F354F /* libiconv.tbd */; };
 		11ED3DFB1CC61E1900561E33 /* hccoren.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3DFA1CC61E1900561E33 /* hccoren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3E021CC61E1900561E33 /* hccoren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ED3DF71CC61E1900561E33 /* hccoren.framework */; };
 		11ED3E071CC61E1900561E33 /* hccorenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E061CC61E1900561E33 /* hccorenTests.m */; };
@@ -288,6 +290,8 @@
 		117165CA1CD14B8E005F354F /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
 		117165CB1CD14B8E005F354F /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
 		117165CC1CD14B8E005F354F /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		117165D61CD14DF2005F354F /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Minizip.framework; sourceTree = "<group>"; };
+		117165D81CD15300005F354F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		11ED3DF71CC61E1900561E33 /* hccoren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hccoren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ED3DFA1CC61E1900561E33 /* hccoren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hccoren.h; sourceTree = "<group>"; };
 		11ED3DFC1CC61E1900561E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -503,11 +507,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117165D91CD15300005F354F /* libiconv.tbd in Frameworks */,
 				117165BF1CD148E4005F354F /* Foundation.framework in Frameworks */,
 				117165C01CD148E4005F354F /* Security.framework in Frameworks */,
 				117165C11CD148E4005F354F /* SystemConfiguration.framework in Frameworks */,
 				117165C21CD148E5005F354F /* UIKit.framework in Frameworks */,
 				117165AE1CD1396D005F354F /* libz.tbd in Frameworks */,
+				117165D71CD14DF2005F354F /* Minizip.framework in Frameworks */,
 				11ED40151CC6668100561E33 /* libicucore.tbd in Frameworks */,
 				11ED40131CC6205900561E33 /* libsqlite3.0.tbd in Frameworks */,
 			);
@@ -930,6 +936,8 @@
 		11ED40161CC6669D00561E33 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				117165D81CD15300005F354F /* libiconv.tbd */,
+				117165D61CD14DF2005F354F /* Minizip.framework */,
 				117165BB1CD148E4005F354F /* Foundation.framework */,
 				117165BC1CD148E4005F354F /* Security.framework */,
 				117165BD1CD148E4005F354F /* SystemConfiguration.framework */,
@@ -1114,7 +1122,7 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = seenvoice.com;
 				TargetAttributes = {
-					114DE6011CC9D446004BE152 = {
+					117165DA1CD1572A005F354F = {
 						CreatedOnToolsVersion = 7.3;
 					};
 					11ED3DF61CC61E1900561E33 = {
@@ -1139,7 +1147,7 @@
 			targets = (
 				11ED3DF61CC61E1900561E33 /* hccoren */,
 				11ED3E001CC61E1900561E33 /* hccorenTests */,
-				114DE6011CC9D446004BE152 /* sncore */,
+				117165DA1CD1572A005F354F /* hccore */,
 			);
 		};
 /* End PBXProject section */
@@ -1166,7 +1174,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		114DE6051CC9D477004BE152 /* ShellScript */ = {
+		117165DE1CD1573D005F354F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1307,22 +1315,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		114DE6031CC9D447004BE152 /* Debug */ = {
+		117165DC1CD1572A005F354F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
-				CLANG_CXX_LIBRARY = "compiler-default";
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		114DE6041CC9D447004BE152 /* Release */ = {
+		117165DD1CD1572A005F354F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
-				CLANG_CXX_LIBRARY = "compiler-default";
-				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1333,8 +1335,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1352,7 +1354,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1368,7 +1370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1384,8 +1386,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1403,7 +1405,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
@@ -1413,7 +1415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1445,15 +1447,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				INFOPLIST_FILE = hccoren/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1484,6 +1488,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_INPUT_FILETYPE = automatic;
@@ -1491,10 +1496,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = __OPTIMIZE__;
 				INFOPLIST_FILE = hccoren/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1528,11 +1534,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		114DE6021CC9D447004BE152 /* Build configuration list for PBXAggregateTarget "sncore" */ = {
+		117165DB1CD1572A005F354F /* Build configuration list for PBXAggregateTarget "hccore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				114DE6031CC9D447004BE152 /* Debug */,
-				114DE6041CC9D447004BE152 /* Release */,
+				117165DC1CD1572A005F354F /* Debug */,
+				117165DD1CD1572A005F354F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

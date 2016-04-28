@@ -33,9 +33,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import <Minizip/Minizip.h>
-//#include "zip.h"
-//#include "unzip.h"
+//#import <Minizip/Minizip.h>
+#include "zip.h"
+#include "unzip.h"
 
 typedef enum {
     ZipFileModeUnzip,

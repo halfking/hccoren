@@ -12,7 +12,9 @@ PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.hccoren
 PRODUCT_NAME = $(TARGET_NAME)
 
 TARGET_DEVICE_FAMILY = 1,2
-ALWAYS_SEARCH_USER_PATHS = NO
+ALWAYS_SEARCH_USER_PATHS = YES
+//:configuration = Debug
+IPHONEOS_DEPLOYMENT_TARGET = 8.0
 
 //:configuration = Debug
 ONLY_ACTIVE_ARCH = NO
@@ -31,7 +33,7 @@ VALID_ARCHS = armv7 armv7s arm64
 //i386 x86_64
 //arm64 armv7 armv7s
 //:configuration = Release
-ENABLE_BITCODE = NO
+ENABLE_BITCODE = YES
 
 //:configuration = Debug
 GCC_PRECOMPILE_PREFIX_HEADER = YES
@@ -210,8 +212,8 @@ GCC_NO_COMMON_BLOCKS = YES
 //:configuration = Debug
 //OTHER_CFLAGS = -p -g
 
-GCC_C_LANGUAGE_STANDARD = gnu99
-//GCC_C_LANGUAGE_STANDARD = compiler-default
+//GCC_C_LANGUAGE_STANDARD = gnu99
+GCC_C_LANGUAGE_STANDARD = compiler-default
 //:configuration = Debug
 CLANG_CXX_LANGUAGE_STANDARD = compiler-default
 //:configuration = Debug
