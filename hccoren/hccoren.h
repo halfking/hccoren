@@ -51,7 +51,7 @@ FOUNDATION_EXPORT const unsigned char hccorenVersionString[];
 #import <hccoren/NSEntity.h>		
 #import <hccoren/HCEPropetyType.h>
 #import <hccoren/WindowItem.h>
-#import <hccoren/iVersion.h>
+//#import <hccoren/iVersion.h>
 #import <hccoren/ChinaMapShift.h>
 #import <hccoren/LocationManager.h>
 #import <hccoren/AsyncSocket.h>
