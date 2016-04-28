@@ -67,8 +67,8 @@ FOUNDATION_EXPORT const unsigned char hccorenVersionString[];
 #import <hccoren/NSString+MD5Addition.h>
 #import <hccoren/NSDataGZipAdditions.h>
 #import <hccoren/JSON.h>
-#import <hccoren/MBProgressHUD.h>
-#import <hccoren/ZipFile.h>
+//#import <hccoren/MBProgressHUD.h>
+//#import <hccoren/ZipFile.h>
 #import <hccoren/UIView+Genie.h>
 #import <hccoren/UIView+LoadFromNib.h>
 #import <hccoren/HWWeakTimer.h>

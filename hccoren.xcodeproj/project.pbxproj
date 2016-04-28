@@ -23,8 +23,6 @@
 /* Begin PBXBuildFile section */
 		114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */; };
 		1171656B1CD0C313005F354F /* hccoren.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1171656A1CD0C313005F354F /* hccoren.podspec */; };
-		117165A31CD0E1E9005F354F /* NSDataGZipAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */; };
-		117165A41CD0E1E9005F354F /* NSDataGZipAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		117165A91CD11003005F354F /* Ipaddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165A51CD11003005F354F /* Ipaddress.c */; };
 		117165AA1CD11003005F354F /* Ipaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A61CD11003005F354F /* Ipaddress.h */; };
 		117165AB1CD11003005F354F /* MacAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A71CD11003005F354F /* MacAddress.h */; };
@@ -34,15 +32,6 @@
 		117165C01CD148E4005F354F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BC1CD148E4005F354F /* Security.framework */; };
 		117165C11CD148E4005F354F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BD1CD148E4005F354F /* SystemConfiguration.framework */; };
 		117165C21CD148E5005F354F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BE1CD148E4005F354F /* UIKit.framework */; };
-		117165CD1CD14B8E005F354F /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165C41CD14B8E005F354F /* crypt.h */; };
-		117165CE1CD14B8E005F354F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165C51CD14B8E005F354F /* ioapi.c */; };
-		117165CF1CD14B8E005F354F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165C61CD14B8E005F354F /* ioapi.h */; };
-		117165D01CD14B8E005F354F /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165C71CD14B8E005F354F /* mztools.c */; };
-		117165D11CD14B8E005F354F /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165C81CD14B8E005F354F /* mztools.h */; };
-		117165D21CD14B8E005F354F /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165C91CD14B8E005F354F /* unzip.c */; };
-		117165D31CD14B8E005F354F /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165CA1CD14B8E005F354F /* unzip.h */; };
-		117165D41CD14B8E005F354F /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165CB1CD14B8E005F354F /* zip.c */; };
-		117165D51CD14B8E005F354F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165CC1CD14B8E005F354F /* zip.h */; };
 		117165D71CD14DF2005F354F /* Minizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165D61CD14DF2005F354F /* Minizip.framework */; };
 		117165D91CD15300005F354F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165D81CD15300005F354F /* libiconv.tbd */; };
 		11ED3DFB1CC61E1900561E33 /* hccoren.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3DFA1CC61E1900561E33 /* hccoren.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -192,8 +181,6 @@
 		11ED3FBF1CC61E7E00561E33 /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC41CC61E7E00561E33 /* wwanconnect.h */; };
 		11ED3FC01CC61E7E00561E33 /* btnCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3EC61CC61E7E00561E33 /* btnCheck.png */; };
 		11ED3FC11CC61E7E00561E33 /* btnCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3EC71CC61E7E00561E33 /* btnCheck@2x.png */; };
-		11ED3FC21CC61E7E00561E33 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC81CC61E7E00561E33 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FC31CC61E7E00561E33 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EC91CC61E7E00561E33 /* MBProgressHUD.m */; };
 		11ED3FC41CC61E7E00561E33 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3ECA1CC61E7E00561E33 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FC51CC61E7E00561E33 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3ECB1CC61E7E00561E33 /* UIImage+ImageEffects.m */; };
 		11ED3FC61CC61E7E00561E33 /* UIImage-Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3ECC1CC61E7E00561E33 /* UIImage-Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -226,17 +213,6 @@
 		11ED3FE11CC61E7E00561E33 /* NSTimer+CC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EE81CC61E7E00561E33 /* NSTimer+CC.m */; };
 		11ED3FE21CC61E7E00561E33 /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EE91CC61E7E00561E33 /* OpenUDID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FE31CC61E7E00561E33 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EEA1CC61E7E00561E33 /* OpenUDID.m */; };
-		11ED3FED1CC61E7E00561E33 /* ARCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EF71CC61E7E00561E33 /* ARCHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FEE1CC61E7E00561E33 /* FileInZipInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EF81CC61E7E00561E33 /* FileInZipInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FEF1CC61E7E00561E33 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EF91CC61E7E00561E33 /* FileInZipInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11ED3FF01CC61E7E00561E33 /* ZipException.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EFA1CC61E7E00561E33 /* ZipException.h */; };
-		11ED3FF11CC61E7E00561E33 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EFB1CC61E7E00561E33 /* ZipException.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11ED3FF21CC61E7E00561E33 /* ZipFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EFC1CC61E7E00561E33 /* ZipFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FF31CC61E7E00561E33 /* ZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EFD1CC61E7E00561E33 /* ZipFile.m */; };
-		11ED3FF41CC61E7E00561E33 /* ZipReadStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EFE1CC61E7E00561E33 /* ZipReadStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3FF51CC61E7E00561E33 /* ZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EFF1CC61E7E00561E33 /* ZipReadStream.m */; };
-		11ED3FF61CC61E7E00561E33 /* ZipWriteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3F001CC61E7E00561E33 /* ZipWriteStream.h */; };
-		11ED3FF71CC61E7E00561E33 /* ZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3F011CC61E7E00561E33 /* ZipWriteStream.m */; };
 		11ED40131CC6205900561E33 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ED40121CC6205900561E33 /* libsqlite3.0.tbd */; };
 		11ED40151CC6668100561E33 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 11ED40141CC6668100561E33 /* libicucore.tbd */; };
 		11ED401A1CC6686100561E33 /* images.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED40191CC6675F00561E33 /* images.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -250,6 +226,7 @@
 		11ED41FF1CC7311700561E33 /* cmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED41FE1CC7309400561E33 /* cmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED42211CC7356B00561E33 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42201CC7351300561E33 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED42251CC73BA800561E33 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42241CC73AC200561E33 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4903673A9460C8EFA871FC7 /* libPods-hccoren.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC463CA51B614AA69EE92DF /* libPods-hccoren.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,6 +240,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D07FE952826F2662DAF774D /* Pods-hccoren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.debug.xcconfig"; sourceTree = "<group>"; };
 		114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorendebug.xcconfig; sourceTree = "<group>"; };
 		114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorenrelease.xcconfig; sourceTree = "<group>"; };
 		114DE8B91CCFCBE8004BE152 /* hccoreappstore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccoreappstore.xcconfig; sourceTree = "<group>"; };
@@ -270,8 +248,6 @@
 		114DE8BB1CCFCD72004BE152 /* framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = framework.xcconfig; sourceTree = "<group>"; };
 		114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1171656A1CD0C313005F354F /* hccoren.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hccoren.podspec; sourceTree = "<group>"; };
-		117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataGZipAdditions.h; sourceTree = "<group>"; };
-		117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataGZipAdditions.m; sourceTree = "<group>"; };
 		117165A51CD11003005F354F /* Ipaddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ipaddress.c; sourceTree = "<group>"; };
 		117165A61CD11003005F354F /* Ipaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ipaddress.h; sourceTree = "<group>"; };
 		117165A71CD11003005F354F /* MacAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacAddress.h; sourceTree = "<group>"; };
@@ -281,15 +257,6 @@
 		117165BC1CD148E4005F354F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		117165BD1CD148E4005F354F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		117165BE1CD148E4005F354F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		117165C41CD14B8E005F354F /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		117165C51CD14B8E005F354F /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		117165C61CD14B8E005F354F /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		117165C71CD14B8E005F354F /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		117165C81CD14B8E005F354F /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		117165C91CD14B8E005F354F /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		117165CA1CD14B8E005F354F /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		117165CB1CD14B8E005F354F /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		117165CC1CD14B8E005F354F /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
 		117165D61CD14DF2005F354F /* Minizip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Minizip.framework; sourceTree = "<group>"; };
 		117165D81CD15300005F354F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		11ED3DF71CC61E1900561E33 /* hccoren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hccoren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -442,8 +409,6 @@
 		11ED3EC41CC61E7E00561E33 /* wwanconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wwanconnect.h; sourceTree = "<group>"; };
 		11ED3EC61CC61E7E00561E33 /* btnCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnCheck.png; sourceTree = "<group>"; };
 		11ED3EC71CC61E7E00561E33 /* btnCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCheck@2x.png"; sourceTree = "<group>"; };
-		11ED3EC81CC61E7E00561E33 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		11ED3EC91CC61E7E00561E33 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		11ED3ECA1CC61E7E00561E33 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		11ED3ECB1CC61E7E00561E33 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		11ED3ECC1CC61E7E00561E33 /* UIImage-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extension.h"; sourceTree = "<group>"; };
@@ -476,17 +441,6 @@
 		11ED3EE81CC61E7E00561E33 /* NSTimer+CC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CC.m"; sourceTree = "<group>"; };
 		11ED3EE91CC61E7E00561E33 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		11ED3EEA1CC61E7E00561E33 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
-		11ED3EF71CC61E7E00561E33 /* ARCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCHelper.h; sourceTree = "<group>"; };
-		11ED3EF81CC61E7E00561E33 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
-		11ED3EF91CC61E7E00561E33 /* FileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileInZipInfo.m; sourceTree = "<group>"; };
-		11ED3EFA1CC61E7E00561E33 /* ZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipException.h; sourceTree = "<group>"; };
-		11ED3EFB1CC61E7E00561E33 /* ZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipException.m; sourceTree = "<group>"; };
-		11ED3EFC1CC61E7E00561E33 /* ZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipFile.h; sourceTree = "<group>"; };
-		11ED3EFD1CC61E7E00561E33 /* ZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipFile.m; sourceTree = "<group>"; };
-		11ED3EFE1CC61E7E00561E33 /* ZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipReadStream.h; sourceTree = "<group>"; };
-		11ED3EFF1CC61E7E00561E33 /* ZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipReadStream.m; sourceTree = "<group>"; };
-		11ED3F001CC61E7E00561E33 /* ZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipWriteStream.h; sourceTree = "<group>"; };
-		11ED3F011CC61E7E00561E33 /* ZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipWriteStream.m; sourceTree = "<group>"; };
 		11ED40121CC6205900561E33 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		11ED40141CC6668100561E33 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		11ED40191CC6675F00561E33 /* images.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = images.h; sourceTree = "<group>"; };
@@ -500,6 +454,8 @@
 		11ED41FE1CC7309400561E33 /* cmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
 		11ED42201CC7351300561E33 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		11ED42241CC73AC200561E33 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		3AC463CA51B614AA69EE92DF /* libPods-hccoren.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hccoren.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF76BE5EC1E3DD46787B59F1 /* Pods-hccoren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.release.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -516,6 +472,7 @@
 				117165D71CD14DF2005F354F /* Minizip.framework in Frameworks */,
 				11ED40151CC6668100561E33 /* libicucore.tbd in Frameworks */,
 				11ED40131CC6205900561E33 /* libsqlite3.0.tbd in Frameworks */,
+				E4903673A9460C8EFA871FC7 /* libPods-hccoren.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,22 +487,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		117165C31CD14B8E005F354F /* MiniZip */ = {
-			isa = PBXGroup;
-			children = (
-				117165C41CD14B8E005F354F /* crypt.h */,
-				117165C51CD14B8E005F354F /* ioapi.c */,
-				117165C61CD14B8E005F354F /* ioapi.h */,
-				117165C71CD14B8E005F354F /* mztools.c */,
-				117165C81CD14B8E005F354F /* mztools.h */,
-				117165C91CD14B8E005F354F /* unzip.c */,
-				117165CA1CD14B8E005F354F /* unzip.h */,
-				117165CB1CD14B8E005F354F /* zip.c */,
-				117165CC1CD14B8E005F354F /* zip.h */,
-			);
-			path = MiniZip;
-			sourceTree = "<group>";
-		};
 		11ED3DED1CC61E1900561E33 = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +501,8 @@
 				11ED3E051CC61E1900561E33 /* hccorenTests */,
 				11ED3DF81CC61E1900561E33 /* Products */,
 				11ED40161CC6669D00561E33 /* Libs */,
+				31FEDB6E8BF8777E5B7653A3 /* Pods */,
+				EC1112754C4C29CDA7853F67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -585,7 +528,6 @@
 				11ED3EBC1CC61E7E00561E33 /* UDI */,
 				11ED3EC51CC61E7E00561E33 /* UIControls */,
 				11ED3ED21CC61E7E00561E33 /* Util */,
-				11ED3EEB1CC61E7E00561E33 /* ZipArchive */,
 				11ED3DFA1CC61E1900561E33 /* hccoren.h */,
 				11ED3DFC1CC61E1900561E33 /* Info.plist */,
 				11ED40191CC6675F00561E33 /* images.h */,
@@ -853,8 +795,6 @@
 				11ED3EAE1CC61E7E00561E33 /* AFUIImageReflection.m */,
 				11ED3EC61CC61E7E00561E33 /* btnCheck.png */,
 				11ED3EC71CC61E7E00561E33 /* btnCheck@2x.png */,
-				11ED3EC81CC61E7E00561E33 /* MBProgressHUD.h */,
-				11ED3EC91CC61E7E00561E33 /* MBProgressHUD.m */,
 				11ED3ECA1CC61E7E00561E33 /* UIImage+ImageEffects.h */,
 				11ED3ECB1CC61E7E00561E33 /* UIImage+ImageEffects.m */,
 				11ED3ECC1CC61E7E00561E33 /* UIImage-Extension.h */,
@@ -904,35 +844,6 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		11ED3EEB1CC61E7E00561E33 /* ZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				117165C31CD14B8E005F354F /* MiniZip */,
-				117165A11CD0E1E9005F354F /* NSDataGZipAdditions.h */,
-				117165A21CD0E1E9005F354F /* NSDataGZipAdditions.m */,
-				11ED3EF61CC61E7E00561E33 /* Objective-Zip */,
-			);
-			path = ZipArchive;
-			sourceTree = "<group>";
-		};
-		11ED3EF61CC61E7E00561E33 /* Objective-Zip */ = {
-			isa = PBXGroup;
-			children = (
-				11ED3EF71CC61E7E00561E33 /* ARCHelper.h */,
-				11ED3EF81CC61E7E00561E33 /* FileInZipInfo.h */,
-				11ED3EF91CC61E7E00561E33 /* FileInZipInfo.m */,
-				11ED3EFA1CC61E7E00561E33 /* ZipException.h */,
-				11ED3EFB1CC61E7E00561E33 /* ZipException.m */,
-				11ED3EFC1CC61E7E00561E33 /* ZipFile.h */,
-				11ED3EFD1CC61E7E00561E33 /* ZipFile.m */,
-				11ED3EFE1CC61E7E00561E33 /* ZipReadStream.h */,
-				11ED3EFF1CC61E7E00561E33 /* ZipReadStream.m */,
-				11ED3F001CC61E7E00561E33 /* ZipWriteStream.h */,
-				11ED3F011CC61E7E00561E33 /* ZipWriteStream.m */,
-			);
-			path = "Objective-Zip";
-			sourceTree = "<group>";
-		};
 		11ED40161CC6669D00561E33 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +860,23 @@
 			name = Libs;
 			sourceTree = "<group>";
 		};
+		31FEDB6E8BF8777E5B7653A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D07FE952826F2662DAF774D /* Pods-hccoren.debug.xcconfig */,
+				DF76BE5EC1E3DD46787B59F1 /* Pods-hccoren.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC1112754C4C29CDA7853F67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AC463CA51B614AA69EE92DF /* libPods-hccoren.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -956,7 +884,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				117165CD1CD14B8E005F354F /* crypt.h in Headers */,
 				11ED3F2F1CC61E7E00561E33 /* CMDDelegate.h in Headers */,
 				11ED42251CC73BA800561E33 /* config.h in Headers */,
 				11ED42211CC7356B00561E33 /* base.h in Headers */,
@@ -973,16 +900,12 @@
 				11ED3F281CC61E7E00561E33 /* PublicMControls.h in Headers */,
 				11ED3F1E1CC61E7E00561E33 /* HCBase.h in Headers */,
 				11ED3FAB1CC61E7E00561E33 /* JSON.h in Headers */,
-				11ED3FF21CC61E7E00561E33 /* ZipFile.h in Headers */,
-				11ED3FEE1CC61E7E00561E33 /* FileInZipInfo.h in Headers */,
 				11ED3FCC1CC61E7E00561E33 /* CommonUtil(Date).h in Headers */,
 				11ED3FCE1CC61E7E00561E33 /* CommonUtil.h in Headers */,
-				117165D11CD14B8E005F354F /* mztools.h in Headers */,
 				11ED3FD01CC61E7E00561E33 /* DeviceConfig.h in Headers */,
 				11ED3FD41CC61E7E00561E33 /* HWindowStack.h in Headers */,
 				11ED3FD21CC61E7E00561E33 /* HttpServerManager.h in Headers */,
 				11ED3F5A1CC61E7E00561E33 /* ChinaMapShift.h in Headers */,
-				11ED3FC21CC61E7E00561E33 /* MBProgressHUD.h in Headers */,
 				11ED3F9D1CC61E7E00561E33 /* Reachability.h in Headers */,
 				11ED3F9F1CC61E7E00561E33 /* NSData-AES.h in Headers */,
 				11ED3FB61CC61E7E00561E33 /* RegexKitLite.h in Headers */,
@@ -1005,13 +928,11 @@
 				11ED3F541CC61E7E00561E33 /* QCMDUpdateTime.h in Headers */,
 				11ED3F2B1CC61E7E00561E33 /* TrackRecord.h in Headers */,
 				11ED3F481CC61E7E00561E33 /* NSEntity.h in Headers */,
-				11ED3FED1CC61E7E00561E33 /* ARCHelper.h in Headers */,
 				11ED3F2D1CC61E7E00561E33 /* WindowItem.h in Headers */,
 				11ED3F361CC61E7E00561E33 /* CMDOP.h in Headers */,
 				11ED3F381CC61E7E00561E33 /* CMDs.h in Headers */,
 				11ED3F421CC61E7E00561E33 /* HCCallbackResult.h in Headers */,
 				11ED3F321CC61E7E00561E33 /* CMDHttpHeader.h in Headers */,
-				11ED3FF41CC61E7E00561E33 /* ZipReadStream.h in Headers */,
 				11ED3F621CC61E7E00561E33 /* HCSocketBuffer.h in Headers */,
 				11ED3FB21CC61E7E00561E33 /* SBJsonParser.h in Headers */,
 				11ED3F5E1CC61E7E00561E33 /* AsyncSocket.h in Headers */,
@@ -1020,11 +941,9 @@
 				11ED3FB41CC61E7E00561E33 /* SBJsonWriter.h in Headers */,
 				11ED3F1F1CC61E7E00561E33 /* HCCacheItem.h in Headers */,
 				11ED3F941CC61E7E00561E33 /* HTTPResponse.h in Headers */,
-				117165CF1CD14B8E005F354F /* ioapi.h in Headers */,
 				11ED3FB01CC61E7E00561E33 /* SBJsonBase.h in Headers */,
 				11ED3F7D1CC61E7E00561E33 /* FileResource.h in Headers */,
 				117165AA1CD11003005F354F /* Ipaddress.h in Headers */,
-				117165D51CD14B8E005F354F /* zip.h in Headers */,
 				11ED3F301CC61E7E00561E33 /* CMDHeader.h in Headers */,
 				11ED3FA11CC61E7E00561E33 /* NSFileManager-AES.h in Headers */,
 				11ED3FAC1CC61E7E00561E33 /* NSObject+SBJSON.h in Headers */,
@@ -1037,17 +956,13 @@
 				11ED3F3C1CC61E7E00561E33 /* CMDSocketHeader.h in Headers */,
 				11ED3FB81CC61E7E00561E33 /* UIDevice+IdentifierAddition.h in Headers */,
 				11ED3FBC1CC61E7E00561E33 /* UIDevice_Reachability.h in Headers */,
-				11ED3FF01CC61E7E00561E33 /* ZipException.h in Headers */,
-				11ED3FF61CC61E7E00561E33 /* ZipWriteStream.h in Headers */,
 				11ED3F901CC61E7E00561E33 /* HTTPMessage.h in Headers */,
 				11ED3F831CC61E7E00561E33 /* HTTPAuthenticationRequest.h in Headers */,
 				11ED3FA91CC61E7E00561E33 /* AFUIImageReflection.h in Headers */,
 				11ED3F951CC61E7E00561E33 /* HTTPServer.h in Headers */,
 				11ED3F3E1CC61E7E00561E33 /* CMDSocketSender.h in Headers */,
-				117165D31CD14B8E005F354F /* unzip.h in Headers */,
 				11ED3F791CC61E7E00561E33 /* DDTTYLogger.h in Headers */,
 				11ED3F6F1CC61E7E00561E33 /* DDData.h in Headers */,
-				117165A31CD0E1E9005F354F /* NSDataGZipAdditions.h in Headers */,
 				11ED3F691CC61E7E00561E33 /* ContextFilterLogFormatter.h in Headers */,
 				11ED3F8F1CC61E7E00561E33 /* HTTPLogging.h in Headers */,
 				11ED3F711CC61E7E00561E33 /* DDFileLogger.h in Headers */,
@@ -1081,10 +996,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ED3E0B1CC61E1900561E33 /* Build configuration list for PBXNativeTarget "hccoren" */;
 			buildPhases = (
+				ADD5B17257334C3D7EE31A2D /* 📦 Check Pods Manifest.lock */,
 				11ED3DF21CC61E1900561E33 /* Sources */,
 				11ED3DF31CC61E1900561E33 /* Frameworks */,
 				11ED3DF41CC61E1900561E33 /* Headers */,
 				11ED3DF51CC61E1900561E33 /* Resources */,
+				DF2D7578E93FDA86971AEA99 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1187,6 +1104,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n#FMK_NAME= \"hccoren\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\nINSTALL_DIR2=${SRCROOT}/../HCBaseSystem/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\n#拷贝到下一级的Lib目录下\nif [ -d \"${INSTALL_DIR2}\" ]\nthen\nrm -rf \"${INSTALL_DIR2}\"\nfi\n#mkdir -p \"{INSTALL_DIR2}\"\ncp -R \"${INSTALL_DIR}\" \"${INSTALL_DIR2}\"\nopen \"${INSTALL_DIR}\"";
 		};
+		ADD5B17257334C3D7EE31A2D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF2D7578E93FDA86971AEA99 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hccoren/Pods-hccoren-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1195,21 +1142,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				11ED3F611CC61E7E00561E33 /* HCSendRequest.m in Sources */,
-				11ED3FF51CC61E7E00561E33 /* ZipReadStream.m in Sources */,
 				11ED3FB11CC61E7E00561E33 /* SBJsonBase.m in Sources */,
 				11ED3FCF1CC61E7E00561E33 /* CommonUtil.m in Sources */,
 				11ED3FDD1CC61E7E00561E33 /* NSNumber+CC.m in Sources */,
 				11ED3F821CC61E7E00561E33 /* HTTPAsyncFileResponse.m in Sources */,
-				11ED3FF31CC61E7E00561E33 /* ZipFile.m in Sources */,
 				11ED3FB71CC61E7E00561E33 /* RegexKitLite.m in Sources */,
 				11ED3F8A1CC61E7E00561E33 /* HTTPDynamicFileResponse.m in Sources */,
 				11ED3FAF1CC61E7E00561E33 /* NSString+SBJSON.m in Sources */,
 				11ED3F7E1CC61E7E00561E33 /* FileResource.m in Sources */,
-				11ED3FC31CC61E7E00561E33 /* MBProgressHUD.m in Sources */,
-				11ED3FF11CC61E7E00561E33 /* ZipException.m in Sources */,
-				117165A41CD0E1E9005F354F /* NSDataGZipAdditions.m in Sources */,
 				11ED3F961CC61E7E00561E33 /* HTTPServer.m in Sources */,
-				11ED3FEF1CC61E7E00561E33 /* FileInZipInfo.m in Sources */,
 				11ED3FE11CC61E7E00561E33 /* NSTimer+CC.m in Sources */,
 				11ED3F631CC61E7E00561E33 /* HCSocketBuffer.m in Sources */,
 				117165AC1CD11003005F354F /* MacAddress.m in Sources */,
@@ -1229,8 +1170,6 @@
 				11ED3F4D1CC61E7E00561E33 /* HCDBHelper(FMDB).m in Sources */,
 				11ED3F841CC61E7E00561E33 /* HTTPAuthenticationRequest.m in Sources */,
 				11ED3FE31CC61E7E00561E33 /* OpenUDID.m in Sources */,
-				117165D01CD14B8E005F354F /* mztools.c in Sources */,
-				117165D21CD14B8E005F354F /* unzip.c in Sources */,
 				11ED3FB51CC61E7E00561E33 /* SBJsonWriter.m in Sources */,
 				11ED3FD71CC61E7E00561E33 /* NSArray+CC.m in Sources */,
 				11ED3FD31CC61E7E00561E33 /* HttpServerManager.m in Sources */,
@@ -1238,7 +1177,6 @@
 				11ED3F331CC61E7E00561E33 /* CMDHttpHeader.m in Sources */,
 				11ED3FA01CC61E7E00561E33 /* NSData-AES.m in Sources */,
 				11ED3F9E1CC61E7E00561E33 /* Reachability.m in Sources */,
-				117165CE1CD14B8E005F354F /* ioapi.c in Sources */,
 				11ED3FBD1CC61E7E00561E33 /* UIDevice_Reachability.m in Sources */,
 				11ED3FA31CC61E7E00561E33 /* rijndael.c in Sources */,
 				11ED3F5F1CC61E7E00561E33 /* AsyncSocket.m in Sources */,
@@ -1255,12 +1193,10 @@
 				11ED3F531CC61E7E00561E33 /* HCSQLHelper.m in Sources */,
 				11ED3F2E1CC61E7E00561E33 /* WindowItem.m in Sources */,
 				11ED3F411CC61E7E00561E33 /* FileDataCacheHelper.m in Sources */,
-				11ED3FF71CC61E7E00561E33 /* ZipWriteStream.m in Sources */,
 				11ED3F721CC61E7E00561E33 /* DDFileLogger.m in Sources */,
 				11ED3F511CC61E7E00561E33 /* HCDbHelper.m in Sources */,
 				11ED3F8E1CC61E7E00561E33 /* HTTPFileResponse.m in Sources */,
 				11ED3FD11CC61E7E00561E33 /* DeviceConfig.m in Sources */,
-				117165D41CD14B8E005F354F /* zip.c in Sources */,
 				11ED3F351CC61E7E00561E33 /* CMDHttpSenderNew.m in Sources */,
 				11ED3FC71CC61E7E00561E33 /* UIImage-Extension.m in Sources */,
 				11ED3F7C1CC61E7E00561E33 /* DispatchQueueLogFormatter.m in Sources */,
@@ -1331,7 +1267,6 @@
 		};
 		11ED3E091CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1370,7 +1305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1382,7 +1317,6 @@
 		};
 		11ED3E0A1CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1415,7 +1349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1427,7 +1361,7 @@
 		};
 		11ED3E0C1CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
+			baseConfigurationReference = 0D07FE952826F2662DAF774D /* Pods-hccoren.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -1454,7 +1388,7 @@
 				GCC_LINK_WITH_DYNAMIC_LIBRARIES = YES;
 				INFOPLIST_FILE = hccoren/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -1468,7 +1402,7 @@
 		};
 		11ED3E0D1CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
+			baseConfigurationReference = DF76BE5EC1E3DD46787B59F1 /* Pods-hccoren.release.xcconfig */;
 			buildSettings = {
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
@@ -1496,7 +1430,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = __OPTIMIZE__;
 				INFOPLIST_FILE = hccoren/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
@@ -1511,7 +1445,6 @@
 		};
 		11ED3E0F1CC61E1900561E33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hccorenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1522,7 +1455,6 @@
 		};
 		11ED3E101CC61E1900561E33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = hccorenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

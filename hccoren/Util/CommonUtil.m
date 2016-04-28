@@ -16,7 +16,8 @@
 #import "DeviceConfig.h"
 
 //#import "HCHotel.h"
-#import "ZipFile.h"
+//#import "ZipFile.h"
+#import <HCMinizip/ZipFile.h>
 
 #define FileHashDefaultChunkSizeForReadingData 1024*8 // 8K
 
