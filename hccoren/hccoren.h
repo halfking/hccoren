@@ -78,7 +78,7 @@ FOUNDATION_EXPORT const unsigned char hccorenVersionString[];
 #import <hccoren/WebSocket.h>
 #import <hccoren/CMDSender.h>
 #import <hccoren/trackrecord.h>
-
+#import <hccoren/HCFileManager.h>
 
 //not must,just for warnings
 //#import "AFUIImageReflection.h"
