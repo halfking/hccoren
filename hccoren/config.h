@@ -32,6 +32,7 @@ typedef int HCImgViewModel;
 
 #define NT_LOCATIONCHANGED      @"REFRESH_LOCATION"
 #define NT_LOCATIONFAILURE      @"LOCATION_FAILURE"
+#define NT_MSGNOTICE            @"NT_MSGNOTICE"
 
 #pragma mark - 一些常用初始值
 #define CENTER_LNG          120.09
