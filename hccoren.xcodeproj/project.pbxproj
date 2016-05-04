@@ -14,6 +14,8 @@
 				117165DE1CD1573D005F354F /* ShellScript */,
 			);
 			dependencies = (
+				112B57041CDA6684008564C6 /* PBXTargetDependency */,
+				112B56F61CDA53DD008564C6 /* PBXTargetDependency */,
 			);
 			name = hccore;
 			productName = hccore;
@@ -21,12 +23,17 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		112B57021CDA6678008564C6 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 112B57011CDA6678008564C6 /* CoreFoundation.framework */; };
+		112B57051CDA67BF008564C6 /* btnCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3EC61CC61E7E00561E33 /* btnCheck.png */; };
+		112B57061CDA67C1008564C6 /* btnCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3EC71CC61E7E00561E33 /* btnCheck@2x.png */; };
+		112B57081CDA6933008564C6 /* hccoren.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 112B57071CDA6933008564C6 /* hccoren.bundle */; };
+		112B57091CDA6A02008564C6 /* hccoren.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1171656A1CD0C313005F354F /* hccoren.podspec */; };
+		112B570A1CDA6A1C008564C6 /* bluesessionusage.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3E661CC61E7E00561E33 /* bluesessionusage.txt */; };
 		114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */; };
 		11502F581CD311C900365412 /* HCMinizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11502F571CD311C900365412 /* HCMinizip.framework */; };
 		11502F5B1CD4BC3600365412 /* HCFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11502F591CD4BC3600365412 /* HCFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11502F5C1CD4BC3600365412 /* HCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11502F5A1CD4BC3600365412 /* HCFileManager.m */; };
 		11502F5D1CD4BC3600365412 /* HCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11502F5A1CD4BC3600365412 /* HCFileManager.m */; };
-		1171656B1CD0C313005F354F /* hccoren.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1171656A1CD0C313005F354F /* hccoren.podspec */; };
 		117165A91CD11003005F354F /* Ipaddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165A51CD11003005F354F /* Ipaddress.c */; };
 		117165AA1CD11003005F354F /* Ipaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A61CD11003005F354F /* Ipaddress.h */; };
 		117165AB1CD11003005F354F /* MacAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A71CD11003005F354F /* MacAddress.h */; };
@@ -102,7 +109,6 @@
 		11ED3F651CC61E7E00561E33 /* Socketsingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E621CC61E7E00561E33 /* Socketsingleton.m */; };
 		11ED3F661CC61E7E00561E33 /* BlueSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E641CC61E7E00561E33 /* BlueSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F671CC61E7E00561E33 /* BlueSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E651CC61E7E00561E33 /* BlueSessionManager.m */; };
-		11ED3F681CC61E7E00561E33 /* bluesessionusage.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3E661CC61E7E00561E33 /* bluesessionusage.txt */; };
 		11ED3F691CC61E7E00561E33 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E681CC61E7E00561E33 /* ContextFilterLogFormatter.h */; };
 		11ED3F6A1CC61E7E00561E33 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E691CC61E7E00561E33 /* ContextFilterLogFormatter.m */; };
 		11ED3F6B1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6A1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h */; };
@@ -182,8 +188,6 @@
 		11ED3FBD1CC61E7E00561E33 /* UIDevice_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EC21CC61E7E00561E33 /* UIDevice_Reachability.m */; };
 		11ED3FBE1CC61E7E00561E33 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EC31CC61E7E00561E33 /* wwanconnect.c */; };
 		11ED3FBF1CC61E7E00561E33 /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC41CC61E7E00561E33 /* wwanconnect.h */; };
-		11ED3FC01CC61E7E00561E33 /* btnCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3EC61CC61E7E00561E33 /* btnCheck.png */; };
-		11ED3FC11CC61E7E00561E33 /* btnCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3EC71CC61E7E00561E33 /* btnCheck@2x.png */; };
 		11ED3FC41CC61E7E00561E33 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3ECA1CC61E7E00561E33 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FC51CC61E7E00561E33 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3ECB1CC61E7E00561E33 /* UIImage+ImageEffects.m */; };
 		11ED3FC61CC61E7E00561E33 /* UIImage-Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3ECC1CC61E7E00561E33 /* UIImage-Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -233,6 +237,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		112B56F51CDA53DD008564C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ED3DEE1CC61E1900561E33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11ED3DF61CC61E1900561E33;
+			remoteInfo = hccoren;
+		};
+		112B57031CDA6684008564C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11ED3DEE1CC61E1900561E33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 112B56FA1CDA659D008564C6;
+			remoteInfo = HCCorenResources;
+		};
 		11ED3E031CC61E1900561E33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11ED3DEE1CC61E1900561E33 /* Project object */;
@@ -244,6 +262,10 @@
 
 /* Begin PBXFileReference section */
 		0DF1CC417C79B55313BCF611 /* Pods-hccoren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.release.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.release.xcconfig"; sourceTree = "<group>"; };
+		112B56FB1CDA659D008564C6 /* HCCoren.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCCoren.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		112B56FD1CDA659D008564C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112B57011CDA6678008564C6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		112B57071CDA6933008564C6 /* hccoren.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = hccoren.bundle; sourceTree = "<group>"; };
 		114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorendebug.xcconfig; sourceTree = "<group>"; };
 		114DE8B81CCFCB9B004BE152 /* hccorenrelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccorenrelease.xcconfig; sourceTree = "<group>"; };
 		114DE8B91CCFCBE8004BE152 /* hccoreappstore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = hccoreappstore.xcconfig; sourceTree = "<group>"; };
@@ -464,6 +486,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		112B56F81CDA659D008564C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112B57021CDA6678008564C6 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11ED3DF31CC61E1900561E33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -492,9 +522,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		112B56FC1CDA659D008564C6 /* HCCorenResources */ = {
+			isa = PBXGroup;
+			children = (
+				112B56FD1CDA659D008564C6 /* Info.plist */,
+			);
+			path = HCCorenResources;
+			sourceTree = "<group>";
+		};
 		11ED3DED1CC61E1900561E33 = {
 			isa = PBXGroup;
 			children = (
+				112B57071CDA6933008564C6 /* hccoren.bundle */,
 				1171656A1CD0C313005F354F /* hccoren.podspec */,
 				114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */,
 				114DE8BB1CCFCD72004BE152 /* framework.xcconfig */,
@@ -504,6 +543,7 @@
 				114DE8B71CCFCACE004BE152 /* hccorendebug.xcconfig */,
 				11ED3DF91CC61E1900561E33 /* hccoren */,
 				11ED3E051CC61E1900561E33 /* hccorenTests */,
+				112B56FC1CDA659D008564C6 /* HCCorenResources */,
 				11ED3DF81CC61E1900561E33 /* Products */,
 				11ED40161CC6669D00561E33 /* Libs */,
 				36382A6FBF9AA6D6DBC753C1 /* Pods */,
@@ -516,6 +556,7 @@
 			children = (
 				11ED3DF71CC61E1900561E33 /* hccoren.framework */,
 				11ED3E011CC61E1900561E33 /* hccorenTests.xctest */,
+				112B56FB1CDA659D008564C6 /* HCCoren.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -878,6 +919,7 @@
 		FD031DC38723AEC69265DEE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				112B57011CDA6678008564C6 /* CoreFoundation.framework */,
 				11502F571CD311C900365412 /* HCMinizip.framework */,
 				65BF62492A19B4E92A3916A3 /* libPods-hccoren.a */,
 			);
@@ -1000,6 +1042,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		112B56FA1CDA659D008564C6 /* HCCorenResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 112B56FE1CDA659D008564C6 /* Build configuration list for PBXNativeTarget "HCCorenResources" */;
+			buildPhases = (
+				112B56F71CDA659D008564C6 /* Sources */,
+				112B56F81CDA659D008564C6 /* Frameworks */,
+				112B56F91CDA659D008564C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HCCorenResources;
+			productName = HCCorenResources;
+			productReference = 112B56FB1CDA659D008564C6 /* HCCoren.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		11ED3DF61CC61E1900561E33 /* hccoren */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ED3E0B1CC61E1900561E33 /* Build configuration list for PBXNativeTarget "hccoren" */;
@@ -1047,6 +1106,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = seenvoice.com;
 				TargetAttributes = {
+					112B56FA1CDA659D008564C6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					117165DA1CD1572A005F354F = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -1073,19 +1135,28 @@
 				11ED3DF61CC61E1900561E33 /* hccoren */,
 				11ED3E001CC61E1900561E33 /* hccorenTests */,
 				117165DA1CD1572A005F354F /* hccore */,
+				112B56FA1CDA659D008564C6 /* HCCorenResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		112B56F91CDA659D008564C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112B570A1CDA6A1C008564C6 /* bluesessionusage.txt in Resources */,
+				112B57091CDA6A02008564C6 /* hccoren.podspec in Resources */,
+				112B57051CDA67BF008564C6 /* btnCheck.png in Resources */,
+				112B57061CDA67C1008564C6 /* btnCheck@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11ED3DF51CC61E1900561E33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11ED3FC11CC61E7E00561E33 /* btnCheck@2x.png in Resources */,
-				1171656B1CD0C313005F354F /* hccoren.podspec in Resources */,
-				11ED3F681CC61E7E00561E33 /* bluesessionusage.txt in Resources */,
-				11ED3FC01CC61E7E00561E33 /* btnCheck.png in Resources */,
+				112B57081CDA6933008564C6 /* hccoren.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1110,7 +1181,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\nWKSP_NAME = $(PROJECT_NAME).xcworkspace\n\n#open \"${PROJECT_TEMP_DIR}\"\n#FMK_NAME= \"hccoren\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n#INSTALL_DIR2=${SRCROOT}/../HCBaseSystem/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\n#WRK_DIR=$(PROJECT_TEMP_DIR)\n#open \"${WRK_DIR}\"\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n#open \"${DEVICE_DIR}\"\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -workspace hccoren.xcworkspace -scheme hccoren -sdk iphonesimulator clean build\nxcodebuild -configuration \"Release\" -workspace hccoren.xcworkspace -scheme hccoren -sdk iphoneos clean build\n\n#xcodebuild -configuration \"Release\"  -workspace ${WKSP_NAME} -scheme ${FMK_NAME} -sdk iphonesimulator clean build\n#xcodebuild -configuration \"Release\" -workspace ${WKSP_NAME} -scheme ${FMK_NAME} -sdk iphoneos clean build\n#xcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n#xcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n#拷贝到下一级的Lib目录下\n#if [ -d \"${INSTALL_DIR2}\" ]\n#then\n#rm -rf \"${INSTALL_DIR2}\"\n#fi\n#mkdir -p \"{INSTALL_DIR2}\"\n#cp -R \"${INSTALL_DIR}\" \"${INSTALL_DIR2}\"\nopen \"${INSTALL_DIR}\"\n";
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\nWKSP_NAME = $(PROJECT_NAME).xcworkspace\n\n# Install dir will be the final output to the framework.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\nWRK_DIR=${BUILD_DIR}\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nDEVICE_DIR2=${WRK_DIR}/Debug-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\nSIMULATOR_DIR2=${WRK_DIR}/Debug-iphonesimulator/${FMK_NAME}.framework\n\n# Clean and Building both architectures.\nxcodebuild -configuration \"Debug\" -workspace hccoren.xcworkspace -scheme hccoren -sdk iphonesimulator clean build\nxcodebuild -configuration \"Debug\" -workspace hccoren.xcworkspace -scheme hccoren -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -workspace hccoren.xcworkspace -scheme hccoren -sdk iphonesimulator clean build\nxcodebuild -configuration \"Release\" -workspace hccoren.xcworkspace -scheme hccoren -sdk iphoneos clean build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\n\n# copy header files and dir structs\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n# combine files\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nlipo -create \"${DEVICE_DIR2}/${FMK_NAME}\" \"${SIMULATOR_DIR2}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}_DEBUG\"\n\n#拷贝到下一级的Lib目录下\n#if [ -d \"${INSTALL_DIR2}\" ]\n#then\n#rm -rf \"${INSTALL_DIR2}\"\n#fi\n#mkdir -p \"{INSTALL_DIR2}\"\n#cp -R \"${INSTALL_DIR}\" \"${INSTALL_DIR2}\"\n#open \"${INSTALL_DIR}\"\n# Copy the resources bundle to the user's desktop\nditto \"${BUILT_PRODUCTS_DIR}/${FMK_NAME}.bundle\" \\\n    \"${INSTALL_DIR}/${FMK_NAME}.bundle\"\nditto \"${BUILT_PRODUCTS_DIR}/${FMK_NAME}.bundle\" \\\n\"${SRCROOT}/${FMK_NAME}.bundle\"\n#open \"${BUILT_PRODUCTS_DIR}\"\nrm -r \"${WRK_DIR}\"\n#\"${HOME}/Desktop/${FMK_NAME}.bundle\"\n";
 		};
 		DF2D7578E93FDA86971AEA99 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1145,6 +1216,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		112B56F71CDA659D008564C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11ED3DF21CC61E1900561E33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1253,6 +1331,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		112B56F61CDA53DD008564C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11ED3DF61CC61E1900561E33 /* hccoren */;
+			targetProxy = 112B56F51CDA53DD008564C6 /* PBXContainerItemProxy */;
+		};
+		112B57041CDA6684008564C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 112B56FA1CDA659D008564C6 /* HCCorenResources */;
+			targetProxy = 112B57031CDA6684008564C6 /* PBXContainerItemProxy */;
+		};
 		11ED3E041CC61E1900561E33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11ED3DF61CC61E1900561E33 /* hccoren */;
@@ -1261,8 +1349,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		112B56FF1CDA659D008564C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = HCCorenResources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.HCCorenResources;
+				PRODUCT_NAME = HCCoren;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		112B57001CDA659D008564C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = NO;
+				ENABLE_BITCODE = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = HCCorenResources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seenvoice.HCCorenResources;
+				PRODUCT_NAME = HCCoren;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		117165DC1CD1572A005F354F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5108102EFA07826E055BF5C1 /* Pods-hccoren.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = YES;
 				MACH_O_TYPE = mh_dylib;
@@ -1272,6 +1399,7 @@
 		};
 		117165DD1CD1572A005F354F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF1CC417C79B55313BCF611 /* Pods-hccoren.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = YES;
 				MACH_O_TYPE = mh_dylib;
@@ -1480,6 +1608,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		112B56FE1CDA659D008564C6 /* Build configuration list for PBXNativeTarget "HCCorenResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				112B56FF1CDA659D008564C6 /* Debug */,
+				112B57001CDA659D008564C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		117165DB1CD1572A005F354F /* Build configuration list for PBXAggregateTarget "hccore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.1.9"
+  s.version      = "0.2.0"
   s.summary      = "这是一个与具体业务无关的通用核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -146,7 +146,8 @@ s.dependency "HCMinizip", "~> 1.2.6"
             "hccoren/**/Reachability.{h,m}",
             "hccoren/UDI/**/*.{h,m,cpp,c}",
             "hccoren/Map/*.{h,m}",
-            "hccoren/base.h"
+            "hccoren/base.h",
+            "hccoren/**/*.bundle"
         ]
         spec.public_header_files = [
             'hccoren/String/**/*.h',
@@ -165,7 +166,8 @@ s.dependency "HCMinizip", "~> 1.2.6"
             "hccoren/Util/HWWeakTimer.{h,m}",
             "hccoren/ZipArchive/**/*.{h,m,mm,c,cpp}",
             "hccoren/ZipArchive/MiniZip/*.{h,m,mm,c,cpp}",
-            "hccoren/base/publictext.h"
+            "hccoren/base/publictext.h",
+            "hccoren/**/*.png"
         ]
         spec.libraries = [
             'icucore',
