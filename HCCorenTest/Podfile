@@ -1,0 +1,7 @@
+platform :ios, ‘7.0‘
+
+target “HCCorenTest” do
+
+pod 'HCMinizip'
+#pod 'AFNetworking','~>2.6.3'
+end
