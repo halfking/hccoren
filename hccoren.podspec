@@ -126,6 +126,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             "hccoren/Data/*.{h,m,c,cpp}",
             "hccoren/base/*.{h,m,mm,c,cpp}",
             "hccoren/config.h",
+            "hccoren/Map/*.{h,m}",
             "hccoren/**/Reachability.{h,m}",
             "hccoren/UDI/**/*.{h,m,cpp,c}",
             "hccoren/base.h",
@@ -138,6 +139,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             'hccoren/Data/*.h',
             'hccoren/Base/*.h',
             'hccoren/config.h',
+            'hccoren/Map/*.h',
             'hccoren/UDI/**/*.h',
             'hccoren/**/Reachability.h',
             'hccoren/base.h'
@@ -180,7 +182,6 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             "hccoren/Network/CocoaWebResource/*.{h,m,mm,c,cpp}",
             "hccoren/Network/BlueSession/*.{h,m,mm,c,cpp}",
             "hccoren/Util/HWWeakTimer.{h,m}",
-            "hccoren/Map/*.{h,m}",
             "hccoren/database.h",
             "hccoren/cmd.h"
         ]
@@ -192,7 +193,6 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             'hccoren/Network/BlueSession/*.h',
             'hccoren/Util/HttpServerManager.h',
             "hccoren/Util/HWWeakTimer.h",
-            'hccoren/Map/*.h',
             'hccoren/database.h',
             'hccoren/cmd.h'
         ]

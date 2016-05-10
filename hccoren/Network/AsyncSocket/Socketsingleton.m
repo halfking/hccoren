@@ -24,6 +24,8 @@
 #import "DeviceConfig.h"
 #import "HCSocketBuffer.h"
 #import "Reachability.h"
+#import "config.h"
+
 @interface Socketsingleton() <AsyncSocketDelegate>
 {
     NSString * server;
