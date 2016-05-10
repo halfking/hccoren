@@ -30,6 +30,19 @@
 + (void)    copyFile:(NSString *)sourceFile target:(NSString *)targetFile overwrite:(BOOL)overwriter;
 + (BOOL)    isExistsFile:(NSString *)filePath;
 + (BOOL)    isFileExistAndNotEmpty:(NSString *)filePath size:(UInt64 *)size;
+#pragma mark - removeFiles
+//获取设备可用空间
+- (UInt64)      getSizeFreeForDevice;
+- (long long)   fileSizeAtPath:(NSString*) filePath;
+- (CGFloat )    folderSizeAtPath:(NSString*) folderPath;
+- (BOOL)        existFileAtPath:(NSString *)path;
+- (BOOL) removeFileAtPath:(NSString*) filePath;
+- (BOOL) removeFilesAtPath:(NSString * )folderPath;
+- (BOOL) removeFilesAtPath:(NSString * )folderPath matchRegex:(NSString *)regexString;
+- (BOOL) removeFilesAtPath:(NSString * )folderPath withoutRegex:(NSString *)regexString;
+- (BOOL) removeFilesAtPath:(NSString * )folderPath withoutPrefixList:(NSArray *)prefixList;
+- (BOOL) removeFilesAtPath:(NSString * )folderPath matchRegex:(NSString *)regexString withoutPrefixList:(NSArray *)prefixList;
+
 
 #pragma mark - fileName
 - (NSString *)getRootPath;
