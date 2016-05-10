@@ -1615,6 +1615,7 @@
 				112B57001CDA659D008564C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		117165DB1CD1572A005F354F /* Build configuration list for PBXAggregateTarget "hccore" */ = {
 			isa = XCConfigurationList;

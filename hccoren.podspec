@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "这是一个与具体业务无关的通用核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -86,7 +86,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+   s.resource  = "hccoren.bundle"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -114,26 +114,9 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
   # s.requires_arc = false
 
     s.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES","ENABLE_BITCODE" => "YES","DEFINES_MODULE" => "YES" }
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-s.dependency "HCMinizip", "~> 1.2.6"
 
-#  s.default_subspec = 'All'
-#  s.subspec 'All' do |spec|
-#	spec.ios.dependency 'hccoren/REGEXKITLITE' '~>0.0.5'
-#    spec.ios.dependency 'hccoren/Core'          '~>0.0.5'
-#spec.ios.dependency 'hccoren/AsyncSocket'
-#  end
-#    s.subspec 'Minizip' do |spec|
-#        spec.requires_arc            = false
-#        spec.source_files = "hccoren/ZipArchive/MiniZip/*.{h,m,mm,c,cpp}"
-#        spec.public_header_files = [
-#            'hccoren/ZipArchive/MiniZip/*.h'
-#        ]
+    s.dependency "HCMinizip", "~> 1.2.6"
 
-#        spec.libraries = [
-#            "icucore","iconv","z"
-#        ]
-#    end
     s.subspec 'Core' do |spec|
         spec.requires_arc            = false
         spec.source_files = [
@@ -167,7 +150,8 @@ s.dependency "HCMinizip", "~> 1.2.6"
             "hccoren/ZipArchive/**/*.{h,m,mm,c,cpp}",
             "hccoren/ZipArchive/MiniZip/*.{h,m,mm,c,cpp}",
             "hccoren/base/publictext.h",
-            "hccoren/**/*.png"
+            "hccoren/**/*.png",
+            "hccoren/hccorentest/**/*"
         ]
         spec.libraries = [
             'icucore',
@@ -197,6 +181,7 @@ s.dependency "HCMinizip", "~> 1.2.6"
             "hccoren/Util/HttpServerManager.{h,m,mm,c,cpp}",
             "hccoren/Network/CocoaWebResource/*.{h,m,mm,c,cpp}",
             "hccoren/Network/BlueSession/*.{h,m,mm,c,cpp}",
+            "hccoren/Util/HWWeakTimer.{h,m}",
             "hccoren/database.h",
             "hccoren/cmd.h"
         ]
@@ -207,6 +192,7 @@ s.dependency "HCMinizip", "~> 1.2.6"
             'hccoren/Network/CocoaWebResource/*.h',
             'hccoren/Network/BlueSession/*.h',
             'hccoren/Util/HttpServerManager.h',
+            "hccoren/Util/HWWeakTimer.h",
             'hccoren/database.h',
             'hccoren/cmd.h'
         ]
