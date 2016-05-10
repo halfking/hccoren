@@ -17,6 +17,9 @@
     NSString * applicationRoot_;
     NSString * rootPath_;
     NSString * rootPathMatchString_;
+
+    NSString * tempFileRoot_;
+    NSArray * reservedFileNames_; // 需要保留的文件
 }
 @end
 @implementation HCFileManager
@@ -323,7 +326,56 @@ static HCFileManager * hcFileManager = nil;
         }
     }
 }
-
+#pragma mark - common path
+//获取本地文件的全路径
+- (NSString *) localFileFullPath:(NSString *)fileUrl
+{
+    NSString * localPath = [self localFileDir];
+    if(fileUrl && fileUrl.length>0)
+    {
+        if([self isFullFilePath:fileUrl])
+            return fileUrl;
+        
+        //lowercaseString];
+        //    fileUrl = [fileUrl lowercaseString];
+        
+        NSString * fileName = [self getFileName:fileUrl];
+        localPath =  [localPath stringByAppendingPathComponent:fileName];
+    }
+    return [self getFilePath:localPath];
+}
+- (NSString *) tempFileFullPath:(NSString *)fileUrl
+{
+    NSString * localPath = [self tempFileDir];
+    if(fileUrl && fileUrl.length>0)
+    {
+        if([self isFullFilePath:fileUrl])
+            return fileUrl;
+        
+        //lowercaseString];
+        //    fileUrl = [fileUrl lowercaseString];
+        
+        NSString * fileName = [self getFileName:fileUrl];
+        localPath =  [localPath stringByAppendingPathComponent:fileName];
+    }
+    return [self getFilePath:localPath];
+}
+- (NSString *) localFileDir
+{
+    return @"localfiles";
+}
+- (NSString *) webRootFileDir
+{
+    return @"docroot";
+}
+- (NSString *) tempFileDir
+{
+    if(!tempFileRoot_ || tempFileRoot_.length==0)
+    {
+        tempFileRoot_ = @"tempfiles";
+    }
+    return tempFileRoot_;
+}
 
 #pragma mark - filename & filePath转换
 - (NSString *)getRootPath

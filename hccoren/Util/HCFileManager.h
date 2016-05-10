@@ -10,12 +10,18 @@
 #import <UIKit/UIKit.h>
 @interface HCFileManager : NSObject
 {
-    
+
 }
 +(id)defaultManager;
 +(HCFileManager *)manager;
 
 #pragma mark - dir
+- (NSString *) localFileDir;
+- (NSString *) tempFileDir;
+- (NSString *) webRootFileDir;
+- (NSString *) localFileFullPath:(NSString *)fileUrl;
+- (NSString *) tempFileFullPath:(NSString *)fileUrl;
+
 #pragma mark - files
 + (void)    createFileDirectory:(NSString *)dirFullPath;
 + (BOOL)    createFileDirectories:(NSString * )path;
