@@ -6,8 +6,8 @@
 //  Copyright © 2016年 seenvoice.com. All rights reserved.
 //
 
-#ifndef config_h
-#define config_h
+#ifndef configcoren_h
+#define configcoren_h
 
 #define USECOMPRESS         0       //是否使用文本压缩的模式
 #define USEBINARYDATA       1       //SOCKET 是否使用二进制流压缩包的形式

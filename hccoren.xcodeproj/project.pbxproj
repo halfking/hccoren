@@ -232,7 +232,7 @@
 		11ED40C61CC723C400561E33 /* HWWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED40C41CC723C400561E33 /* HWWeakTimer.m */; };
 		11ED41FF1CC7311700561E33 /* cmd.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED41FE1CC7309400561E33 /* cmd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED42211CC7356B00561E33 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42201CC7351300561E33 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED42251CC73BA800561E33 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42241CC73AC200561E33 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11ED42251CC73BA800561E33 /* config_coren.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED42241CC73AC200561E33 /* config_coren.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A1B080F49B5C7F34E4753D9 /* libPods-hccoren.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF62492A19B4E92A3916A3 /* libPods-hccoren.a */; };
 /* End PBXBuildFile section */
 
@@ -480,7 +480,7 @@
 		11ED40C41CC723C400561E33 /* HWWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWWeakTimer.m; sourceTree = "<group>"; };
 		11ED41FE1CC7309400561E33 /* cmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
 		11ED42201CC7351300561E33 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
-		11ED42241CC73AC200561E33 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		11ED42241CC73AC200561E33 /* config_coren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config_coren.h; sourceTree = "<group>"; };
 		5108102EFA07826E055BF5C1 /* Pods-hccoren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hccoren.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hccoren/Pods-hccoren.debug.xcconfig"; sourceTree = "<group>"; };
 		65BF62492A19B4E92A3916A3 /* libPods-hccoren.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hccoren.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -580,7 +580,7 @@
 				11ED401D1CC689A200561E33 /* database.h */,
 				11ED41FE1CC7309400561E33 /* cmd.h */,
 				11ED42201CC7351300561E33 /* base.h */,
-				11ED42241CC73AC200561E33 /* config.h */,
+				11ED42241CC73AC200561E33 /* config_coren.h */,
 			);
 			path = hccoren;
 			sourceTree = "<group>";
@@ -934,7 +934,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11ED3F2F1CC61E7E00561E33 /* CMDDelegate.h in Headers */,
-				11ED42251CC73BA800561E33 /* config.h in Headers */,
+				11ED42251CC73BA800561E33 /* config_coren.h in Headers */,
 				11ED42211CC7356B00561E33 /* base.h in Headers */,
 				11ED41FF1CC7311700561E33 /* cmd.h in Headers */,
 				11ED3F441CC61E7E00561E33 /* HCEPropetyType.h in Headers */,

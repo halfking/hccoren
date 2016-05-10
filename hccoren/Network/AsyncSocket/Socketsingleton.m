@@ -24,7 +24,7 @@
 #import "DeviceConfig.h"
 #import "HCSocketBuffer.h"
 #import "Reachability.h"
-#import "config.h"
+#import "config_coren.h"
 
 @interface Socketsingleton() <AsyncSocketDelegate>
 {
