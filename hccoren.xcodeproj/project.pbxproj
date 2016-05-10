@@ -29,14 +29,14 @@
 		112B57081CDA6933008564C6 /* hccoren.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 112B57071CDA6933008564C6 /* hccoren.bundle */; };
 		112B57091CDA6A02008564C6 /* hccoren.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1171656A1CD0C313005F354F /* hccoren.podspec */; };
 		112B570A1CDA6A1C008564C6 /* bluesessionusage.txt in Resources */ = {isa = PBXBuildFile; fileRef = 11ED3E661CC61E7E00561E33 /* bluesessionusage.txt */; };
-		114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */; };
+		114DE8BD1CD0926C004BE152 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 114DE8BC1CD0926C004BE152 /* PrefixHeader.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		11502F581CD311C900365412 /* HCMinizip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11502F571CD311C900365412 /* HCMinizip.framework */; };
 		11502F5B1CD4BC3600365412 /* HCFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11502F591CD4BC3600365412 /* HCFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11502F5C1CD4BC3600365412 /* HCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11502F5A1CD4BC3600365412 /* HCFileManager.m */; };
 		11502F5D1CD4BC3600365412 /* HCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11502F5A1CD4BC3600365412 /* HCFileManager.m */; };
 		117165A91CD11003005F354F /* Ipaddress.c in Sources */ = {isa = PBXBuildFile; fileRef = 117165A51CD11003005F354F /* Ipaddress.c */; };
-		117165AA1CD11003005F354F /* Ipaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A61CD11003005F354F /* Ipaddress.h */; };
-		117165AB1CD11003005F354F /* MacAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A71CD11003005F354F /* MacAddress.h */; };
+		117165AA1CD11003005F354F /* Ipaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A61CD11003005F354F /* Ipaddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		117165AB1CD11003005F354F /* MacAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 117165A71CD11003005F354F /* MacAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		117165AC1CD11003005F354F /* MacAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 117165A81CD11003005F354F /* MacAddress.m */; };
 		117165AE1CD1396D005F354F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165AD1CD1396D005F354F /* libz.tbd */; };
 		117165BF1CD148E4005F354F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117165BB1CD148E4005F354F /* Foundation.framework */; };
@@ -51,7 +51,7 @@
 		11ED3F1F1CC61E7E00561E33 /* HCCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E141CC61E7E00561E33 /* HCCacheItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F201CC61E7E00561E33 /* HCCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E151CC61E7E00561E33 /* HCCacheItem.m */; };
 		11ED3F281CC61E7E00561E33 /* PublicMControls.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E1D1CC61E7E00561E33 /* PublicMControls.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F291CC61E7E00561E33 /* PublicText.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E1E1CC61E7E00561E33 /* PublicText.h */; };
+		11ED3F291CC61E7E00561E33 /* PublicText.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E1E1CC61E7E00561E33 /* PublicText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F2B1CC61E7E00561E33 /* TrackRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E201CC61E7E00561E33 /* TrackRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F2C1CC61E7E00561E33 /* TrackRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E211CC61E7E00561E33 /* TrackRecord.m */; };
 		11ED3F2D1CC61E7E00561E33 /* WindowItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E221CC61E7E00561E33 /* WindowItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,7 +61,7 @@
 		11ED3F311CC61E7E00561E33 /* CMDHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E271CC61E7E00561E33 /* CMDHeader.m */; };
 		11ED3F321CC61E7E00561E33 /* CMDHttpHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E281CC61E7E00561E33 /* CMDHttpHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F331CC61E7E00561E33 /* CMDHttpHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E291CC61E7E00561E33 /* CMDHttpHeader.m */; };
-		11ED3F341CC61E7E00561E33 /* CMDHttpSenderNew.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E2A1CC61E7E00561E33 /* CMDHttpSenderNew.h */; };
+		11ED3F341CC61E7E00561E33 /* CMDHttpSenderNew.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E2A1CC61E7E00561E33 /* CMDHttpSenderNew.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F351CC61E7E00561E33 /* CMDHttpSenderNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E2B1CC61E7E00561E33 /* CMDHttpSenderNew.m */; };
 		11ED3F361CC61E7E00561E33 /* CMDOP.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E2C1CC61E7E00561E33 /* CMDOP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F371CC61E7E00561E33 /* CMDOP.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E2D1CC61E7E00561E33 /* CMDOP.m */; };
@@ -71,7 +71,7 @@
 		11ED3F3B1CC61E7E00561E33 /* CMDSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E311CC61E7E00561E33 /* CMDSender.m */; };
 		11ED3F3C1CC61E7E00561E33 /* CMDSocketHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E321CC61E7E00561E33 /* CMDSocketHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F3D1CC61E7E00561E33 /* CMDSocketHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E331CC61E7E00561E33 /* CMDSocketHeader.m */; };
-		11ED3F3E1CC61E7E00561E33 /* CMDSocketSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E341CC61E7E00561E33 /* CMDSocketSender.h */; };
+		11ED3F3E1CC61E7E00561E33 /* CMDSocketSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E341CC61E7E00561E33 /* CMDSocketSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F3F1CC61E7E00561E33 /* CMDSocketSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E351CC61E7E00561E33 /* CMDSocketSender.m */; };
 		11ED3F401CC61E7E00561E33 /* FileDataCacheHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E361CC61E7E00561E33 /* FileDataCacheHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F411CC61E7E00561E33 /* FileDataCacheHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E371CC61E7E00561E33 /* FileDataCacheHelper.m */; };
@@ -83,9 +83,9 @@
 		11ED3F471CC61E7E00561E33 /* HCImageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E3E1CC61E7E00561E33 /* HCImageItem.m */; };
 		11ED3F481CC61E7E00561E33 /* NSEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E3F1CC61E7E00561E33 /* NSEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F491CC61E7E00561E33 /* NSEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E401CC61E7E00561E33 /* NSEntity.m */; };
-		11ED3F4A1CC61E7E00561E33 /* SegementCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E411CC61E7E00561E33 /* SegementCacheManager.h */; };
+		11ED3F4A1CC61E7E00561E33 /* SegementCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E411CC61E7E00561E33 /* SegementCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F4B1CC61E7E00561E33 /* SegementCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E421CC61E7E00561E33 /* SegementCacheManager.m */; };
-		11ED3F4C1CC61E7E00561E33 /* HCDBHelper(FMDB).h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E441CC61E7E00561E33 /* HCDBHelper(FMDB).h */; };
+		11ED3F4C1CC61E7E00561E33 /* HCDBHelper(FMDB).h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E441CC61E7E00561E33 /* HCDBHelper(FMDB).h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F4D1CC61E7E00561E33 /* HCDBHelper(FMDB).m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E451CC61E7E00561E33 /* HCDBHelper(FMDB).m */; };
 		11ED3F4E1CC61E7E00561E33 /* HCDBHelper-init.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E461CC61E7E00561E33 /* HCDBHelper-init.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F4F1CC61E7E00561E33 /* HCDBHelper-init.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E471CC61E7E00561E33 /* HCDBHelper-init.m */; };
@@ -109,51 +109,51 @@
 		11ED3F651CC61E7E00561E33 /* Socketsingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E621CC61E7E00561E33 /* Socketsingleton.m */; };
 		11ED3F661CC61E7E00561E33 /* BlueSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E641CC61E7E00561E33 /* BlueSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F671CC61E7E00561E33 /* BlueSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E651CC61E7E00561E33 /* BlueSessionManager.m */; };
-		11ED3F691CC61E7E00561E33 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E681CC61E7E00561E33 /* ContextFilterLogFormatter.h */; };
+		11ED3F691CC61E7E00561E33 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E681CC61E7E00561E33 /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F6A1CC61E7E00561E33 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E691CC61E7E00561E33 /* ContextFilterLogFormatter.m */; };
-		11ED3F6B1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6A1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h */; };
+		11ED3F6B1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6A1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F6C1CC61E7E00561E33 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E6B1CC61E7E00561E33 /* DDAbstractDatabaseLogger.m */; };
-		11ED3F6D1CC61E7E00561E33 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6C1CC61E7E00561E33 /* DDASLLogger.h */; };
+		11ED3F6D1CC61E7E00561E33 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6C1CC61E7E00561E33 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F6E1CC61E7E00561E33 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E6D1CC61E7E00561E33 /* DDASLLogger.m */; };
-		11ED3F6F1CC61E7E00561E33 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6E1CC61E7E00561E33 /* DDData.h */; };
+		11ED3F6F1CC61E7E00561E33 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E6E1CC61E7E00561E33 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F701CC61E7E00561E33 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E6F1CC61E7E00561E33 /* DDData.m */; };
-		11ED3F711CC61E7E00561E33 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E701CC61E7E00561E33 /* DDFileLogger.h */; };
+		11ED3F711CC61E7E00561E33 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E701CC61E7E00561E33 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F721CC61E7E00561E33 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E711CC61E7E00561E33 /* DDFileLogger.m */; };
-		11ED3F731CC61E7E00561E33 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E721CC61E7E00561E33 /* DDLog.h */; };
+		11ED3F731CC61E7E00561E33 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E721CC61E7E00561E33 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F741CC61E7E00561E33 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E731CC61E7E00561E33 /* DDLog.m */; };
-		11ED3F751CC61E7E00561E33 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E741CC61E7E00561E33 /* DDNumber.h */; };
+		11ED3F751CC61E7E00561E33 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E741CC61E7E00561E33 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F761CC61E7E00561E33 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E751CC61E7E00561E33 /* DDNumber.m */; };
-		11ED3F771CC61E7E00561E33 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E761CC61E7E00561E33 /* DDRange.h */; };
+		11ED3F771CC61E7E00561E33 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E761CC61E7E00561E33 /* DDRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F781CC61E7E00561E33 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E771CC61E7E00561E33 /* DDRange.m */; };
-		11ED3F791CC61E7E00561E33 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E781CC61E7E00561E33 /* DDTTYLogger.h */; };
+		11ED3F791CC61E7E00561E33 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E781CC61E7E00561E33 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F7A1CC61E7E00561E33 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E791CC61E7E00561E33 /* DDTTYLogger.m */; };
-		11ED3F7B1CC61E7E00561E33 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E7A1CC61E7E00561E33 /* DispatchQueueLogFormatter.h */; };
+		11ED3F7B1CC61E7E00561E33 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E7A1CC61E7E00561E33 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F7C1CC61E7E00561E33 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E7B1CC61E7E00561E33 /* DispatchQueueLogFormatter.m */; };
 		11ED3F7D1CC61E7E00561E33 /* FileResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E7C1CC61E7E00561E33 /* FileResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F7E1CC61E7E00561E33 /* FileResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E7D1CC61E7E00561E33 /* FileResource.m */; };
-		11ED3F7F1CC61E7E00561E33 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E7E1CC61E7E00561E33 /* GCDAsyncSocket.h */; };
+		11ED3F7F1CC61E7E00561E33 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E7E1CC61E7E00561E33 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F801CC61E7E00561E33 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E7F1CC61E7E00561E33 /* GCDAsyncSocket.m */; };
-		11ED3F811CC61E7E00561E33 /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E801CC61E7E00561E33 /* HTTPAsyncFileResponse.h */; };
+		11ED3F811CC61E7E00561E33 /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E801CC61E7E00561E33 /* HTTPAsyncFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F821CC61E7E00561E33 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E811CC61E7E00561E33 /* HTTPAsyncFileResponse.m */; };
-		11ED3F831CC61E7E00561E33 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E821CC61E7E00561E33 /* HTTPAuthenticationRequest.h */; };
+		11ED3F831CC61E7E00561E33 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E821CC61E7E00561E33 /* HTTPAuthenticationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F841CC61E7E00561E33 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E831CC61E7E00561E33 /* HTTPAuthenticationRequest.m */; };
 		11ED3F851CC61E7E00561E33 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E841CC61E7E00561E33 /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F861CC61E7E00561E33 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E851CC61E7E00561E33 /* HTTPConnection.m */; };
-		11ED3F871CC61E7E00561E33 /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E861CC61E7E00561E33 /* HTTPDataResponse.h */; };
+		11ED3F871CC61E7E00561E33 /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E861CC61E7E00561E33 /* HTTPDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F881CC61E7E00561E33 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E871CC61E7E00561E33 /* HTTPDataResponse.m */; };
-		11ED3F891CC61E7E00561E33 /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E881CC61E7E00561E33 /* HTTPDynamicFileResponse.h */; };
+		11ED3F891CC61E7E00561E33 /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E881CC61E7E00561E33 /* HTTPDynamicFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F8A1CC61E7E00561E33 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E891CC61E7E00561E33 /* HTTPDynamicFileResponse.m */; };
-		11ED3F8B1CC61E7E00561E33 /* HTTPErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8A1CC61E7E00561E33 /* HTTPErrorResponse.h */; };
+		11ED3F8B1CC61E7E00561E33 /* HTTPErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8A1CC61E7E00561E33 /* HTTPErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F8C1CC61E7E00561E33 /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E8B1CC61E7E00561E33 /* HTTPErrorResponse.m */; };
-		11ED3F8D1CC61E7E00561E33 /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8C1CC61E7E00561E33 /* HTTPFileResponse.h */; };
+		11ED3F8D1CC61E7E00561E33 /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8C1CC61E7E00561E33 /* HTTPFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F8E1CC61E7E00561E33 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E8D1CC61E7E00561E33 /* HTTPFileResponse.m */; };
-		11ED3F8F1CC61E7E00561E33 /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8E1CC61E7E00561E33 /* HTTPLogging.h */; };
-		11ED3F901CC61E7E00561E33 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8F1CC61E7E00561E33 /* HTTPMessage.h */; };
+		11ED3F8F1CC61E7E00561E33 /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8E1CC61E7E00561E33 /* HTTPLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11ED3F901CC61E7E00561E33 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E8F1CC61E7E00561E33 /* HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F911CC61E7E00561E33 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E901CC61E7E00561E33 /* HTTPMessage.m */; };
-		11ED3F921CC61E7E00561E33 /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E911CC61E7E00561E33 /* HTTPRedirectResponse.h */; };
+		11ED3F921CC61E7E00561E33 /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E911CC61E7E00561E33 /* HTTPRedirectResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F931CC61E7E00561E33 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E921CC61E7E00561E33 /* HTTPRedirectResponse.m */; };
 		11ED3F941CC61E7E00561E33 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E931CC61E7E00561E33 /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11ED3F951CC61E7E00561E33 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E941CC61E7E00561E33 /* HTTPServer.h */; };
+		11ED3F951CC61E7E00561E33 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E941CC61E7E00561E33 /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F961CC61E7E00561E33 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E951CC61E7E00561E33 /* HTTPServer.m */; };
 		11ED3F971CC61E7E00561E33 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3E961CC61E7E00561E33 /* WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3F981CC61E7E00561E33 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3E971CC61E7E00561E33 /* WebSocket.m */; };
@@ -164,8 +164,8 @@
 		11ED3FA11CC61E7E00561E33 /* NSFileManager-AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EA31CC61E7E00561E33 /* NSFileManager-AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FA21CC61E7E00561E33 /* NSFileManager-AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EA41CC61E7E00561E33 /* NSFileManager-AES.m */; };
 		11ED3FA31CC61E7E00561E33 /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EA51CC61E7E00561E33 /* rijndael.c */; };
-		11ED3FA41CC61E7E00561E33 /* rijndael.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EA61CC61E7E00561E33 /* rijndael.h */; };
-		11ED3FA91CC61E7E00561E33 /* AFUIImageReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EAD1CC61E7E00561E33 /* AFUIImageReflection.h */; };
+		11ED3FA41CC61E7E00561E33 /* rijndael.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EA61CC61E7E00561E33 /* rijndael.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11ED3FA91CC61E7E00561E33 /* AFUIImageReflection.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EAD1CC61E7E00561E33 /* AFUIImageReflection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FAA1CC61E7E00561E33 /* AFUIImageReflection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EAE1CC61E7E00561E33 /* AFUIImageReflection.m */; };
 		11ED3FAB1CC61E7E00561E33 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EAF1CC61E7E00561E33 /* JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FAC1CC61E7E00561E33 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EB01CC61E7E00561E33 /* NSObject+SBJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -180,14 +180,14 @@
 		11ED3FB51CC61E7E00561E33 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EB91CC61E7E00561E33 /* SBJsonWriter.m */; };
 		11ED3FB61CC61E7E00561E33 /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EBA1CC61E7E00561E33 /* RegexKitLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FB71CC61E7E00561E33 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EBB1CC61E7E00561E33 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11ED3FB81CC61E7E00561E33 /* UIDevice+IdentifierAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EBD1CC61E7E00561E33 /* UIDevice+IdentifierAddition.h */; };
+		11ED3FB81CC61E7E00561E33 /* UIDevice+IdentifierAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EBD1CC61E7E00561E33 /* UIDevice+IdentifierAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FB91CC61E7E00561E33 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EBE1CC61E7E00561E33 /* UIDevice+IdentifierAddition.m */; };
 		11ED3FBA1CC61E7E00561E33 /* UIDevice_Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EBF1CC61E7E00561E33 /* UIDevice_Hardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FBB1CC61E7E00561E33 /* UIDevice_Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EC01CC61E7E00561E33 /* UIDevice_Hardware.m */; };
-		11ED3FBC1CC61E7E00561E33 /* UIDevice_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC11CC61E7E00561E33 /* UIDevice_Reachability.h */; };
+		11ED3FBC1CC61E7E00561E33 /* UIDevice_Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC11CC61E7E00561E33 /* UIDevice_Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FBD1CC61E7E00561E33 /* UIDevice_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EC21CC61E7E00561E33 /* UIDevice_Reachability.m */; };
 		11ED3FBE1CC61E7E00561E33 /* wwanconnect.c in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3EC31CC61E7E00561E33 /* wwanconnect.c */; };
-		11ED3FBF1CC61E7E00561E33 /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC41CC61E7E00561E33 /* wwanconnect.h */; };
+		11ED3FBF1CC61E7E00561E33 /* wwanconnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3EC41CC61E7E00561E33 /* wwanconnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FC41CC61E7E00561E33 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3ECA1CC61E7E00561E33 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ED3FC51CC61E7E00561E33 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ED3ECB1CC61E7E00561E33 /* UIImage+ImageEffects.m */; };
 		11ED3FC61CC61E7E00561E33 /* UIImage-Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 11ED3ECC1CC61E7E00561E33 /* UIImage-Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -941,7 +941,6 @@
 				11ED401E1CC68C4F00561E33 /* database.h in Headers */,
 				11ED3F461CC61E7E00561E33 /* HCImageItem.h in Headers */,
 				11ED3FCA1CC61E7E00561E33 /* UIView+extension.h in Headers */,
-				117165AB1CD11003005F354F /* MacAddress.h in Headers */,
 				11ED3FC81CC61E7E00561E33 /* UIImage-Transform.h in Headers */,
 				11ED3FC61CC61E7E00561E33 /* UIImage-Extension.h in Headers */,
 				11ED3FC41CC61E7E00561E33 /* UIImage+ImageEffects.h in Headers */,
@@ -992,7 +991,6 @@
 				11ED3F941CC61E7E00561E33 /* HTTPResponse.h in Headers */,
 				11ED3FB01CC61E7E00561E33 /* SBJsonBase.h in Headers */,
 				11ED3F7D1CC61E7E00561E33 /* FileResource.h in Headers */,
-				117165AA1CD11003005F354F /* Ipaddress.h in Headers */,
 				11ED3F301CC61E7E00561E33 /* CMDHeader.h in Headers */,
 				11ED3FA11CC61E7E00561E33 /* NSFileManager-AES.h in Headers */,
 				11ED3FAC1CC61E7E00561E33 /* NSObject+SBJSON.h in Headers */,
@@ -1002,8 +1000,8 @@
 				11ED3DFB1CC61E1900561E33 /* hccoren.h in Headers */,
 				11502F5B1CD4BC3600365412 /* HCFileManager.h in Headers */,
 				11ED3FBA1CC61E7E00561E33 /* UIDevice_Hardware.h in Headers */,
-				11ED3F3A1CC61E7E00561E33 /* CMDSender.h in Headers */,
-				11ED3F3C1CC61E7E00561E33 /* CMDSocketHeader.h in Headers */,
+				117165AB1CD11003005F354F /* MacAddress.h in Headers */,
+				117165AA1CD11003005F354F /* Ipaddress.h in Headers */,
 				11ED3FB81CC61E7E00561E33 /* UIDevice+IdentifierAddition.h in Headers */,
 				11ED3FBC1CC61E7E00561E33 /* UIDevice_Reachability.h in Headers */,
 				11ED3F901CC61E7E00561E33 /* HTTPMessage.h in Headers */,
@@ -1036,6 +1034,8 @@
 				11ED3F6B1CC61E7E00561E33 /* DDAbstractDatabaseLogger.h in Headers */,
 				11ED3FBF1CC61E7E00561E33 /* wwanconnect.h in Headers */,
 				11ED3F8B1CC61E7E00561E33 /* HTTPErrorResponse.h in Headers */,
+				11ED3F3A1CC61E7E00561E33 /* CMDSender.h in Headers */,
+				11ED3F3C1CC61E7E00561E33 /* CMDSocketHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,6 +23,7 @@ FOUNDATION_EXPORT const unsigned char hccorenVersionString[];
 #import <hccoren/cmd.h>
 #import <hccoren/base.h>
 #import <hccoren/images.h>
+#import <hccoren/config.h>
 #import <hccoren/CommonUtil.h>
 #import <hccoren/CommonUtil(Date).h>
 #import <hccoren/NSArray+CC.h>
