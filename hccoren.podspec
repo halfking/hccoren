@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.2.4"
+  s.version      = "0.2.5"
   s.summary      = "这是一个与具体业务无关的通用核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -128,7 +128,6 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             "hccoren/config.h",
             "hccoren/**/Reachability.{h,m}",
             "hccoren/UDI/**/*.{h,m,cpp,c}",
-            "hccoren/Map/*.{h,m}",
             "hccoren/base.h",
             "hccoren/**/*.bundle"
         ]
@@ -141,7 +140,6 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             'hccoren/config.h',
             'hccoren/UDI/**/*.h',
             'hccoren/**/Reachability.h',
-            'hccoren/Map/*.h',
             'hccoren/base.h'
         ]
         spec.exclude_files = [
@@ -182,6 +180,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             "hccoren/Network/CocoaWebResource/*.{h,m,mm,c,cpp}",
             "hccoren/Network/BlueSession/*.{h,m,mm,c,cpp}",
             "hccoren/Util/HWWeakTimer.{h,m}",
+            "hccoren/Map/*.{h,m}",
             "hccoren/database.h",
             "hccoren/cmd.h"
         ]
@@ -193,6 +192,7 @@ s.source       = { :git => "https://github.com/halfking/hccoren.git", :tag => s.
             'hccoren/Network/BlueSession/*.h',
             'hccoren/Util/HttpServerManager.h',
             "hccoren/Util/HWWeakTimer.h",
+            'hccoren/Map/*.h',
             'hccoren/database.h',
             'hccoren/cmd.h'
         ]
