@@ -50,26 +50,27 @@
 //    if ([cmd sendCMD]) {
 //        //        [self hideProgressHUD:YES];
 //    }
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        CMD_CREATE(cmd, GetMtvInfo, @"GetMtvInfo");
-        cmd.MtvID = 3741;
-        cmd.HasSample = NO;
-        //    [self showProgressHUDWithMessage:@"waiting..."];
-        cmd.CMDCallBack = ^(HCCallbackResult * result)
-        {
-            //        [self hideProgressHUD:YES];
-            if(result.Code==0)
-            {
-                if (result.Data) {
-                    //NSlog(@"data:%@",[result.Data json])
-                }
-            }
-        };
-        if ([cmd sendCMD]) {
-            //        [self hideProgressHUD:YES];
-        }
-    });
-    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        CMD_CREATE(cmd, GetMtvInfo, @"GetMtvInfo");
+//        cmd.MtvID = 3741;
+//        cmd.HasSample = NO;
+//        //    [self showProgressHUDWithMessage:@"waiting...	"];
+//        cmd.CMDCallBack = ^(HCCallbackResult * result)
+//        {
+//            //        [self hideProgressHUD:YES];
+//            if(result.Code==0)
+//            {
+//                if (result.Data) {
+//                    //NSlog(@"data:%@",[result.Data json])
+//                }
+//            }
+//        };
+//        if ([cmd sendCMD]) {
+//            //        [self hideProgressHUD:YES];
+//        }
+//        cmd = nil;
+//    });
+//    
     return YES;
 }
 

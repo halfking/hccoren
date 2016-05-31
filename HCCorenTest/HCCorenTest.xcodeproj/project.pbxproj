@@ -124,6 +124,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110FF0301CFD3FB10025BA02 /* config_coren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_coren.h; sourceTree = "<group>"; };
 		112B53271CD9D180008564C6 /* HCCorenTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCCorenTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112B532B1CD9D180008564C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		112B532D1CD9D180008564C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,7 +183,6 @@
 		118CE6781CE1899900290641 /* FileDataCacheHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDataCacheHelper.m; sourceTree = "<group>"; };
 		118CE6791CE1899900290641 /* HCCallbackResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCallbackResult.h; sourceTree = "<group>"; };
 		118CE67A1CE1899900290641 /* HCCallbackResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCallbackResult.m; sourceTree = "<group>"; };
-		118CE67B1CE1899900290641 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		118CE67D1CE1899900290641 /* HCEPropetyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCEPropetyType.h; sourceTree = "<group>"; };
 		118CE67E1CE1899900290641 /* HCEPropetyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCEPropetyType.m; sourceTree = "<group>"; };
 		118CE67F1CE1899900290641 /* HCImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCImageItem.h; sourceTree = "<group>"; };
@@ -428,11 +428,11 @@
 		118CE6581CE1899900290641 /* hccoren */ = {
 			isa = PBXGroup;
 			children = (
+				110FF0301CFD3FB10025BA02 /* config_coren.h */,
 				118CE6591CE1899900290641 /* Base */,
 				118CE6631CE1899900290641 /* base.h */,
 				118CE6641CE1899900290641 /* cmd.h */,
 				118CE6651CE1899900290641 /* CMDBase */,
-				118CE67B1CE1899900290641 /* config.h */,
 				118CE67C1CE1899900290641 /* Data */,
 				118CE6851CE1899900290641 /* Database */,
 				118CE6901CE1899900290641 /* database.h */,
