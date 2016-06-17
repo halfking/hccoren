@@ -167,6 +167,7 @@ static DeviceConfig * infor = nil;
                      [infoDictionary objectForKey:@"CFBundleShortVersionString"],
                      [infoDictionary objectForKey:@"CFBundleVersion"]];
     self.appNameCN = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    self.appBundleID = [[NSBundle mainBundle]bundleIdentifier]; //[infoDictionary objectForKey:@"CFBundleID"];
     //    NSLog(@"infodic:%@",[[NSBundle mainBundle] infoDictionary]);
     //    self.Lat = CENTER_LAT;
     //    self.Lng = CENTER_LNG;

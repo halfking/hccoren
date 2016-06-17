@@ -105,12 +105,12 @@
 @property(nonatomic,assign,readonly,getter = get_AccuraceLng)double AccuraceLng;
 @property(nonatomic,PP_STRONG,readonly) NSString * RegionName;
 @property(nonatomic,assign,readonly) int RegionID;
-
 @property(nonatomic,assign) CGFloat Width;
 @property(nonatomic,assign) CGFloat Height;
 @property(nonatomic,assign) CGFloat Scale;
 
 @property(nonatomic,PP_STRONG) NSString * appNameCN;
+@property(nonatomic,PP_STRONG) NSString * appBundleID;
 
 @property(nonatomic,PP_STRONG)NSString * MacAddress;
 @property(nonatomic,PP_STRONG)NSString * Code;
