@@ -614,9 +614,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
 - (void) reachabilityChanged: (NSNotification* )note
 {
     Reachability* curReach = [note object];
-    if(curReach)
+    if(curReach && [curReach isKindOfClass:[Reachability class]])
     {
-        NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+//        NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
         [self updateInterfaceWithReachability: curReach];
     }
 }

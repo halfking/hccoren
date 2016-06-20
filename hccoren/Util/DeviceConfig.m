@@ -733,9 +733,9 @@ static DeviceConfig * infor = nil;
 - (void) reachabilityChanged:(NSNotification *)note
 {
     Reachability* curReach = [note object];
-    if(curReach)
+    if(curReach && [curReach isKindOfClass:[Reachability class]])
     {
-        NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+//        NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
         [self updateInterfaceWithReachability:curReach];
     }
 }

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "hccoren"
-  s.version      = "0.4.2"
+  s.version      = "0.4.3"
   s.summary      = "这是一个与具体业务无关的通用核心库。"
   s.description  = <<-DESC
 这是一个特定的核心库。包含了常用的字串处理、网络处理、图片处理、压缩、正则、JSON、数据库及一个WebServer管理器。简化了外部引用的一些问题。
@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
 使用命令CMD时注意，需要重新设置DeviceConfig中记录的命令地址的信息。
 0.4.1   Deviconfig 增加bundleid属性
 0.4.2   命令以Get形式发送时，将中文进行转码，并且更改网络监控的名称kReachabilityChangedNotificationSV
+0.4.3   接收网络监控时，判断类型是否正确。
+
                    DESC
 
   s.homepage     = "https://github.com/halfking/hccoren"
