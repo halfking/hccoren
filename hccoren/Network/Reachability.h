@@ -16,7 +16,7 @@ typedef enum {
     ReachableViaWWAN
 } NetworkStatus;
 
-#define kReachabilityChangedNotification @"kNetworkReachabilityChangedNotification"
+#define kReachabilityChangedNotificationSV @"kNetworkReachabilityChangedNotificationSV"
 
 
 

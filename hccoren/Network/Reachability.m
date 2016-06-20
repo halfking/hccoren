@@ -99,7 +99,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
         
         // Post a notification to notify the client that the network reachability changed.
         
-        [[NSNotificationCenter defaultCenter] postNotificationName: kReachabilityChangedNotification object: noteObject];
+        [[NSNotificationCenter defaultCenter] postNotificationName: kReachabilityChangedNotificationSV object: noteObject];
 
     }
 }

@@ -593,7 +593,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
         [[NSNotificationCenter defaultCenter] removeObserver:self];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(reachabilityChanged:)
-                                                     name: kReachabilityChangedNotification
+                                                     name: kReachabilityChangedNotificationSV
                                                    object: nil];
         reachalility_ = PP_RETAIN([Reachability reachabilityWithHostName:@"http://www.baidu.com"]);
         [reachalility_ startNotifier];
@@ -614,8 +614,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(Socketsingleton)
 - (void) reachabilityChanged: (NSNotification* )note
 {
     Reachability* curReach = [note object];
-    NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
-    [self updateInterfaceWithReachability: curReach];
+    if(curReach)
+    {
+        NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+        [self updateInterfaceWithReachability: curReach];
+    }
 }
 //处理连接改变后的情况
 - (void) updateInterfaceWithReachability: (Reachability*) curReach

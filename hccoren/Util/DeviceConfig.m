@@ -26,7 +26,7 @@
 {
     int isCheckingNetwork_;
     NSURLSessionDataTask * dataTask_;
-
+    
 }
 //@synthesize HOST_IP1;
 //@synthesize HOST_PORT1;
@@ -157,9 +157,9 @@ static DeviceConfig * infor = nil;
     else
         IsChinese = NO;
     
-//#ifdef IS_MANAGERCONSOLE
-//    self.UDI = [NSString stringWithFormat:@"%@_",self.UDI];
-//#endif
+    //#ifdef IS_MANAGERCONSOLE
+    //    self.UDI = [NSString stringWithFormat:@"%@_",self.UDI];
+    //#endif
     
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     
@@ -173,8 +173,8 @@ static DeviceConfig * infor = nil;
     //    self.Lng = CENTER_LNG;
     [self setCurrentLocation:CENTER_LAT lng:CENTER_LNG];
     
-//    self.HOST_IP1 = CT_HOSTIP;
-//    self.HOST_PORT1 = CT_HOSTPORT;
+    //    self.HOST_IP1 = CT_HOSTIP;
+    //    self.HOST_PORT1 = CT_HOSTPORT;
     self.UploadServer = NET_UPLOADSERVER;
     self.UploadServices = NET_UPLOADSERVICES;
     self.InterfaceUrl = NET_INTERFACE;
@@ -189,11 +189,11 @@ static DeviceConfig * infor = nil;
     self.ImagePathRoot2 = NET_IMAGEPATHROOT2;
     
     NSLog(@"UPloadServer ip and port %@%@",self.UploadServer,self.UploadServices);
-//    NSLog(@"HOST ip and port %@:%li",self.HOST_IP1,self.HOST_PORT1);
+    //    NSLog(@"HOST ip and port %@:%li",self.HOST_IP1,self.HOST_PORT1);
     
     
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
-//#warning 此处需要核实一下，因为编译Framework，所以暂时注释 2015-04-27
+    //#warning 此处需要核实一下，因为编译Framework，所以暂时注释 2015-04-27
 #if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000) || (defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090)
     if ((NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1) && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
         Width = screenSize.height;
@@ -257,9 +257,9 @@ static DeviceConfig * infor = nil;
     serverChanged = NO;
     EconomyMode = NO;
     //[ua release];
-//    hasSetPage = hasSetPage ? hasSetPage : -1 ;
+    //    hasSetPage = hasSetPage ? hasSetPage : -1 ;
     
-//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reachabilityChanged:) name:NET_CHANGED object:nil];
+    //    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(reachabilityChanged:) name:NET_CHANGED object:nil];
     
     [self checkNetwork];
     
@@ -308,52 +308,52 @@ static DeviceConfig * infor = nil;
     //    NSURL *url = [NSURL URLWithString:@"http://automation.whatismyip.com/n09230945.asp"];
     NSURLRequest * request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ip.cn"] cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:15];
     dataTask_ =  [[NSURLSession sharedSession]dataTaskWithRequest:request
-                               completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if(data && !error)
-        {
-            NSString *responseString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-            if (responseString) {
-                NSString * ip = [responseString stringByMatching:@"((2[0-4]\\d|25[0-5]|[01]?\\d\\d?)\\.){3}(2[0-4]\\d|25[0-5]|[01]?\\d\\d?)"];
-                //                  NSString *ip = [NSString stringWithFormat:@"%@", responseString];
-                if(ip && ip.length>0)
-                {
-                    self.IPAddress = ip;
-                    
-                    //通知相关程序，IP改变
-                    [[NSNotificationCenter defaultCenter]postNotificationName:NET_IPCHANGED object:nil];
-                }
-                //            NSLog(@"responseString = %@", ip);
-            };
-        }
-        else
-        {
-            NSLog(@"error:%@",[error localizedDescription]);
-        }
-                                   
-                                   
-    }];
-//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    NSDictionary * params = [NSDictionary dictionary];
-//    [manager GET :@"http://ip.cn" parameters:params
-//          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//              NSString *responseString = [responseObject JSONRepresentationEx];
-//              if (responseString) {
-//                  NSString * ip = [responseString stringByMatching:@"((2[0-4]\\d|25[0-5]|[01]?\\d\\d?)\\.){3}(2[0-4]\\d|25[0-5]|[01]?\\d\\d?)"];
-//                  //                  NSString *ip = [NSString stringWithFormat:@"%@", responseString];
-//                  if(ip && ip.length>0)
-//                  {
-//                      self.IPAddress = ip;
-//                      
-//                      //通知相关程序，IP改变
-//                      [[NSNotificationCenter defaultCenter]postNotificationName:NT_IPCHANGED object:nil];
-//                  }
-//                  //            NSLog(@"responseString = %@", ip);
-//              };
-//          }
-//          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//              NSLog(@"error:%@",[error localizedDescription]);
-//          }];
+                                                completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                                                    if(data && !error)
+                                                    {
+                                                        NSString *responseString = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+                                                        if (responseString) {
+                                                            NSString * ip = [responseString stringByMatching:@"((2[0-4]\\d|25[0-5]|[01]?\\d\\d?)\\.){3}(2[0-4]\\d|25[0-5]|[01]?\\d\\d?)"];
+                                                            //                  NSString *ip = [NSString stringWithFormat:@"%@", responseString];
+                                                            if(ip && ip.length>0)
+                                                            {
+                                                                self.IPAddress = ip;
+                                                                
+                                                                //通知相关程序，IP改变
+                                                                [[NSNotificationCenter defaultCenter]postNotificationName:NET_IPCHANGED object:nil];
+                                                            }
+                                                            //            NSLog(@"responseString = %@", ip);
+                                                        };
+                                                    }
+                                                    else
+                                                    {
+                                                        NSLog(@"error:%@",[error localizedDescription]);
+                                                    }
+                                                    
+                                                    
+                                                }];
+    //    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    //    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //    NSDictionary * params = [NSDictionary dictionary];
+    //    [manager GET :@"http://ip.cn" parameters:params
+    //          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    //              NSString *responseString = [responseObject JSONRepresentationEx];
+    //              if (responseString) {
+    //                  NSString * ip = [responseString stringByMatching:@"((2[0-4]\\d|25[0-5]|[01]?\\d\\d?)\\.){3}(2[0-4]\\d|25[0-5]|[01]?\\d\\d?)"];
+    //                  //                  NSString *ip = [NSString stringWithFormat:@"%@", responseString];
+    //                  if(ip && ip.length>0)
+    //                  {
+    //                      self.IPAddress = ip;
+    //
+    //                      //通知相关程序，IP改变
+    //                      [[NSNotificationCenter defaultCenter]postNotificationName:NT_IPCHANGED object:nil];
+    //                  }
+    //                  //            NSLog(@"responseString = %@", ip);
+    //              };
+    //          }
+    //          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    //              NSLog(@"error:%@",[error localizedDescription]);
+    //          }];
 }
 
 #pragma mark ActiveWLAN WWAN
@@ -505,7 +505,7 @@ static DeviceConfig * infor = nil;
 //}
 //- (oneway void) release
 //{
-//    
+//
 //}
 //- (DeviceConfig *)autorelease
 //{
@@ -576,7 +576,7 @@ static DeviceConfig * infor = nil;
     //    //                          address?address:@"",@"address",
     //    //                          nil];
     //
-//            CMD_CREATE(cmd, 0133, 133);
+    //            CMD_CREATE(cmd, 0133, 133);
     //    //    CMD_0133 * cmd = (CMD_0133*)[[CMDS_SX sharedCMDS_SX]createCMDOP:133];
     //        cmd.lat = Loc_Lat;
     //        cmd.lng = Loc_Lng;
@@ -717,7 +717,7 @@ static DeviceConfig * infor = nil;
 {
     if(!self.reachability)
     {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotificationSV object:nil];
         self.reachability = [Reachability reachabilityForInternetConnection];
         
         [self.reachability startNotifier];
@@ -733,8 +733,11 @@ static DeviceConfig * infor = nil;
 - (void) reachabilityChanged:(NSNotification *)note
 {
     Reachability* curReach = [note object];
-    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
-    [self updateInterfaceWithReachability:curReach];
+    if(curReach)
+    {
+        NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+        [self updateInterfaceWithReachability:curReach];
+    }
 }
 
 - (void)updateInterfaceWithReachability:(Reachability *)reachability
@@ -745,7 +748,7 @@ static DeviceConfig * infor = nil;
     NSDictionary * dic = @{@"networkstatus":@(networkStatus_),@"orgnetworkstatus":@(orgNetworkStatus)};
     
     [[NSNotificationCenter defaultCenter]postNotificationName:NET_CHANGED object:[NSNumber numberWithInt:(int)networkStatus_] userInfo:dic];
-//    [self doNetworkChanged:orgNetworkStatus];
+    //    [self doNetworkChanged:orgNetworkStatus];
 }
 //有可能网络联接，但无法访问数据，认为断网
 - (void)networkTimeout:(NSNotification *)noti
@@ -775,7 +778,7 @@ static DeviceConfig * infor = nil;
         isCheckingNetwork_ ++ ;
     }
     isCheckingNetwork_ ++ ;
-     NetworkStatus orgNetworkStatus = networkStatus_;
+    NetworkStatus orgNetworkStatus = networkStatus_;
     NSLog(@"check network begin...");
     Reachability *r = [Reachability reachabilityWithHostName:CT_TESTNETWORK];
     switch ([r currentReachabilityStatus]) {
@@ -820,7 +823,7 @@ static DeviceConfig * infor = nil;
         
         if(ret)
         {
-             NSDictionary * dic = @{@"networkstatus":@(networkStatus_),@"orgnetworkstatus":@(orgNetworkStatus)};
+            NSDictionary * dic = @{@"networkstatus":@(networkStatus_),@"orgnetworkstatus":@(orgNetworkStatus)};
             NSLog(@"Checknet work completed...connected");
             [[NSNotificationCenter defaultCenter]postNotificationName:NET_CHANGED object:[NSNumber numberWithInt:(int)networkStatus_] userInfo:dic];
             isCheckingNetwork_ = 0;
@@ -840,22 +843,22 @@ static DeviceConfig * infor = nil;
 }
 - (void)doNetworkChanged:(NetworkStatus)orgNetworkStatus
 {
-//    //网络切换时，需要注意自动停止相关的操作
-//    if(networkStatus_ == ReachableNone ||(networkStatus_ == ReachableViaWWAN && [[UserManager sharedUserManager]currentSettings].NoticeFor3G))
-//    {
-//        [[UDManager sharedUDManager]stopAllUploads:NO delegate:self];
-//    }
-//    else if([[UserManager sharedUserManager]currentSettings].AutoUploadDataViaWIFI||[[UserManager sharedUserManager]currentSettings].NoticeFor3G==NO)
-//    {
-//        if(canAutoUpload_)
-//        {
-//            [[UDManager sharedUDManager]startAlludsWithoutStopByUser:self];
-//        }
-//    }
-//    if(orgNetworkStatus==ReachableNone && networkStatus_!=ReachableNone)
-//    {
-//        [[UserManager sharedUserManager]registerDevice:nil];
-//    }
+    //    //网络切换时，需要注意自动停止相关的操作
+    //    if(networkStatus_ == ReachableNone ||(networkStatus_ == ReachableViaWWAN && [[UserManager sharedUserManager]currentSettings].NoticeFor3G))
+    //    {
+    //        [[UDManager sharedUDManager]stopAllUploads:NO delegate:self];
+    //    }
+    //    else if([[UserManager sharedUserManager]currentSettings].AutoUploadDataViaWIFI||[[UserManager sharedUserManager]currentSettings].NoticeFor3G==NO)
+    //    {
+    //        if(canAutoUpload_)
+    //        {
+    //            [[UDManager sharedUDManager]startAlludsWithoutStopByUser:self];
+    //        }
+    //    }
+    //    if(orgNetworkStatus==ReachableNone && networkStatus_!=ReachableNone)
+    //    {
+    //        [[UserManager sharedUserManager]registerDevice:nil];
+    //    }
 }
 
 @end

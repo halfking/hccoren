@@ -40,8 +40,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(CMDHttpSenderNew)
     __block CMDHttpHeader * header = [[CMDHttpHeader alloc]init];
     __block __weak CMDOP * weakCmd = cmd;
     NSString * url = cmd.serverURL;
-    if (!url || !url.length) {
+    if (!url || url.length==0) {
         url = PP_RETAIN([header toString:weakCmd includeUDI:NO]);
+    }
+    if(url && url.length>0)
+    {
+        if(config.SysVersion >= 9.0)
+            url = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+        else
+        url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     }
     NSLog(@"拼接命令后%@",url);
     NSMutableString * parameterString  = nil;
@@ -63,7 +70,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(CMDHttpSenderNew)
         NSString * object = [postContent objectForKey:key];
         NSString * objectString = nil;
         if([object isKindOfClass:[NSString class]])
-        objectString = (NSString *)object;
+            objectString = (NSString *)object;
         else
         {
             NSString * json = [object JSONRepresentationEx];
@@ -85,9 +92,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(CMDHttpSenderNew)
         NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
                                                                 cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:20];
         if(cmd.refer)
-        [request setValue:cmd.refer forHTTPHeaderField:@"Refer"];
+            [request setValue:cmd.refer forHTTPHeaderField:@"Refer"];
         if(cmd.UA)
-        [request setValue:cmd.UA forHTTPHeaderField:@"User-Agent"];
+            [request setValue:cmd.UA forHTTPHeaderField:@"User-Agent"];
         
         [request setHTTPMethod:@"POST"];
         [request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
@@ -225,7 +232,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(CMDHttpSenderNew)
     {
         NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
                                                                 cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:15];
-        request.HTTPMethod = @"GET";
+//        request.HTTPMethod = @"GET";
         
         [request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
         
@@ -233,9 +240,9 @@ SYNTHESIZE_SINGLETON_FOR_CLASS_NEW(CMDHttpSenderNew)
         //            [request addValue:[params objectForKey:key] forHTTPHeaderField:key];
         //        }
         if(cmd.refer)
-        [request setValue:cmd.refer forHTTPHeaderField:@"Refer"];
+            [request setValue:cmd.refer forHTTPHeaderField:@"Refer"];
         if(cmd.UA)
-        [request setValue:cmd.UA forHTTPHeaderField:@"User-Agent"];
+            [request setValue:cmd.UA forHTTPHeaderField:@"User-Agent"];
         
         [request setHTTPMethod:@"GET"];
         [[session dataTaskWithRequest:request

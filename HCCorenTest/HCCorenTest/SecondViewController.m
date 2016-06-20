@@ -31,6 +31,7 @@
 {
     [super viewDidAppear:animated];
     
+    
     __block NSString * text = textView_.text?textView_.text:@"";
     text = [text stringByAppendingString:@"\n\rrequest....."];
     textView_.text = text;
