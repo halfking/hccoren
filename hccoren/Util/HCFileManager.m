@@ -150,7 +150,7 @@ static HCFileManager * hcFileManager = nil;
     {
         [self createFileDirectories:targetPath];
     }
-    else
+    else if(overwriter)
     {
         [self createFileDirectories:targetPath];
     }

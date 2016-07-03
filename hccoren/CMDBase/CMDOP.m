@@ -298,6 +298,7 @@
     {
         //        assert(@"error key ");
         NSLog(@"arg compile failure....");
+        self.CMDCallBack = nil;
         return NO;
     }
     if(args_) argsHash_ = PP_RETAIN([CommonUtil md5Hash:args_]);
@@ -344,6 +345,7 @@
             }
             else
             {
+                self.CMDCallBack=nil;
                 return NO;
             }
         }
@@ -373,6 +375,7 @@
         ticksForSendTime = [CommonUtil getDateTicks:[NSDate date]];
         ticksForParse = [CommonUtil getDateTicks:[NSDate date]];
 #endif
+        self.CMDCallBack = nil;
         return NO;
     }
     CMDSender * sender_ = [handler_ getCurrentSender:useHttpSender_];

@@ -46,13 +46,13 @@
             [self setProperties:dic];
             self.Args = args;
             self.DicNotParsed = dic;
-            if(dic)
-            {
+//            if(dic)
+//            {
                 if([dic objectForKey:@"totaldetailcount"])
                     TotalDetailCount = [[dic objectForKey:@"totaldetailcount"]intValue];
                 if([dic objectForKey:@"totalcount"])
                     TotalCount = [[dic objectForKey:@"totalcount"]intValue];
-            }
+//            }
         }
     }
     else
