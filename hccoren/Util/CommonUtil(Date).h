@@ -13,6 +13,7 @@
 #define MSG_JUSTNOW                 @"刚才"
 #define MSG_MINITUESBEFORE          @"分钟前"
 #define MSG_TODAY                   @"今天"
+#define MSG_DAYSBEFORE              @"天前"
 #define MSG_LASTUPDATETIME         @"最后刷新时间  %@"
 
 @interface CommonUtil(Date)

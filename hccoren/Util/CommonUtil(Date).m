@@ -132,7 +132,7 @@ static dispatch_once_t dateformatOnce;
         {
             dateString = [dateString stringByReplacingOccurrencesOfString:@"/" withString:@"-"];
         }
-       
+        
         dateString = [dateString stringByReplacingOccurrencesOfString:@"T" withString:@" "];
         dateString = [dateString stringByReplacingOccurrencesOfString:@"Z" withString:@""];
         
@@ -153,29 +153,29 @@ static dispatch_once_t dateformatOnce;
         @finally {
             willdate = [NSDate dateWithTimeIntervalSince1970:0];
         }
-//        if(willdate==nil)
-//        {
-//            dateString = [dateString stringByReplacingOccurrencesOfString:@"T" withString:@" "];
-//            dateString = [dateString stringByReplacingOccurrencesOfString:@"Z" withString:@""];
-//            NSRange range1 = [dateString rangeOfString:@"."];
-//            if(range1.length>0)
-//            {
-//                dateString = [dateString substringToIndex:range1.location];
-//            }
-//            
-//            [formate setDateFormat:(@"yyyy-MM-dd HH:mm:ss")];
-//            //NSLocale *locale=[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
-//            //[formate setLocale:locale];
-//            @try {
-//                willdate = PP_RETAIN([formate dateFromString:dateString]);
-//            }
-//            @catch (NSException *exception) {
-//                NSLog(@"convert string %@ to date error:%@",dateString,[exception description]);
-//            }
-//            @finally {
-//                
-//            }
-//        }
+        //        if(willdate==nil)
+        //        {
+        //            dateString = [dateString stringByReplacingOccurrencesOfString:@"T" withString:@" "];
+        //            dateString = [dateString stringByReplacingOccurrencesOfString:@"Z" withString:@""];
+        //            NSRange range1 = [dateString rangeOfString:@"."];
+        //            if(range1.length>0)
+        //            {
+        //                dateString = [dateString substringToIndex:range1.location];
+        //            }
+        //
+        //            [formate setDateFormat:(@"yyyy-MM-dd HH:mm:ss")];
+        //            //NSLocale *locale=[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+        //            //[formate setLocale:locale];
+        //            @try {
+        //                willdate = PP_RETAIN([formate dateFromString:dateString]);
+        //            }
+        //            @catch (NSException *exception) {
+        //                NSLog(@"convert string %@ to date error:%@",dateString,[exception description]);
+        //            }
+        //            @finally {
+        //
+        //            }
+        //        }
         PP_RELEASE(locale);
         PP_RELEASE(formate);
         return PP_AUTORELEASE(willdate);
@@ -262,6 +262,11 @@ static dispatch_once_t dateformatOnce;
         {
             return [NSString stringWithFormat:@"%@ %@",MSG_TODAY,[CommonUtil stringFromDate:oldDate andFormat:@"HH:mm"] ];
         }
+        else if(diff <= 30 * 24 * 3600)
+        {
+            int dayCount = diff / (60 * 60 * 24);
+            return [NSString stringWithFormat:@"%d %@",dayCount,MSG_DAYSBEFORE];
+        }
         else
         {
             return [CommonUtil stringFromDate:oldDate andFormat:@"yyyy-MM-dd"];
@@ -276,12 +281,12 @@ static dispatch_once_t dateformatOnce;
 {
     if(!dateString||dateString.length==0) return @"";
     NSDate * date = [self dateFromString:dateString];
-    return [self getTimeText:[date timeIntervalSinceNow] date:date];
+    return [self getTimeText:0 - [date timeIntervalSinceNow] date:date];
 }
 +(NSString *)getTimeTextViaDate:(NSDate *)orgDate
 {
     if(!orgDate) return @"";
-    return [self getTimeText:[orgDate timeIntervalSinceNow] date:orgDate];
+    return [self getTimeText: 0 - [orgDate timeIntervalSinceNow] date:orgDate];
 }
 + (NSString *) getTimeText:(int)seconds date:(NSDate *)orgDate
 {
@@ -294,14 +299,16 @@ static dispatch_once_t dateformatOnce;
     int count = 0;
     if(dayCount >0)
     {
-        if(dayCount > 7 && orgDate)
+        if(dayCount > 29 && orgDate)
         {
             [ret appendFormat:@"%@",[CommonUtil getDateText:orgDate format:@"yyyy-MM-dd"]];
+            return PP_AUTORELEASE(ret);
         }
         else
         {
             [ret appendFormat:@"%d天",dayCount];
         }
+        
         count ++;
     }
     if(hourCount>0)
