@@ -35,7 +35,10 @@
 +(NSString *)getActivityDateTextSprit:(NSString *)oldDateString;
 +(NSString *)getSubscribeDateText:(NSString *)oldDateString;
 
+
 +(NSString *)getTimeText:(int)seconds;
++(NSString *)getTimeTextViaString:(NSString *)dateString;
++(NSString *)getTimeTextViaDate:(NSDate *)orgDate;
 +(NSString *)getTimeText:(int)seconds date:(NSDate*)orgDate;
 +(long)getDateTicks:(NSDate *) date;
 

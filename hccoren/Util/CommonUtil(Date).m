@@ -272,6 +272,17 @@ static dispatch_once_t dateformatOnce;
 {
     return [self getTimeText:seconds date:nil];
 }
++(NSString *)getTimeTextViaString:(NSString *)dateString
+{
+    if(!dateString||dateString.length==0) return @"";
+    NSDate * date = [self dateFromString:dateString];
+    return [self getTimeText:[date timeIntervalSinceNow] date:date];
+}
++(NSString *)getTimeTextViaDate:(NSDate *)orgDate
+{
+    if(!orgDate) return @"";
+    return [self getTimeText:[orgDate timeIntervalSinceNow] date:orgDate];
+}
 + (NSString *) getTimeText:(int)seconds date:(NSDate *)orgDate
 {
     if(seconds <=0) return @"";
