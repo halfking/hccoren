@@ -36,6 +36,7 @@
 +(NSString *)getSubscribeDateText:(NSString *)oldDateString;
 
 +(NSString *)getTimeText:(int)seconds;
++(NSString *)getTimeText:(int)seconds date:(NSDate*)orgDate;
 +(long)getDateTicks:(NSDate *) date;
 
 //判断时间是否在范围内
