@@ -149,9 +149,10 @@ static dispatch_once_t dateformatOnce;
         }
         @catch (NSException *exception) {
             NSLog(@"convert string %@ to date error:%@",dateString,[exception description]);
+            willdate = [NSDate dateWithTimeIntervalSince1970:0];
         }
         @finally {
-            willdate = [NSDate dateWithTimeIntervalSince1970:0];
+            
         }
         //        if(willdate==nil)
         //        {
